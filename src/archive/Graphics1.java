@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package computerscience30s;
+package archive;
 
 /**
  * Graphics1.java - description here...

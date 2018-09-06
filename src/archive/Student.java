@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package computerscience30s;
+package archive;
 
 /**
  * Student.java - represents a student. This class uses inheritance to inherit

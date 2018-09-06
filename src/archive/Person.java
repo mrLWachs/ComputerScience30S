@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package computerscience30s;
+package archive;
 
 /**
  * Person.java - represents a person. This is a class with properties (things 

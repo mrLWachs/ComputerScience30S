@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package computerscience30s;
+package archive;
 
 /**
  * Husky.java - represents a Husky. This class uses inheritance to inherit

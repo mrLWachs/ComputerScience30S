@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package computerscience30s;
+package archive;
 
 /**
  * Teacher.java - represents a Teacher. This class uses inheritance to inherit
