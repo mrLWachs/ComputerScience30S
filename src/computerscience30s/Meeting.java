@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package archive2017To2018;
+package computerscience30s;
 
 /**
  * Meeting.java - represents a meeting. This class associates ("has a") with
