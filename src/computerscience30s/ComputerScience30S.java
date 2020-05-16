@@ -938,7 +938,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         meeting.attend(teacher);
         meeting.attend(husky);
         meeting.hold();  
-        
+         
         System.out.println("\nLearing classes completed!\n");
     }
     
