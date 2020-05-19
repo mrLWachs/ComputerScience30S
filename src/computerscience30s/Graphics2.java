@@ -94,15 +94,26 @@ public class Graphics2 extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+        
+        // double clicking a button immediately jumps to code written for you 
+        // to add in your code to execute (just like in visual Studio)
+        System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-     
+        
+        // For other actions, like this, right click on the object in the 
+        // WYSIWYG ("What You See Is What You Get") designer and go to the
+        // menu -> Events -> then the action you wish to add
+        jLabel1.setText("Key pressed " + evt.getKeyCode());
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void jLabel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseMoved
        
+        // The code added by the designer cannot be editted but can be 
+        // added to lke the line below. The code creates a method with 
+        // parameters that we can use
+        jLabel1.setText("Mouse " + evt.getX() + "," + evt.getY()); 
     }//GEN-LAST:event_jLabel2MouseMoved
 
 
