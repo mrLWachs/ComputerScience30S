@@ -33,10 +33,10 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        learnIntroToJava();
-//        learnMethods();
-//        learnArrays();
-//        learnClasses();
+        learnIntroToJava();
+        learnMethods();
+        learnArrays();
+        learnClasses();
         LearnGraphics learnGraphics = new LearnGraphics();
     }
 
