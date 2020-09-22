@@ -344,7 +344,26 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("answer 5 = " + answer5);
         System.out.println("answer 6 = " + answer6);
 
+        // The Math "library" does random numbers, like:
+        // Random random = new Random();
         
+        double seed = Math.random();
+        System.out.println("seed = " + seed);
+        
+        // You can use a formula for generating random numbers in a range 
+        // between a low and a high number:
+        
+        // E.g. between 1 and 10 and make it an int
+        
+        // Start with the constants defining the highest and lowest
+        final double LOW  = 1.0;
+        final double HIGH = 10.0;
+        // Now a formula to generate in that range
+        double number = (HIGH - LOW + 1) * seed + LOW;
+        // Now cast it to an integer
+        int value = (int)number;
+        // And display it
+        System.out.println("random value = " + value);
         
         
         
