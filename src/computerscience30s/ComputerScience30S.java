@@ -364,20 +364,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         int value = (int)number;
         // And display it
         System.out.println("random value = " + value);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
+                
         // this line terminates any running java program at any point
         //System.exit(0);
 
