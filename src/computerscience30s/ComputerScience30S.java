@@ -155,27 +155,28 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         ///////////////////////////////////////////////////////////////////////
         // VARIABLES:
         ///////////////////////////////////////////////////////////////////////
-
-        // The simpliest of variable types
+        
+        // The simpliest variable (variables stores "remembers" data) type:
         
         boolean a = true;
         
-        // type name = value ;        
-        // This line creates (declares) a variable
+        // type name = value ;
+        
+        // When you write a line of code to create (declare) a variable
         
         int b = 0;
         
         double c = 0.0;
         
-        // Variables can change (vary)
+        // Variables can change ("vary")
         
         a = false;
         b = 1;
         c = 1.2;
         
-        // A variable always goes on the LHS (left hand side) of the equals 
-        // sign (=) and the value going into the variable always goes on the 
-        // RHS (right hand side)
+        // Variables always go on the left hand side (LHS) of the equals 
+        // sign (=) and the value going into the variable always goes on
+        // the right hand side (RHS) 
         
         System.out.println("a = " + a);
         System.out.println("b = " + b);
@@ -183,49 +184,45 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         char d = 'A';
         
+        // The "char" is short for "character" hold (remembers) one character
+        
         System.out.println("d = " + d);
         
-        // The boolean, int, double and char are all simple (primitive) data 
-        // type, now a complex data type....
+        // The boolean, integer (int), double, character (char) are all
+        // simple (primitive) data types, now a complex data type...
         
-        String e = "banana";
+        String e = "apple";
         
         System.out.println("e = " + e);
-                
-        // now manipulate the variables (change)
-                
-        int x = 10;
         
-        System.out.println("x = " + x); // 10
+        // Manipulate our variables
         
-        x = 20;
+        int x = 10;        
+        System.out.println("x = " + x);
+        x = 20;        
+        System.out.println("x = " + x);        
+        int y = x + 10;        
+        System.out.println("y = " + y);
         
-        System.out.println("x = " + x); // 20
+        // Optional shorthand...      
         
-        int y = x + 10;
+        y++;    // means y = y + 1
+        y--;    // means y = y - 1
         
-        System.out.println("y = " + y); // 30
+        // Even more shorthand...
         
-        // Optional shorthand...
-        
-        y++;    // means same as y = y + 1
-        y--;    // means same as y = y - 1
-        
-        // More optional shorthand...
-        
-        y += 10;    // means y = y + 10
-        y -= 10;    // means y = y - 10
-        y *= 10;    // means y = y * 10
-        y /= 10;    // means y = y / 10
+        y += 10;    // Means y = y + 10
+        y -= 10;    // Means y = y - 10
+        y *= 10;    // Means y = y * 10
+        y /= 10;    // Means y = y / 10
         
         System.out.println("y = " + y);
-
-        // Modulus (mod) gives you the remainder of a division, java 
-        // uses the % symbol
+                
+        // Modulus (mod) gives you the remainder of a division, in java
+        // uses the percentage "%" symbol for this
         
         x = 28;
         y = x / 5;
-        
         int z = x % 5;
         
         System.out.println("x = " + x);
@@ -233,7 +230,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("z = " + z);
         
         // Constants are variables that don't change, and constants are 
-        // written ALL_CAPS with underscores separating words
+        // written in ALL_CAPITAL_LETTERS with underscores to seperate words
         
         final double  PI           = 3.14159265;
         final int     PROBLEMS     = 99;
@@ -241,43 +238,40 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         final boolean FOUND        = true;
         final String  TEACHER_NAME = "Wachs";
         
-        System.out.println(PI + " and " +
-                           PROBLEMS + " and " +
-                           YES + " and " +
-                           FOUND + " and " +
+        System.out.println(PI       + ", " + 
+                           PROBLEMS + ", " + 
+                           YES      + ", " + 
+                           FOUND    + ", " + 
                            TEACHER_NAME);
         
-        // Convert one variable data type to another...
+        // Converting one data type to another
         
-        int    f = 25;
+        int f = 25;
+        
         double g = f;
         
         System.out.println("f = " + f);
         System.out.println("g = " + g);
         
-        // Now change the value of the double 
-        
-        g = 25.9;
-        
-        // Use casting, it "ignores" any decimal places        
-        // it does not "round off" the number as shown:
+        g = 25.9999999999;
         
         int h = (int)g;
         
+        // When we use round brackets ( ) with the data type inside, this is 
+        // called "casting" which means it ignores the decimal part 
+        
         System.out.println("h = " + h);
         
-        // Try it again
-        
-        double k = 2.999999999999;
+        double k = 2.9999999;
         int    l = (int)k;
         double m = (double)l;
         
-        // casting can happen with lots of types:
+        // Casting can happen with other data types
         
         char n = 'A';
         int  o = (int)n;
-        char p = (char)63;
-                
+        char p = (char)70;
+        
         System.out.println("k = " + k);
         System.out.println("l = " + l);
         System.out.println("m = " + m);
@@ -285,85 +279,96 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("o = " + o);
         System.out.println("p = " + p);
         
-        // Using input dialog boxes with variables
+        // Use dialog boxes with variables
         
-        String q = JOptionPane.showInputDialog("Enter string");
-        JOptionPane.showMessageDialog(null,q);
+        String q = JOptionPane.showInputDialog("Enter");
         
-        // To use dialog input with numbers, you have to start off with a 
-        // string and then convert it to a number
+        JOptionPane.showMessageDialog(null, q);
+        
+        // When using input dialogs, ALWAYS use a variable first at the front
+        // of the line
+        
+        // With numbers, you have to start off with a string, and then convert
+        // it to a number. This is like: Convert.ToInt32(text) in C#
         
         String r = JOptionPane.showInputDialog("Enter int");
         
-        // Now convert it, in a way like: Convert.toInt32().... in C#
-        // it uses something called "parsing" (means "reading")
+        // We use code that "parses" (means "reading")
         
         int s = Integer.parseInt(r);
         
-        JOptionPane.showMessageDialog(null,s);
+        JOptionPane.showMessageDialog(null, s);
         
-        // Same example with doubles: 
+        // Same example with a double
         
         String t = JOptionPane.showInputDialog("Enter double");
         double u = Double.parseDouble(t);
-        JOptionPane.showMessageDialog(null,u);
-                
-        // Example with char:
+        JOptionPane.showMessageDialog(null, u);
         
-        String v = JOptionPane.showInputDialog("Enter char");
-        char w = v.charAt(0);
+        // Example with a char
+        
+        String v = JOptionPane.showInputDialog("Enter char");        
+        char w = v.charAt(0);        
+        JOptionPane.showMessageDialog(null, w);
         
         // Strings have built-in actions like "charAt" to pull out a character
         // "at" location "0" which means the very first character (because 
         // numbering in Computer Science usually starts at 0)
         
-        JOptionPane.showMessageDialog(null,w);
-        
-        // Strings have many built-in actions (functions, methods)    
+        // Strings have many built-in actions (functions, methods)
         
         String word = "hippopotomonsprosesquippedaiophobia";        
         int length = word.length();        
         System.out.println(word + " is length " + length);        
         word = word.toUpperCase();        
-        System.out.println(word);        
-        // many more can be explored
+        System.out.println(word);
         
-        // Also built-in to Java is a "Math" "library" of code
+        // Many more string functions can be explored
+        
+        // Also built-in to java is a math "library" of code
         
         double answer1 = Math.PI;
-        double answer2 = Math.abs(-1);
-        double answer3 = Math.cos(0.5);
-        double answer4 = Math.log(0.5);
-        double answer5 = Math.pow(5, 3);
-        double answer6 = Math.sqrt(9);
+        double answer2 = Math.cos(0.5);
+        double answer3 = Math.abs(-1);
+        double answer4 = Math.pow(5, 3);
+        double answer5 = Math.sqrt(9);
+        double answer6 = Math.log(0.5);
         
-        System.out.println("answer 1 = " + answer1);
-        System.out.println("answer 2 = " + answer2);
-        System.out.println("answer 3 = " + answer3);
-        System.out.println("answer 4 = " + answer4);
-        System.out.println("answer 5 = " + answer5);
-        System.out.println("answer 6 = " + answer6);
-
-        // The Math "library" does random numbers, like:
+        System.out.println("answer1 = " + answer1);
+        System.out.println("answer2 = " + answer2);
+        System.out.println("answer3 = " + answer3);
+        System.out.println("answer4 = " + answer4);
+        System.out.println("answer5 = " + answer5);
+        System.out.println("answer6 = " + answer6);
+        
+        // Math library also does random numbers, like:
         // Random random = new Random();
         
         double seed = Math.random();
+        
         System.out.println("seed = " + seed);
         
-        // You can use a formula for generating random numbers in a range 
-        // between a low and a high number:
+        // You can use a formula for generating random numbers in a range
+        // between a low and a high number
         
-        // E.g. between 1 and 10 and make it an int
+        // e.g. between 1 and 10 and make it an integer
         
-        // Start with the constants defining the highest and lowest
+        // Start with some constants defining the high and low
+        
         final double LOW  = 1.0;
         final double HIGH = 10.0;
-        // Now a formula to generate in that range
+        
+        // Now the formula to generate in that range
+        
         double number = (HIGH - LOW + 1) * seed + LOW;
-        // Now cast it to an integer
+        
+        // Now "cast" it to an int
+        
         int value = (int)number;
+        
         // And display it
-        System.out.println("random value = " + value);
+        
+        System.out.println("value = " + value);
                 
         // this line terminates any running java program at any point
         //System.exit(0);
@@ -374,20 +379,32 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 
 // NETBEANS TIPS:
 // ==============
-// (1)  Hold Alt + scroll mouse to zoom in and out on code
-// (2)  Double click the top of a tab of code to make bigger or smaller
-// (3)  Type in lowercase "sout" and hit TAB to write System.out....
-// (4)  Words in capital letters and in blue are IMPORTANT code words, the words
-//      in captial letters are powerful, they are a "class"
-// (5)  Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
-// (6)  The word "null" means "nothing" and can act as a placeholder for code
-//      you don't actually want
-// (7)  To "comment out" some code, select the code (with your mouse) and
-//      click on the two buttons under the code tab (at the right end)
-// (8)  A red squiggily line and/or a "lightbulb" in NetBeans means a potential
-//      error and a potential fix (if you click on the lightbulb)
-// (9)  You can get more NetBeans tips and autocompletes by selecting
-//      Help -> Keyboard Shortcuts Card
-// (10) To stop a running program, click the red stop button on the left in the
+// (1)  To zoom in and out on the code, hold ALT and roll the mouse
+// (2)  Double click the top of a tab to hide side windows or show them
+// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (5)  Click the green triangle on the top toolbar to run code
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (7)  The word "null" means nothing and can act as a placeholder for code
+//      you don't actually need (right now)
+// (8)  To "comment out" chunks of code, select the code with your mouse or
+//      keyboard, then click on the two buttons under the code tab
+// (9)  To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
-
+// (10) You can get more NetBeans tips and autocompletes by selecting 
+//      Help -> Keyboard Shortcuts Card
+// (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
+//      error and a potential fix (if you click on the lightbulb)
+// (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
+//      "Java", select "Java Main Class", and "Open in Editor" and the enter 
+//      this into the temple (but use the slash "/" instead of "|"):
+//
+//      /** 
+//       * ${name}.java - 
+//       *
+//       * @author Mr. Wachs 
+//       * @since ${date} 
+//       */
+//      public class ${name} 
+//       { .... etc .....     
+//
