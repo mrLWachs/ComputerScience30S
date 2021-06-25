@@ -595,13 +595,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         System.out.println("\n Learning Methods complete! \n");
     }
-            
-    /**
-     * Draws a star on the screen
-     */
-    private static void drawStar() {
-        System.out.println("*");
-    }
   
     /**
      * Writes a star on the screen
