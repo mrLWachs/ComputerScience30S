@@ -43,97 +43,112 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         ///////////////////////////////////////////////////////////////////////
                 
         // Basic output
-        System.out.print("Hello World...");
+        System.out.println("Hello World...");
         
-        // If you use println, it adds a line break at the end
-        System.out.println("I'm in the world");
+        // Use print without the "ln", does not add a line break at the end
+        System.out.print("I'm in ");
+        System.out.println("the world");
         
-        // Additional output tips.... (these are "special" characters):        
-        System.out.println("Quote \" ");
+        System.out.println("Good-bye world!");
+                
+        // Additional output tips... (these are "special" characters)
+        
+        System.out.println("Make a quote \" ");
+        System.out.println("Make a slash \\ ");
         System.out.println("Make a \t tab");
-        System.out.println("Slash \\ ");
-        System.out.println("New \n Line");
+        System.out.println("Make a \n new line");
         
-        // Make a "dialog" box appear        
-        JOptionPane.showMessageDialog(null, "Hi");
+        // Make a dialog box appear
+        JOptionPane.showMessageDialog(null, "Hello");
         
-        // Optional (does not "need" to be in assignments) dialog boxes:
-        JOptionPane.showMessageDialog(null,
-                "Information dialog icon is i",
-                "Information title",
-                JOptionPane.INFORMATION_MESSAGE);
-        // You can hit "enter" in some lines of code at certain places to 
-        // drop the code to the next line and save having too long of a line
+        // Above is the only one need for assignments, final projects, etc.
+        // Optional (not needed, but cool) dialog boxes below:
         
-        JOptionPane.showMessageDialog(null,
-                "Question dialog icon is ?",
-                "Question title",
-                JOptionPane.QUESTION_MESSAGE);
+        JOptionPane.showMessageDialog(
+                null,
+                "Information icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
         
-        JOptionPane.showMessageDialog(null,
-                "Warning dialog icon is !",
-                "Warning title",
-                JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showMessageDialog(
+                null,
+                "Question icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE
+        );
         
-        JOptionPane.showMessageDialog(null,
-                "Plain dialog icon is !",
-                "Plain title",
-                JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(
+                null,
+                "Warning icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE
+        );
         
-        // dialogs for inputs
+        JOptionPane.showMessageDialog(
+                null,
+                "Plain no no icon",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE
+        );
         
-        // the simpliest version is the one you have to use        
+        // Dialogs for inputs....
+        
+        // The simpliest version is the one you have to use
         JOptionPane.showInputDialog("Enter something");
         
-        // some optional versions of input dialogs
-        JOptionPane.showInputDialog(null,
-                "Information dialog icon is i",
-                "Information title",
+        // Some optional input dialogs below:
+        JOptionPane.showInputDialog(
+                null, 
+                "Information dialog icon is i", 
+                "Information Title", 
                 JOptionPane.INFORMATION_MESSAGE);
-        
-        JOptionPane.showInputDialog(null,
-                "Question dialog icon is ?",
-                "Question title",
+
+        JOptionPane.showInputDialog(
+                null, 
+                "Question dialog icon is ?", 
+                "Question Title", 
                 JOptionPane.QUESTION_MESSAGE);
         
-        JOptionPane.showInputDialog(null,
-                "Warning dialog icon is !",
-                "Warning title",
+        JOptionPane.showInputDialog(
+                null, 
+                "Warning dialog icon is !", 
+                "Warning Title", 
                 JOptionPane.WARNING_MESSAGE);
         
-        JOptionPane.showInputDialog(null,
-                "Plain dialog icon is !",
-                "Plain title",
+        JOptionPane.showInputDialog(
+                null, 
+                "Plain dialog no icon", 
+                "Plain Title", 
                 JOptionPane.PLAIN_MESSAGE);
         
-        // NOTE: these examples above are NOT being used properly if used in
-        // a assignment, correct way comes up later in this code...
-        
-        // an optional type of dialog (may not be needed)
+        // More different (and optional) dialogs...
         
         JOptionPane.showConfirmDialog(null, "Confirm");
         
-        // more different versions...
-        
-        JOptionPane.showConfirmDialog(null,
+        JOptionPane.showConfirmDialog(
+                null,
                 "Example 1",
                 "Information",
-                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.YES_NO_OPTION,
                 JOptionPane.INFORMATION_MESSAGE);
         
-        JOptionPane.showConfirmDialog(null,
+        JOptionPane.showConfirmDialog(
+                null,
                 "Example 2",
                 "Question",
-                JOptionPane.YES_NO_OPTION,
+                JOptionPane.DEFAULT_OPTION,
                 JOptionPane.QUESTION_MESSAGE);
         
-        JOptionPane.showConfirmDialog(null,
+        JOptionPane.showConfirmDialog(
+                null,
                 "Example 3",
                 "Warning",
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.WARNING_MESSAGE);
         
-        JOptionPane.showConfirmDialog(null,
+        JOptionPane.showConfirmDialog(
+                null,
                 "Example 4",
                 "Plain",
                 JOptionPane.YES_NO_CANCEL_OPTION,
@@ -148,19 +163,19 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 
 // NETBEANS TIPS:
 // ==============
-// (1)  Hold Alt + scroll mouse to zoom in and out on code
-// (2)  Double click the top of a tab of code to make bigger or smaller
-// (3)  Type in lowercase "sout" and hit TAB to write System.out....
-// (4)  Words in capital letters and in blue are IMPORTANT code words, the words
-//      in captial letters are powerful, they are a "class"
-// (5)  Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
-// (6)  The word "null" means "nothing" and can act as a placeholder for code 
-//      you don't actually want
-// (7)  To "comment out" some code, select the code (with your mouse) and 
-//      click on the two buttons under the code tab (at the right end)
-// (8)  A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
-//      error and a potential fix (if you click on the lightbulb)
-// (9)  You can get more NetBeans tips and autocompletes by selecting 
-//      Help -> Keyboard Shortcuts Card
-// (10) To stop a running program, click the red stop button on the left in the
+// (1)  To zoom in and out on the code, hold ALT and roll the mouse
+// (2)  Double click the top of a tab to hide side windows or show them
+// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (5)  Click the green triangle on the top toolbar to run code
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (7)  The word "null" means nothing and can act as a placeholder for code
+//      you don't actually need (right now)
+// (8)  To "comment out" chunks of code, select the code with your mouse or
+//      keyboard, then click on the two buttons under the code tab
+// (9)  To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
+// (10) You can get more NetBeans tips and autocompletes by selecting 
+//      Help -> Keyboard Shortcuts Card
+// (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
+//      error and a potential fix (if you click on the lightbulb)
