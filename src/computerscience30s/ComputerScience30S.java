@@ -22,10 +22,13 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-                
-        // anything following 2 slashes is a comment, until the end of the line
-
+        // TODO code application logic here  
+        
+        // This is a comment all typing after "//" until the line ends        
+        // Commments are not code, so you can write what you want        
+        // Curly brackets (braces, parenthesis) { and } are important        
+        // All code right now goes between these two brackets
+        
         /*  
             This is for multiple line comments, as it covers as many lines as
             you want starting with "slash star" until it sees the closing 
@@ -41,9 +44,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 
 // NETBEANS TIPS:
 // ==============
-// (1)  Hold Alt + scroll mouse to zoom in and out on code
-// (2)  Double click the top of a tab of code to make bigger or smaller
-// (3)  Type in lowercase "sout" and hit TAB to write System.out....
-// (4)  Words in capital letters and in blue are IMPORTANT code words, the words
-//      in captial letters are powerful, they are a "class"
-// (5)  Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
+// (1)  To zoom in and out on the code, hold ALT and roll the mouse
+// (2)  Double click the top of a tab to hide side windows or show them
+// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (5)  Click the green triangle on the top toolbar to run code
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
