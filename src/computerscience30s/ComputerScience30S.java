@@ -377,22 +377,23 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         ///////////////////////////////////////////////////////////////////////
         // CONDITIONAL STATEMENTS
         ///////////////////////////////////////////////////////////////////////
-                
-        // Simple if, use it when something is true, checks for 1 thing
+        
+        // The simple if statement, you use this when comparing if something is
+        // true, as it checks that one thing ("asks a true/false question")
+        
+        // If statements use both ( ) round and { } curly brackets and the 
+        // code inside of the curly brackets is said to be in a "block" of
+        // code and that block only runs when the test inside of the round
+        // brackets tests TRUE. It also indents the code insode the block
         
         int value1 = 10, value2 = 10;
-        
-        // The if uses both () round and {} curly brackets and the code inside 
-        // of the curley brackets is said to be in a "block" of code, and that 
-        // block only runs when the test is true it also indents the code  
-        // inside a block
         
         if (value1 == value2) {
             System.out.println("equal");
         }
-        
-        // Example of if with else, for both true and false, checks 2 things
-        
+
+        // if with "else" (an option) for both true and false, checks 2 things
+
         double value3 = 1.45, value4 = 1.5;
         
         if (value3 < value4) {
@@ -401,21 +402,23 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         else {
             System.out.println("Greater than");
         }
-        
-        // Use chars and some shorthand, not usually recommended (except in
-        // certain situations) used when the code between { } (block) is only
-        // one line of code! Then, you don't need the { } and the code can 
-        // (but you don't have to) be moved up to the same line as if
+
+        // Use chars and some shorthand, not usually recommended (except in 
+        // certain situations) used when the code in a block - between { } is
+        // only one line of code! Then, you don't need the { } 
+        // And.. (even further shorthand) the line can be moved up to the
+        // same line as the if statement        
         
         char value5 = 'A', value6 = 'a';
         
         if (value5 != value6) System.out.println("!=");
         else                  System.out.println("==");
-                
-        // Use "else if" for multiple cases of more than 2 things (same as a 
-        // "switch" statement - which I do not use!) use string for this 
-        // example which are more complex (because they are capital letters),
-        // with string NEVER use == instead use .equals()...
+               
+        // Use "else if" for multiple cases of more than 2 things (same as 
+        // the "switch" statement - which I don't use) use string for this
+        // example which are more complex (because they use many characters,
+        // and upper and lower case) 
+        // NOTE: with string NEVER use == ALWAYS use .equals()...
         
         String word1 = "edgy";
         String word2 = "edGy";
@@ -430,20 +433,20 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             System.out.println("w1!=w2");
         }
         
-        // Combine logic using:
-        // "and" "or" "not"
-        // using symbols:
-        //  &&    ||    !
+        // Combine logic using "and" "or" "not" which uses the symbols:
+        // "&&" for "and"
+        // "||" for "or"
+        // "!" for "not"
         
         int age = 17;
         double iq = 1.0;
         
         if (age >= 21 && iq > 1.15) {
-            // With "and" BOTH have to be true
+            // with "and" BOTH have to be true
             System.out.println("Get in");
         }
         else if (age >= 18 || iq > 0.85) {
-            // With "or" EITHER can be true
+            // with "or" EITHER can be true
             System.out.println("Keep trying");
         }
         else {
@@ -457,22 +460,48 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 
 }
 
+
 // NETBEANS TIPS:
 // ==============
-// (1)  Hold Alt + scroll mouse to zoom in and out on code
-// (2)  Double click the top of a tab of code to make bigger or smaller
-// (3)  Type in lowercase "sout" and hit TAB to write System.out....
-// (4)  Words in capital letters and in blue are IMPORTANT code words, the words
-//      in captial letters are powerful, they are a "class"
-// (5)  Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
-// (6)  The word "null" means "nothing" and can act as a placeholder for code
-//      you don't actually want
-// (7)  To "comment out" some code, select the code (with your mouse) and
-//      click on the two buttons under the code tab (at the right end)
-// (8)  A red squiggily line and/or a "lightbulb" in NetBeans means a potential
-//      error and a potential fix (if you click on the lightbulb)
-// (9)  You can get more NetBeans tips and autocompletes by selecting
-//      Help -> Keyboard Shortcuts Card
-// (10) To stop a running program, click the red stop button on the left in the
+// (1)  To zoom in and out on the code, hold ALT and roll the mouse
+// (2)  Double click the top of a tab to hide side windows or show them
+// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (5)  Click the green triangle on the top toolbar to run code
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (7)  The word "null" means nothing and can act as a placeholder for code
+//      you don't actually need (right now)
+// (8)  To "comment out" chunks of code, select the code with your mouse or
+//      keyboard, then click on the two buttons under the code tab
+// (9)  To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
-
+// (10) You can get more NetBeans tips and autocompletes by selecting 
+//      Help -> Keyboard Shortcuts Card
+// (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
+//      error and a potential fix (if you click on the lightbulb)
+// (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
+//      "Java", select "Java Main Class", and "Open in Editor" and the enter 
+//      this into the temple (but use the slash "/" instead of "|"):
+//
+//      /** 
+//       * ${name}.java - 
+//       *
+//       * @author Mr. Wachs 
+//       * @since ${date} 
+//       */
+//      public class ${name} 
+//       { .... etc .....     
+//
+// (13) When printing code for hand in (this only needs to be done once), click
+//      on "Print Options" and uncheck everything previously checked off, and
+//      then check off "Print as in Editor", then either print it to a PDF 
+//      (which means select "Microsoft Print to PDF" on the next screen), or
+//      cancel and resize the code to fit better (see tip #1) and then print 
+//      again
+// (14) To autoformat code (fixes indents, extra spaces, etc.) select code with
+//      mouse or keyboard (or it will format all if none is selected) and press
+//      ALT + SHIFT + F  (you should do this before hand in!)
+// (15) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 14) by going to Tools -> Options, then click on the "Editor"
+//      tab at the top, then the "Formatting" below that. Then change the 
+//      settings to what you prefer
