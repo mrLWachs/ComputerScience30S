@@ -32,11 +32,40 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        learnIntroToJava();         // "calling" a method means run the code
-        learnMethods();
-        learnArrays();
-        learnClasses();
-        LearnGraphics learnGraphics = new LearnGraphics();
+        String message = "Which unit example would you like to learn?";
+        String[] options = { 
+            "Introduction To Java",
+            "Methods",
+            "Arrays",
+            "Classes",
+            "Graphics",
+            "All"
+        };
+        int r = JOptionPane.showOptionDialog(
+            null, 
+            message, 
+            "Computer Science 30S Examples", 
+            JOptionPane.DEFAULT_OPTION, 
+            JOptionPane.PLAIN_MESSAGE, 
+            null, 
+            options, 
+            options[0]);
+        if (r == 0) {
+            learnIntroToJava();         // "calling" a method means run the code
+        } 
+        else if (r == 1) learnMethods();
+        else if (r == 2) learnArrays();
+        else if (r == 3) learnClasses();
+        else if (r == 4) {
+            LearnGraphics learnGraphics = new LearnGraphics();
+        }
+        else if (r == 5) {
+            learnIntroToJava();
+            learnMethods();
+            learnArrays();
+            learnClasses();
+            LearnGraphics learnGraphics = new LearnGraphics();
+        }
     }
 
     /**
