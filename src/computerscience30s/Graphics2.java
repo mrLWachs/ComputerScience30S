@@ -1,10 +1,18 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package computerscience30s;
 
 
 /**
- * Graphics2.java - description
+ * Graphics2.java - this is a form (or frame, or 'container', or user interface)
+ * built using the NetBeans WYSIWYG ("what you see is what you get") UI 
+ * designer. To make this type of JFrame, you go to "File -> New File" and  
+ * select "JFrame Form" and the UI editor will appear. To switch between code  
+ * and the designer, use the buttons under the "Graphics2.java" tab named 
+ * "Source" and "Design". We will be using the editor's "Pallette" and 
+ * "Properties" windows to build and change the design and then adding code as 
+ * needed. We will examine this frame and Graphics1 to compare doing the same 
+ * things using a designer vs. writing all the code ourselves.
  *
  * @author Mr. Wachs
  * @since 27-May-2020, 2:37:51 PM
@@ -13,13 +21,14 @@ public class Graphics2 extends javax.swing.JFrame
 {
 
     /** 
-     * Default constructor, set class properties, creates new form Graphics2 
+     * Creates new form Graphics2 (this is the constructor method)
      */
     public Graphics2() {
         initComponents();
        
-        // The line below is added after the line above (which should not be 
-        // removed) to make the design visible to the user
+        // Add code after the call to the method in the line above (which do 
+        // not erase that line which is a method call) - now add a line to make  
+        // the form (frame, container, window, etc.) appear to the user
         this.setVisible(true);
     }
 
