@@ -1,8 +1,8 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package computerscience30s;
 
-/** required imports */
+/** Required imports */
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -40,25 +40,36 @@ public class Graphics1 extends JFrame
     
     
     /**
-     * Default class constructor, sets class properties
+     * Default class constructor, sets class properties - this method will be
+     * called when a "Graphics1" object is created (instantiated) - which is 
+     * done in the "LearnGraphics" class constructor method
      */
     public Graphics1() {
+        // To have NetBeans automate writing a method for you, select the code
+        // you want in the method with your mouse first, then press:
+        // ALT + SHIFT + M and name the method
+        
         setContainer();
         setControls(); 
         setActions();
-        // reveal design to user (this should be done last in constructor)
-        this.setVisible(true);                          // makes frame visible
+        
+        // Reveal design to user (this should be done last in constructor)
+        this.setVisible(true);          // Make the frame (container) visible
     }
 
     /**
      * Setup the frame's (form) properties:
      */
     private void setContainer() {
-        this.setSize(680, 830);                         // set width and height
-        this.setTitle("Graphics 1");                    // title at the top
-        this.setResizable(false);
-        this.setLocationRelativeTo(null);
-        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        // Use a reference to the object that will be created in the future
+        // and use all the properties and call (invoke) all the methods
+        // we inherited from the super-class (JFrame)
+        
+        this.setSize(680, 830);         // Sets the width and height
+        this.setTitle("Graphics 1");    // Sets the title at top of form (frame)
+        this.setResizable(false);       // Makes it so the user cannot resize
+        this.setLocationRelativeTo(null);   // Centers the form on screen
+        this.setDefaultCloseOperation(DISPOSE_ON_CLOSE); // Close the program
     }
 
     /**
