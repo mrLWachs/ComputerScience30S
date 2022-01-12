@@ -18,7 +18,8 @@ import javax.swing.Timer;
 
 /**
  * Graphics3.java - using the NetBeans visual designer in combination
- * with our custom code to make a "mini final project" type of application
+ * with our custom code (a 'hybrid' approach) to make a "mini final project" 
+ * type of application (a mini 'PhotoShop')
  *
  * @author Mr. Wachs 
  * @since 13-Dec-2018 
