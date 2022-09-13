@@ -27,7 +27,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // This is a comment all typing after "//" until the line ends        
         // Commments are not code, so you can write what you want        
         // Curly brackets (braces, parenthesis) { and } are important        
-        // All code right now goes between these two brackets
+        // All code right now goes between these two brackets. Comments are 
+        // not code, so you can write what you want
         
         /*  
             This is for multiple line comments, as it covers as many lines as
@@ -35,7 +36,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             "star slash"
         */
         
-        System.out.println("Hello World");  // comment at the end
+        System.out.println("Hello World");  // comment at the end of the line
         
     }
 
