@@ -19,3 +19,10 @@ public class ComputerScience30S {
     }
     
 }
+
+
+// NetBeans Tips...
+// (1)  To zoom in and out on the code, hold ALT and roll the mouse
+// (2)  Double click the top of a tab to hide side windows or show them
+// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
+
