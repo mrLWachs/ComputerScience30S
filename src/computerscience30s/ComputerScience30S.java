@@ -13,8 +13,25 @@ public class ComputerScience30S {
         // All code right now goes between these two brackets. Comments are 
         // not code, so you can write what you want
         
+        // Clicking the green triange on the toolbar above will "run" or
+        // "compile" your code and show you the running program in an output
+        // window below...        
         
-        System.out.print("Hello World"); 
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
+        
+        // A basic output
+        System.out.print("Hello World"); // Comments can be on code lines
+        
+        System.out.print(" I'm in ");
+        // Spaces, you have to add them inside the quotes
+        
+        System.out.println("The world!");
+        
+        
         
     }
     
