@@ -1,6 +1,8 @@
  
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 public class ComputerScience30S {
 
     public static void main(String[] args) { 
@@ -31,6 +33,13 @@ public class ComputerScience30S {
         
         System.out.println("The world!");
         
+        
+        // Dialog types of input and outputs...
+        // dialogs are liitle tiny "windows", "forms", "graphical rectangles"
+        
+        // Make a "fancier" output with a dialog box ("Message box")
+        
+        JOptionPane.showMessageDialog(null, "Hello World");
         
         
     }
