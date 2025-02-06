@@ -1,6 +1,14 @@
- 
+       
+/**
+ * Required package class namespace - the line below is put in automatically,
+ * and connects this file to the project
+ */        
 package computerscience30s;
 
+/**
+ * Required imports for the project - the lines below are added when your code
+ * needs to connect to another library (API) of code
+ */
 import javax.swing.JOptionPane;
 
 public class ComputerScience30S {
