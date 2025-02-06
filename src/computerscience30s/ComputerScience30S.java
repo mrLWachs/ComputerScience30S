@@ -33,13 +33,23 @@ public class ComputerScience30S {
         
         System.out.println("The world!");
         
+        // There are "shortcuts" to coding (see the tips below)  
+        System.out.println("Good-bye World");
         
-        // Dialog types of input and outputs...
-        // dialogs are liitle tiny "windows", "forms", "graphical rectangles"
         
-        // Make a "fancier" output with a dialog box ("Message box")
+        
+        
+        // Dialog types of input and outputs, and are little tiny "windows", 
+        // "forms", "graphical rectangles" and are somewhat "fancier" ways to
+        // do an input/output with a dialog box (in C# it was "Message box")
         
         JOptionPane.showMessageDialog(null, "Hello World");
+        
+        // Above line of code is the ONLY one needed for assignment, final 
+        // project, etc.
+        
+        
+
         
         
     }
