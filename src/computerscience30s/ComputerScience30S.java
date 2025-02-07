@@ -54,16 +54,6 @@ public class ComputerScience30S {
         // In all these, the key is to use the "\" backslash
         // which is called an "escape character"
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         // Dialog types of input and outputs, and are little tiny "windows", 
         // "forms", "graphical rectangles" and are somewhat "fancier" ways to
         // do an input/output with a dialog box (in C# it was "Message box")
@@ -72,6 +62,62 @@ public class ComputerScience30S {
         
         // Above line of code is the ONLY one needed for assignment, final 
         // project, etc.
+        
+        // For inputs (meaning the user is involved in giving us data)...
+        // An "input" dialog box
+        
+        JOptionPane.showInputDialog("Enter something");
+        
+        // The simpliest version (is the one you will need to know)
+        
+        // However.............................................................
+        
+        // Optionally (not required) now some examples of other things you can
+        // do with these message/input dialog boxes...
+        
+        // Code could span multiple lines until it reaches a semi colon ";"
+        // The light red line on the far right -------------------------------->
+        // can be thought of as a "barrier" and you should try not to code too
+        // much past this line
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE
+        );
+                
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Error icon is X",
+                "Error Title",
+                JOptionPane.ERROR_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain icon (no icon)",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        
+        
+        
         
         
 
