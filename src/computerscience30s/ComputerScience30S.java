@@ -11,9 +11,29 @@ package computerscience30s;
  */
 import javax.swing.JOptionPane;
 
-public class ComputerScience30S {
 
+/**
+ * ComputerScience30s.java - the large in class example we continue to work on
+ * in each unit adding example code on the new concepts of each unit along with
+ * any in class requests for code example that might come up over the course.
+ * 
+ * @author Mr. Wachs
+ * @since September 2024
+ */
+public class ComputerScience30S 
+{
+
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) { 
+        
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
+           
         
         // This is a comment!
         
@@ -117,6 +137,9 @@ public class ComputerScience30S {
         
         // Some other optional input dialogs...
         
+        // NOTE: There is a little more to using this input dialog that we will 
+        // cover after learning variables
+        
         JOptionPane.showInputDialog(
                 null, 
                 "Information icon is i",
@@ -195,6 +218,23 @@ public class ComputerScience30S {
                 JOptionPane.DEFAULT_OPTION,
                 JOptionPane.PLAIN_MESSAGE
         );
+        
+        ///////////////////////////////////////////////////////////////////////
+        // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
+        
+        // A variable is a piece of code that tells the computer to
+        // store (or "remember") information (or "data")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
