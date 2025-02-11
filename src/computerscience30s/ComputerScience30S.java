@@ -288,7 +288,21 @@ public class ComputerScience30S
         y++;    // Means the same as y = y + 1;
         y--;    // Means the same as y = y - 1;
         
-
+        // Even more shorthand (less recommended)
+        
+        y += 10;    // Means the same as y = y + 10;
+        y -= 10;    // Means the same as y = y - 10;
+        y *= 10;    // Means the same as y = y * 10;
+        y /= 10;    // Means the same as y = y / 10;
+        
+        System.out.println("y = " + y);
+        
+        
+        
+        
+        
+        
+        
         
         
     }
