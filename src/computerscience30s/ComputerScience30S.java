@@ -326,7 +326,16 @@ public class ComputerScience30S
                            FOUND    + "," + 
                            COMPUTER_TEACHER);
         
+        // In a line of code, one space or multiple spaces doesn't matter
+        // as seen above when declaring constants (it only matter when
+        // between quotation marks). You can hit enter in a line of code
+        // to break to a new line, because the computer will still consider
+        // it ONE line of code until we reach the semicolon.
         
+        // Constants are used for things like: easier code to maintain,
+        // easier to read/understand (especially for other programmers)
+        
+        // Converting between variable data types...
         
         
         
