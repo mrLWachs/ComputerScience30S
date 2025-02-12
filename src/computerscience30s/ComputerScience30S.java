@@ -413,22 +413,40 @@ public class ComputerScience30S
 //        String v = JOptionPane.showInputDialog("Enter a char");
 //        char   w = v.charAt(0);
 //        JOptionPane.showMessageDialog(null, "char is " + w);
+//        
+//        // Strings have built-in actions like "charAt" to pull out a character
+//        // "at" location "0" which means the very first character (because 
+//        // numbering in Computer Science usually starts at 0)
+//        
+//        // Strings have MANY built-in "actions" (function, methods)
+//        
+//        String word = "hippopotomonsprosesquippedaiophobia";
+//        int length  = word.length();
+//        
+//        System.out.println("word " + word + " is length " + length);
+//        
+//        String upper = word.toUpperCase();
+//        
+//        System.out.println("word " + word + " in upper case is " + upper);
         
-        // Strings have built-in actions like "charAt" to pull out a character
-        // "at" location "0" which means the very first character (because 
-        // numbering in Computer Science usually starts at 0)
+        // Many more string functions can be explored
         
-        // Strings have MANY built-in "actions" (function, methods)
+        // "Math" library of code is also "built-in" to java
+        // which comes with it's own functions (actions, methods)
         
-        String word = "hippopotomonsprosesquippedaiophobia";
-        int length  = word.length();
+        double answer1 = Math.PI;
+        double answer2 = Math.cos(0.5);
+        double answer3 = Math.abs(-1);
+        double answer4 = Math.pow(5, 3);
+        double answer5 = Math.sqrt(9);
+        double answer6 = Math.log(0.5);
         
-        System.out.println("word " + word + " is length " + length);
-        
-        String upper = word.toUpperCase();
-        
-        System.out.println("word " + word + " in upper case is " + upper);
-        
+        System.out.println("answer1 = " + answer1);
+        System.out.println("answer2 = " + answer2);
+        System.out.println("answer3 = " + answer3);
+        System.out.println("answer4 = " + answer4);
+        System.out.println("answer5 = " + answer5);
+        System.out.println("answer6 = " + answer6);
         
         
         
