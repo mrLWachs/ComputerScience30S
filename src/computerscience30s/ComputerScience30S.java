@@ -407,12 +407,12 @@ public class ComputerScience30S
 //        String t = JOptionPane.showInputDialog("Enter a double");
 //        double u = Double.parseDouble(t);
 //        JOptionPane.showMessageDialog(null, "double is " + u);
-
-        // Example with a char (single character)...
-        
-        String v = JOptionPane.showInputDialog("Enter a char");
-        char   w = v.charAt(0);
-        JOptionPane.showMessageDialog(null, "char is " + w);
+//
+//        // Example with a char (single character)...
+//        
+//        String v = JOptionPane.showInputDialog("Enter a char");
+//        char   w = v.charAt(0);
+//        JOptionPane.showMessageDialog(null, "char is " + w);
         
         // Strings have built-in actions like "charAt" to pull out a character
         // "at" location "0" which means the very first character (because 
@@ -421,9 +421,13 @@ public class ComputerScience30S
         // Strings have MANY built-in "actions" (function, methods)
         
         String word = "hippopotomonsprosesquippedaiophobia";
+        int length  = word.length();
         
+        System.out.println("word " + word + " is length " + length);
         
+        String upper = word.toUpperCase();
         
+        System.out.println("word " + word + " in upper case is " + upper);
         
         
         
