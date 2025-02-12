@@ -314,7 +314,7 @@ public class ComputerScience30S
         // and constants are written in ALL_CAPITAL_LETTERS with underscores
         // to seperate words
         
-        final double  PI               = 3.141592653589;
+        final double  PI               = 3.141592653589793;
         final int     PROBLEMS         = 99;
         final char    YES              = 'Y';
         final boolean FOUND            = true;
