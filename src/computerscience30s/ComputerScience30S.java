@@ -484,4 +484,7 @@ public class ComputerScience30S
 //      output window, or the X in the bottom right of NetBeans
 // (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
 //      error and a potential fix (if you click on the lightbulb)
+// (11) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
+
 
