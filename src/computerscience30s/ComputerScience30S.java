@@ -448,49 +448,49 @@ public class ComputerScience30S
 //        System.out.println("answer4 = " + answer4);
 //        System.out.println("answer5 = " + answer5);
 //        System.out.println("answer6 = " + answer6);
-        
-        // Math library also does random numbers, in a way like...
-        
-        // Random random = new Random();
-        
-        // Although, Java does allow you to do something like that line,
-        // but, it is not the same as C#
-
-        double seed = Math.random();
-
-        // The "seed" generates a number (decimal) between
-        // 0 and 1 (but it never reaches 0 or 1)
-        
-        System.out.println("seed = " + seed);
-        
-        // You can use a formula for generating random numbers in a range
-        // between a low and a high number
-        
-        // e.g. between 1 and 10 and make it an integer
-        
-        // Start with some constants defining the low and high
-        
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
-        
-        // Now the formula to generate in that range
-        
-        double number = (HIGH - LOW + 1) * seed + LOW;
-        
-        System.out.println("number = " + number);
-        
-        // Now cast it into an int
-        
-        int value = (int)number;
-        
-        // and display it
-        
-        System.out.println("value = " + value);
-
-        // Do it again, but simplify the formula (between 2-53)
-        
-        int card = (int) ( ( 53 - 2 + 1 ) * Math.random() + 2 );
-        System.out.println("card = " + card);
+//        
+//        // Math library also does random numbers, in a way like...
+//        
+//        // Random random = new Random();
+//        
+//        // Although, Java does allow you to do something like that line,
+//        // but, it is not the same as C#
+//
+//        double seed = Math.random();
+//
+//        // The "seed" generates a number (decimal) between
+//        // 0 and 1 (but it never reaches 0 or 1)
+//        
+//        System.out.println("seed = " + seed);
+//        
+//        // You can use a formula for generating random numbers in a range
+//        // between a low and a high number
+//        
+//        // e.g. between 1 and 10 and make it an integer
+//        
+//        // Start with some constants defining the low and high
+//        
+//        final double LOW  = 1.0;
+//        final double HIGH = 10.0;
+//        
+//        // Now the formula to generate in that range
+//        
+//        double number = (HIGH - LOW + 1) * seed + LOW;
+//        
+//        System.out.println("number = " + number);
+//        
+//        // Now cast it into an int
+//        
+//        int value = (int)number;
+//        
+//        // and display it
+//        
+//        System.out.println("value = " + value);
+//
+//        // Do it again, but simplify the formula (between 2-53)
+//        
+//        int card = (int) ( ( 53 - 2 + 1 ) * Math.random() + 2 );
+//        System.out.println("card = " + card);
         
         ///////////////////////////////////////////////////////////////////////
         // CONDITIONAL STATEMENTS
@@ -504,6 +504,20 @@ public class ComputerScience30S
         // code and that block only runs when the test inside of the round
         // brackets tests TRUE. It also indents the code inside the block
         
+        int value1 = 10;
+        int value2 = 10;
+        
+        if (value1 == value2) {
+            System.out.println("equal");
+        }
+        
+        if (value1 < value2) {
+            System.out.println("They are ");
+            System.out.println("less than");
+        }
+        
+        // All lines of code between the curley brackets { } is in a block that 
+        // is "controlled" by the conditional (if) statement
         
         
         
