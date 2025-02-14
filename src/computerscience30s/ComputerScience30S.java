@@ -1422,26 +1422,33 @@ public class ComputerScience30S
 }
 
 // NETBEANS TIPS:
-
 // ==============
-// (1)  To zoom in and out on the code, hold ALT and roll the mouse
-// (2)  Double click the top of a tab to hide side windows or show them
-// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
-// (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
-// (5)  Click the green triangle on the top toolbar to run code
-// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
-// (7)  The word "null" means "nothing" and can act as a placeholder for code
+//
+// UNIT 1: Introduction To Java.................................................
+//
+// (1)  To build a new Java coding project in NetBeans, start Netbeans
+//      then click "File -> New Project..." and choose "Java with Ant" 
+//      and "Java Application", then click "Next >" give your project
+//      a name that makes sense and in a location you can remember
+//      then click "Finish" ... start coding!
+// (2)  To zoom in and out on the code, hold ALT and roll the mouse
+// (3)  Double click the top of a tab to hide side windows or show them
+// (4)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (5)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (6)  Click the green triangle on the top toolbar to run code
+// (7)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (8)  The word "null" means "nothing" and can act as a placeholder for code
 //      you often do not need (right now)
-// (8) To "comment out" chunks of code, select the code with your mouse or 
+// (9) To "comment out" chunks of code, select the code with your mouse or 
 //     your keyboard, then click on one of the two buttons under the code tab
 //     (on the right)
-// (9)  To stop a running program, click the red stop button on the left in the
+// (10) To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
-// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+// (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
 //      error and a potential fix (if you click on the lightbulb)
-// (11) You can get more NetBeans tips and autocompletes by selecting:
+// (12) You can get more NetBeans tips and autocompletes by selecting:
 //      Help -> Keyboard Shortcuts Card
-// (12) To make projects easier and automate some tasks, go to 
+// (13) To make projects easier and automate some tasks, go to 
 //      Tools -> Templates, scroll down and click on the ">" beside "Java", 
 //      select "Java Main Class", and "Open in Editor" and the enter 
 //      the text below (by uncommenting it, then copying it, and pasting it 
@@ -1473,11 +1480,11 @@ public class ComputerScience30S
 //
 //}
 //
-// (13) To autoformat code (fixes indents, extra spaces, etc.) you select the
+// (14) To autoformat code (fixes indents, extra spaces, etc.) you select the
 //      code with mouse or keyboard (if you select nothing it will autoformat
 //      all the code) and pres ALT + SHIFT + F (you should do this before you 
 //      hand in your code)
-// (14) When preparing a solution for hand in, when in NetBeans (after the  
+// (15) When preparing a solution for hand in, when in NetBeans (after the  
 //      code is cleaned up and ready - see tip 13) go to:
 //      "File -> Print to HTML..." and then use the dialog box that appears
 //      to select a location you can find the HTML file, and give the file  
@@ -1488,9 +1495,15 @@ public class ComputerScience30S
 //      (this is part of the mark). Then hand in both the code file (html)
 //      and the outputs file (Word file) on Mr. Wachs' hand in page here: 
 //      https://bit.ly/3iiTvbu
-// (15) You can "teach" NetBeans to change the style it uses to autoformat (see
+// (16) You can "teach" NetBeans to change the style it uses to autoformat (see
 //      number 13) by going to Tools -> Options, then click on the "Editor"
-//      tab at the top, then the "For
+//      button at the top of this dialog, then click on the "Formatting" Tab.
+//      Then under "Language" select "Java" and under "Category" choose 
+//      various categories and make adjustments to your preferred style (see 
+//      Mr. Wachs if you cannot find the style change you want)
+//
+// UNIT 2: Methods..............................................................
+//
 // (16) The + and - signs and gray lines along the side in NetBeans
 //      help to "expand" and "collapse" the method body (block of code)
 //      press CTRL and SHIFT and "-" it collapses all methods, and
@@ -1510,6 +1523,9 @@ public class ComputerScience30S
 // (22) If you have to rename a variable or a method, select the word (the name
 //      of the variable or method) and then press CTRL + R, then type in a
 //      new name
+//
+// UNIT 3: Arrays...............................................................
+//
 // (23) All arrays have a ".length" feature built in that you can have NetBeans
 //      autocomplete for you by typing the name of your array, then dot length
 //      (".length") which automatically gives you how many elements are in
