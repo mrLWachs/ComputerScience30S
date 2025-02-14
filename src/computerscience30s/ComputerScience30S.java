@@ -653,22 +653,31 @@ public class ComputerScience30S
 
 // NETBEANS TIPS:
 // ==============
-// (1)  To zoom in and out on the code, hold ALT and roll the mouse
-// (2)  Double click the top of a tab to hide side windows or show them
-// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
-// (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
-// (5)  Click the green triangle on the top toolbar to run code
-// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
-// (7)  The word "null" means "nothing" and can act as a placeholder for code
+//
+// UNIT 1: Introduction To Java.................................................
+//
+// (1)  To build a new Java coding project in NetBeans, start Netbeans
+//      then click "File -> New Project..." and choose "Java with Ant" 
+//      and "Java Application", then click "Next >" give your project
+//      a name that makes sense and in a location you can remember
+//      then click "Finish" ... start coding!
+// (2)  To zoom in and out on the code, hold ALT and roll the mouse
+// (3)  Double click the top of a tab to hide side windows or show them
+// (4)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (5)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (6)  Click the green triangle on the top toolbar to run code
+// (7)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (8)  The word "null" means "nothing" and can act as a placeholder for code
 //      you often do not need (right now)
-// (8) To "comment out" chunks of code, select the code with your mouse or 
+// (9) To "comment out" chunks of code, select the code with your mouse or 
 //     your keyboard, then click on one of the two buttons under the code tab
 //     (on the right)
-// (9)  To stop a running program, click the red stop button on the left in the
+// (10) To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
-// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+// (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
 //      error and a potential fix (if you click on the lightbulb)
-// (11) You can get more NetBeans tips and autocompletes by selecting:
+// (12) You can get more NetBeans tips and autocompletes by selecting:
 //      Help -> Keyboard Shortcuts Card
+
 
 
