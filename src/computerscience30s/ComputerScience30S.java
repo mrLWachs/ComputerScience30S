@@ -43,7 +43,7 @@ public class ComputerScience30S
         // All code right now goes between these two brackets. Comments are 
         // not code, so you can write what you want
         
-        // Clicking the green triange on the toolbar above will "run" or
+        // Clicking the green triangle on the toolbar above will "run" or
         // "compile" your code and show you the running program in an output
         // window below...        
         
