@@ -542,33 +542,53 @@ public class ComputerScience30S
 //        
 //        if (value5 != value6) System.out.println("!=");
 //        else                  System.out.println("==");
-        
-        // Use "else if" for multiple cases of more than 2 things (same as the
-        // "switch" statement - which I don't use) use strings for this
-        // example which are more complex (because they use many character,
-        // and upper and lower case)
-        
-        // NOTE: with string NEVER use == ALWAYS use .equals()...
-        
-        String word1 = "edgy";
-        String word2 = "eDgy";
-        
-        if (word1.equals(word2)) {
-            System.out.println("equal");
-        }
-        else if (word1.equalsIgnoreCase(word2)) {
-            System.out.println("kind of equal");
-        }
-        else {
-            System.out.println("not equal");
-        }
+//        
+//        // Use "else if" for multiple cases of more than 2 things (same as the
+//        // "switch" statement - which I don't use) use strings for this
+//        // example which are more complex (because they use many character,
+//        // and upper and lower case)
+//        
+//        // NOTE: with string NEVER use == ALWAYS use .equals()...
+//        
+//        String word1 = "edgy";
+//        String word2 = "eDgy";
+//        
+//        if (word1.equals(word2)) {
+//            System.out.println("equal");
+//        }
+//        else if (word1.equalsIgnoreCase(word2)) {
+//            System.out.println("kind of equal");
+//        }
+//        else {
+//            System.out.println("not equal");
+//        }
         
         // Combine logic using "and" "or" "not" which use the symbols:
         // "&&" for "and"
         // "||" for "or"
         // "!"  for "not"
         
+        int age = 17;
+        double iq = 100.0;
         
+        if (age >= 21 && iq > 130) {
+            // with "AND" (&&) BOTH have to be true
+            System.out.println("Get in!");
+        }
+        else if (age >= 18 || iq >= 100) {
+            // with "OR" (||) EITHER can be true
+            System.out.println("Keep trying...");
+        }
+        else {
+            System.out.println("Get out!");
+        }
+        
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
+        
+        
+        // Simple loop...
         
         
         
