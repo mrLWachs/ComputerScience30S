@@ -582,22 +582,28 @@ public class ComputerScience30S
 //        else {
 //            System.out.println("Get out!");
 //        }
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // LOOPING
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // Simple loop...
+//        
+//        int counter = 0;
+//        
+//        while (counter < 10) {
+//            System.out.println("counter = " + counter);
+//            counter++;  // counter = counter + 1;
+//        }
         
-        ///////////////////////////////////////////////////////////////////////
-        // LOOPING
-        ///////////////////////////////////////////////////////////////////////
+        // while Loop with a string
         
-        // Simple loop...
+        String password = JOptionPane.showInputDialog("Create password");
         
-        int counter = 0;
-        
-        while (counter < 10) {
-            System.out.println("counter = " + counter);
-            counter++;  // counter = counter + 1;
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Try again!");
+            password = JOptionPane.showInputDialog("Create another password");
         }
-        
-        
-        
         
         
         
