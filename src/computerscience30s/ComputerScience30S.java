@@ -550,10 +550,23 @@ public class ComputerScience30S
         
         // NOTE: with string NEVER use == ALWAYS use .equals()...
         
+        String word1 = "edgy";
+        String word2 = "eDgy";
         
+        if (word1.equals(word2)) {
+            System.out.println("equal");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("kind of equal");
+        }
+        else {
+            System.out.println("not equal");
+        }
         
-        
-        
+        // Combine logic using "and" "or" "not" which use the symbols:
+        // "&&" for "and"
+        // "||" for "or"
+        // "!"  for "not"
         
         
         
