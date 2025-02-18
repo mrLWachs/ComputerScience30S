@@ -605,7 +605,10 @@ public class ComputerScience30S
             password = JOptionPane.showInputDialog("Create another password");
         }
         
-        
+        // The next type of loop is rarely used (you may never need it)
+        // it tests for true/false at the bottom of the loop, you use it
+        // when you want the body (block) of the loop to run at least
+        // once!
         
         
         
