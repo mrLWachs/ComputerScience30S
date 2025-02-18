@@ -617,7 +617,7 @@ public class ComputerScience30S
         } while (choice.equalsIgnoreCase(password) == false);
         
         JOptionPane.showMessageDialog(null, "Correct!");
-        
+//        
         // The "for" loop is used for counting (and for the upcoming unit 
         // called "arrays"). It is a much more technical ("codey") looking loop
         // The inside of the round brackets means: ( start ; end ; change)        
@@ -628,11 +628,14 @@ public class ComputerScience30S
             System.out.println(i);
         }
         
+        // Variations on the for loop:
+            // start at 100
+            // end (stop) at zero (including zero)
+            // count down (not up)
+            // count by 10s
+            
         
-        
-        
-        
-        
+            
         
         
         
