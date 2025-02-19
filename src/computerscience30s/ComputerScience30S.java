@@ -646,6 +646,37 @@ public class ComputerScience30S
         // EXAMPLE ASSIGNMENT:
         ///////////////////////////////////////////////////////////////////////
         
+        // Create welcome screen for the user (message dialog box)
+        String message = "You are an intern at radio station, C-RAP, The \n"
+                       + "disk jockeys announce the current temperature \n"
+                       + "in both Fahrenheit and Celsius every half-hour.\n"
+                       + "They would like an easy way to display both the \n"
+                       + "Fahrenheit and Celsius temperatures quickly and \n"
+                       + "at the same time. The local airport phones in \n"
+                       + "the temperature (but only in Celsius). They \n"
+                       + "have requested that you develop an application \n"
+                       + "that will display both temperatures after the \n"
+                       + "Celsius temperature is inputted. Note: Use \n"
+                       + "this conversion formula F = (C ∗ 1.8) + 32";     
+        JOptionPane.showMessageDialog(null, message);
+        // Get user input (temperature in celcius) - dialog
+        String userInput = JOptionPane.showInputDialog("Enter temperature "
+                + "in Celcius");
+        // convert this to a number I can do math with
+        double celcius = Double.parseDouble(userInput);
+        // apply a formula  (F = (C ∗ 1.8) + 32 )
+        double fahrenheit = (celcius * 1.8) + 32;
+        // Show the user the results (fahrenheit) in a dialog
+        JOptionPane.showMessageDialog(null, "Your temperature in "
+                + "Fahrenheit is " + fahrenheit);
+        // show ending message
+        JOptionPane.showMessageDialog(null, "Thank you!");
+                
+        // This line terminates any running java program at any point
+        // System.exit(0);
+        
+        // Curly brackets (braces, parenthesis) { and } are important - all 
+        // code goes between these two brackets  
         
     }
     
@@ -664,15 +695,16 @@ public class ComputerScience30S
 //      then click "Finish" ... start coding!
 // (2)  To zoom in and out on the code, hold ALT and roll the mouse
 // (3)  Double click the top of a tab to hide side windows or show them
-// (4)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (4)  The curly brackets (braces, parenthesis) are important "{" and "}" so
+//      do not remove them or an error may occur
 // (5)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (6)  Click the green triangle on the top toolbar to run code
 // (7)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
-// (8)  The word "null" means "nothing" and can act as a placeholder for code
-//      you often do not need (right now)
-// (9) To "comment out" chunks of code, select the code with your mouse or 
-//     your keyboard, then click on one of the two buttons under the code tab
-//     (on the right)
+// (8)  The word "null" means "nothing" and can oftem act as a placeholder for 
+//      code you often do not need (right now)
+// (9)  To "comment out" chunks of code, select the code with your mouse or 
+//      your keyboard, then click on one of the two buttons under the code tab
+//      (on the right)
 // (10) To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
 // (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
@@ -723,9 +755,10 @@ public class ComputerScience30S
 //      not forget to also create a file (a Microsoft Word file is 
 //      recommended) that has screen captures (pictures) to prove your 
 //      program ran. Make as many or few to prove your solutions works 
-//      (this is part of the mark). Then hand in both the code file (html)
-//      and the outputs file (Word file) on Mr. Wachs' hand in page here: 
-//      https://bit.ly/3iiTvbu
+//      (this is part of the mark). Note: when naming both files (outputs and
+//      code files) make sure you include YOUR NAME in the file name itself.
+//      Then hand in both the code file (html) and the outputs file (Word file)
+//      on Mr. Wachs' hand in page here: https://bit.ly/3iiTvbu
 // (16) You can "teach" NetBeans to change the style it uses to autoformat (see
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      button at the top of this dialog, then click on the "Formatting" Tab.
