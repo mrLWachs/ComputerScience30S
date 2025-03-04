@@ -29,6 +29,10 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) { 
+        learnIntroToJava();        
+    }
+
+    private static void learnIntroToJava() {
         
         ///////////////////////////////////////////////////////////////////////
         // JAVA BASIC INPUT AND OUTPUTS
