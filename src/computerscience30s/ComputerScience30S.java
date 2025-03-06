@@ -29,8 +29,9 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) { 
-        // "Call" a method (means you use the name of the method)
         //learnIntroToJava();  
+        
+        // "Call" a method (means you use the name of the method)
         learnMethods();
     }
 
