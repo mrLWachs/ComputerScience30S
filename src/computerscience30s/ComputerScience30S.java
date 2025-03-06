@@ -803,4 +803,10 @@ public class ComputerScience30S
 // (18) If you hold down the CTRL key, method calls become links with the
 //      mouse to jump to the method (even ones we don't write)
 // (19) If you write the "call" to a method, before writing the method 
-//      itself, the lightbulb will help you write it
+//      itself, the lightbulb (see tip #11) will help you write it
+// (20) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
+// (21) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
