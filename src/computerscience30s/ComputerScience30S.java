@@ -29,7 +29,10 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) { 
-        learnIntroToJava();        
+        // "Call" a method (means you use the name of the method)
+        //learnIntroToJava();  
+        
+        learnMethods();
     }
 
     private static void learnIntroToJava() {
@@ -683,6 +686,27 @@ public class ComputerScience30S
         // code goes between these two brackets  
         
     }
+
+    private static void learnMethods() {
+        System.out.println("Start learning methods...");
+        
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method. We make methods
+        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // repeating code
+        
+        // Code to "jump" to a method, is "calling" the method (method call) 
+        makeStar();
+        
+        
+        System.out.println("Completed learning methods!");
+    }
+    
+    private static void makeStar() {
+        System.out.println("*");
+    }
     
 }
 
@@ -770,5 +794,13 @@ public class ComputerScience30S
 //      various categories and make adjustments to your preferred style (see 
 //      Mr. Wachs if you cannot find the style change you want)
 //
-
-
+// UNIT 2: Methods..............................................................
+//
+// (17) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
+// (18) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
+// (19) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb will help you write it
