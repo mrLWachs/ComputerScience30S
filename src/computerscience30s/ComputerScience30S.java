@@ -711,7 +711,16 @@ public class ComputerScience30S
         
         write("something");
         
-                
+        write("Spider-man");
+        
+        write("Batman");
+        write("Superman");
+        write("Omni-man");
+        write("Mr. Wachs");
+        
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are seperated with commas ","
+        
         
         
         System.out.println("Completed learning methods!");
@@ -722,6 +731,8 @@ public class ComputerScience30S
     }
 
     private static void write(String thing) {
+        // The parameter (called "thing") is the term when you write the
+        // method, and when you call the method it is called the arguement
         System.out.println(thing);
     }
 
