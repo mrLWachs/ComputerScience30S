@@ -700,6 +700,19 @@ public class ComputerScience30S
         // Code to "jump" to a method, is "calling" the method (method call) 
         makeStar();
         
+        // Call it again
+        makeStar();
+        
+        // When we call a method, we sometimes place "data" (information) 
+        // inside the round brackets and that data is "passed" (sending) over 
+        // to the method. The data being passed is technically called the
+        // "argument" and the data being recieved is called the "parameter(s)". 
+        // You can always change the arguement.
+        
+        write("something");
+        
+                
+        
         
         System.out.println("Completed learning methods!");
     }
@@ -707,7 +720,12 @@ public class ComputerScience30S
     private static void makeStar() {
         System.out.println("*");
     }
-    
+
+    private static void write(String thing) {
+        System.out.println(thing);
+    }
+
+
 }
 
 
