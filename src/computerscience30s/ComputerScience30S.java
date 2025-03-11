@@ -742,10 +742,18 @@ public class ComputerScience30S
         System.out.println("Completed learning methods!");
     }
     
+    /**
+     * Writes a star on the screen
+     */
     private static void makeStar() {
         System.out.println("*");
     }
 
+    /**
+     * Writes something on the screen
+     * 
+     * @param thing the something to write (input)
+     */
     private static void write(String thing) {
         // The parameter (called "thing") is the term when you write the
         // method, and when you call the method it is called the arguement
@@ -763,7 +771,7 @@ public class ComputerScience30S
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or can have ONE output
         // which means the method will "return" that data type in the method
-        return 7;
+        return random(1, 10);
     }
     
     private static int random(int low, int high) {
