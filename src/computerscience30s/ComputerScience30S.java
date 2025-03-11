@@ -765,6 +765,17 @@ public class ComputerScience30S
         // which means the method will "return" that data type in the method
         return 7;
     }
+    
+    private static int random(int low, int high) {
+        double seed = Math.random();
+        double L = (double)low;
+        double H = (double)high;
+        double number = ( H - L + 1) * seed + L;
+        return (int)number;
+        
+        // Note: the code could also be written other ways like...
+        //return (int)(( high - low + 1) * Math.random() + low);        
+    }
 
 
 }
