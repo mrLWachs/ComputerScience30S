@@ -35,6 +35,9 @@ public class ComputerScience30S
         learnMethods();
     }
 
+    /**
+     * Learn the content of the introduction unit (unit 1)
+     */
     private static void learnIntroToJava() {
         
         ///////////////////////////////////////////////////////////////////////
@@ -687,6 +690,9 @@ public class ComputerScience30S
         
     }
 
+    /**
+     * Learn the content of the methods unit (unit 2)
+     */
     private static void learnMethods() {
         System.out.println("Start learning methods...");
         
@@ -733,10 +739,8 @@ public class ComputerScience30S
         
         write("Number was " + number);
         
-        
-        
-        
-        
+        // Overloaded methods are methods with the smae name, BUT different
+        // parameters / arguments
         
         
         System.out.println("Completed learning methods!");
@@ -775,16 +779,15 @@ public class ComputerScience30S
     }
     
     private static int random(int low, int high) {
-        double seed = Math.random();
-        double L = (double)low;
-        double H = (double)high;
-        double number = ( H - L + 1) * seed + L;
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = ( H - L + 1 ) * seed + L;
         return (int)number;
         
         // Note: the code could also be written other ways like...
         //return (int)(( high - low + 1) * Math.random() + low);        
     }
-
 
 }
 
@@ -806,7 +809,7 @@ public class ComputerScience30S
 // (5)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (6)  Click the green triangle on the top toolbar to run code
 // (7)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
-// (8)  The word "null" means "nothing" and can oftem act as a placeholder for 
+// (8)  The word "null" means "nothing" and can often act as a placeholder for 
 //      code you often do not need (right now)
 // (9)  To "comment out" chunks of code, select the code with your mouse or 
 //      your keyboard, then click on one of the two buttons under the code tab
@@ -888,3 +891,8 @@ public class ComputerScience30S
 //      snippets", and select "Generated Method body" and remove the last line
 // (21) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
+// (22) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
+// (23) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
