@@ -704,10 +704,10 @@ public class ComputerScience30S
         // repeating code
         
         // Code to "jump" to a method, is "calling" the method (method call) 
-        makeStar();
+        writeStar();
         
         // Call it again
-        makeStar();
+        writeStar();
         
         // When we call a method, we sometimes place "data" (information) 
         // inside the round brackets and that data is "passed" (sending) over 
@@ -752,7 +752,7 @@ public class ComputerScience30S
     /**
      * Writes a star on the screen
      */
-    private static void makeStar() {
+    private static void writeStar() {
         System.out.println("*");
     }
 
