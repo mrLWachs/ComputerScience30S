@@ -32,7 +32,8 @@ public class ComputerScience30S
         //learnIntroToJava();  
         
         // "Call" a method (means you use the name of the method)
-        learnMethods();
+        //learnMethods();
+        learnArrays();
     }
 
     /**
@@ -831,6 +832,39 @@ public class ComputerScience30S
         // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit (unit 3)
+     */
+    private static void learnArrays() {
+        System.out.println("Start Learning Arrays...");
+        
+        // Create (declare) a simple variable (for comparison)
+        int variable = 5;
+        
+        // E.g. in memory a variable could "look" like...
+        //
+        //          +-------+
+        // variable |   5   | (type integer)
+        //          +-------+
+        
+        int array[] = new int[5];
+        
+        // The order of words in declaring an array:
+        // (1)    (2)    (3)   (4)   (5)     (6)    (7)                     (7)
+        // type   name   [ ]    =    "new"   type    [ size of the array ]   ;
+                
+        // E.g. in memory an array could "look" like...
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (a length of 5)
+        //       +-------+-------+-------+-------+-------+
+        
+        
+        
+        
+        System.out.println("Completed learning Arrays!");
     }
 
 }
