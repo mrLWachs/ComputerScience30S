@@ -879,11 +879,27 @@ public class ComputerScience30S
         //       +-------+-------+-------+-------+-------+
         //           0       1       2       3       4
         
+        array[0] = 25;
+        array[1] = 250;
+        array[2] = 2;
+        array[3] = 0;
+        array[4]  = -25;
         
+        //       +-------+-------+-------+-------+-------+
+        // array |   25  |  250  |   2   |   0   |  -25  | (now filled)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
         
+        // These next lines would be errors when the code runs:
+        // array[5] = 25;
+        // array[500] = 25;        
+        // array[-1] = 25;
+        // The above lines would all be "out of bounds" errors (or "range" error)
         
-        
-        
+        // array[2.5] = 25; 
+        // The above line is an example of a "syntax" error (usually caught by 
+        // the IDE in this case NetBeans)
+                
         
         
         
