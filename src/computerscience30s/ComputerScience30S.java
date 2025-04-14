@@ -1020,3 +1020,10 @@ public class ComputerScience30S
 // (23) If you have to rename a variable or a method, select the word (the name
 //      of the variable or method) and then press CTRL + R, then type in a
 //      new name
+//
+// UNIT 3: Arrays...............................................................
+//
+// (24) When your code "crashes" and an error takes place (run-time error) try
+//      to READ what the error says down in the output window of NetBeans as
+//      it may offer clues on how to debug the error (and click on the links)
+
