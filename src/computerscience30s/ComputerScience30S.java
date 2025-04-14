@@ -852,7 +852,7 @@ public class ComputerScience30S
         int array[] = new int[5];
         
         // The order of words in declaring an array:
-        // (1)    (2)    (3)   (4)   (5)     (6)    (7)                     (7)
+        // (1)    (2)    (3)   (4)   (5)     (6)    (7)                     (8)
         // type   name   [ ]    =    "new"   type    [ size of the array ]   ;
                 
         // E.g. in memory an array could "look" like...
@@ -860,6 +860,18 @@ public class ComputerScience30S
         //       +-------+-------+-------+-------+-------+
         // array |       |       |       |       |       | (a length of 5)
         //       +-------+-------+-------+-------+-------+
+        
+        // Array names are usually "plural" words
+        // The square brackets "[  ]" in code indicate we are using an array, 
+        // the word "new" is used because arrays (they are technically 
+        // "advanced" data types) are more complicated than variables (which 
+        // are "simple" or "primitive" data types) then you repeat the data 
+        // type ("int" in this case) and the square brackets are also repeated 
+        // with a number (or a variable) inside - this number represents the 
+        // SIZE of the array. When arrays are first created, they are EMPTY.
+        
+        
+        
         
         
         
