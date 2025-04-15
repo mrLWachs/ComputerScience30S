@@ -900,6 +900,7 @@ public class ComputerScience30S
         // The above line is an example of a "syntax" error (usually caught by 
         // the IDE in this case NetBeans)
                 
+        // Declare an array (a little differently) of NO size...
         double[] a;
         
         // In memory...
@@ -928,9 +929,15 @@ public class ComputerScience30S
         //   +----------+----------+----------+
         // a |   1.1    |   2.2    |   3.3    | (now it is filled with content)
         //   +----------+----------+----------+
-        //  
+        //        0          1          2
         
         a = new double[5];
+        
+        
+        
+        
+        
+        
         
         
         
