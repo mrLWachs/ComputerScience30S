@@ -957,6 +957,40 @@ public class ComputerScience30S
         // we gives array should be a plural word (e.g. 'scores' (array name)
         // not 'score' (variable name), 'names' not 'name', etc.) 
         
+        final String[] OPTIONS = {
+            "New Game",
+            "Save Game",
+            "Quit"            
+        };
+        
+        // When using arrays, use individual elements (spots, indices - the 
+        // plural of "index") of the array like regular variables, for example
+        
+        int[] numbers = new int[100];
+        
+        // Change (or "assign") a index (spot)
+        numbers[99] = 333;
+        
+        //         +-----+-----+-----+
+        // numbers |     | ... | 333 | (length is 100)
+        //         +-----+-----+-----+
+        //            0    ...   99
+        // Remember, the last index is always ONE LESS than the length
+        
+        numbers[0] = numbers[99] * 2;
+        System.out.println(numbers[0]);
+        
+        //         +-----+-----+-----+
+        // numbers | 666 | .?. | 333 | 
+        //         +-----+-----+-----+
+        //            0    ...   99
+        
+        // To work with, and to "travel" (means to "visit" every spot) the 
+        // entire array, we use a loop!
+        
+        
+        
+        
         
         
         
