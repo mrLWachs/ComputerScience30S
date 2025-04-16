@@ -1051,7 +1051,11 @@ public class ComputerScience30S
         output(text);
     }
 
-    
+    /**
+     * Convert all the double into integers and then output the array 
+     * 
+     * @param array the array of double
+     */
     private static void output(double[] array) {
         int[] a = convert(array);
         output(a);
