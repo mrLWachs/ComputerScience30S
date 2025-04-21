@@ -1045,8 +1045,27 @@ public class ComputerScience30S
         final int ROWS    = 30; // "dimension" going "down" (also like "y" axis)
         final int COLUMNS = 40; // "dimension" going "across" (also like "x")
         
-                
-                
+        char[][] matrix = new char[ROWS][COLUMNS];
+
+        // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
+        // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
+        // could be "seen" as...
+        //
+        //               (columns, width, x axis is 4, meaning 0-3)
+        //
+        //                     0         1         2         3
+        //                +---------+---------+---------+---------+
+        // (rows,       0 |         |         |         |         |
+        //  height,       +---------+---------+---------+---------+
+        //  y axis      1 |         |         |         |         |
+        //  is 3,         +---------+---------+---------+---------+
+        //  meaning     2 |         |         |         |         |
+        //  0-2)          +---------+---------+---------+---------+
+        // 
+        // A matrix "row" can also be "visualized" as the matrix "height"
+        // A matrix "column" can also be "visualized" as the matrix "width"
+        
+        // Fill the matrix with random characters...        
                 
         
         
@@ -1120,7 +1139,16 @@ public class ComputerScience30S
         return numbers;                     // Return completed array
     }
 
-    
+    /**
+     * Generates a random character between tow low and high characters
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
+    private static char random(char low, char high) {
+        return (char)random((int)low, (int)high);     // cast to int and back  
+    }
     
     
 }
