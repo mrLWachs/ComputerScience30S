@@ -1081,18 +1081,25 @@ public class ComputerScience30S
         // nested for loops are refering to (e.g. like row, column, x, y)
         // With Netbeans, when you rename a loop variable it renames all 3
         
+        // Create some constants for the characters
+        final char LOW  = '!';
+        final char HIGH = '~';
+        
         for (int row = 0; row < ROWS; row++) {
             for (int column = 0; column < COLUMNS; column++) {
-                matrix[row][column] = random('A', 'Z');
+                matrix[row][column] = random(LOW, HIGH);
             }
         }
         
         // Output the matrix, using a method which turns the entire matrix into
         // a string (which we can then output with one of our existing methods)
         
-        String text1 = toString(matrix);
+        String text1 = toString(twoDArray);
         output(text1);
+        String text2 = toString(matrix);
+        output(text2);
         
+        // Now experiment (optional) to start looking at "graphics"
         
         
         
