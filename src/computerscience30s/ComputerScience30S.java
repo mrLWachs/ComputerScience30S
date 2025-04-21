@@ -1028,7 +1028,26 @@ public class ComputerScience30S
         // array filled with other arrays, 2D, etc.) - and also known as a 
         // table, grid, or a MATRIX
         
+        // We declare (create) a matrix , by adding multiple sets of square
+        // brackets (a set of brackets for each dimension)
         
+        char[][] twoDArray = new char[1][2];
+        twoDArray[0][0] = 'A';
+        twoDArray[0][1] = 'B';
+        
+        // Advice, when working with matrices, I recommend using variable and 
+        // constants with names the make sense (to you!)
+        
+        // Create some constants to use when building the matrix (these are
+        // not needed to declare a matrix, but they might help in understanding 
+        // it) - we make contants as a way to "visualize" what we are building
+        
+        final int ROWS    = 30; // "dimension" going "down" (also like "y" axis)
+        final int COLUMNS = 40; // "dimension" going "across" (also like "x")
+        
+                
+                
+                
         
         
         
