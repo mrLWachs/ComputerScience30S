@@ -1067,9 +1067,31 @@ public class ComputerScience30S
         
         // Fill the matrix with random characters...        
                 
+        // Test our random character method first...
         
+        char character = random('A', 'Z');
+        System.out.println("Random character was " + character);
         
+        // Fill our matrix (meaning put content in every location/index/spot
+        // in the matrix) by traversing (travelling, 'visit' every spot) the
+        // matrix and adding random characters (our method) - when traversing
+        // matricies (plural of matrix) we use multiple nested for loops
         
+        // We might rename looping variables to better understand what the 
+        // nested for loops are refering to (e.g. like row, column, x, y)
+        // With Netbeans, when you rename a loop variable it renames all 3
+        
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[row][column] = random('A', 'Z');
+            }
+        }
+        
+        // Output the matrix, using a method which turns the entire matrix into
+        // a string (which we can then output with one of our existing methods)
+        
+        String text1 = toString(matrix);
+        output(text1);
         
         
         
