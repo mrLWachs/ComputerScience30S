@@ -1145,9 +1145,15 @@ public class ComputerScience30S
         // those at the end...
         
         String first  = "?";
-        String middle = "matrix";
-        String last   = ".gif";
+        // More commonly called "folder", "path", "directory"
         
+        String middle = "matrix";
+        // What the user usually enters
+        
+        String last   = ".gif";
+        // File "extension" or type
+        
+        // Every file has a "first", "middle", and "last" name
         String fullName = first + middle + last;
         
         
