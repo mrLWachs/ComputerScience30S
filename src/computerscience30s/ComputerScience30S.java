@@ -1144,8 +1144,11 @@ public class ComputerScience30S
         // copy/paste. It will change the "\" to two "\\" and also type two of 
         // those at the end...
         
+        String first  = "?";
+        String middle = "matrix";
+        String last   = ".gif";
         
-        
+        String fullName = first + middle + last;
         
         
         
