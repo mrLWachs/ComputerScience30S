@@ -9,6 +9,8 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
+import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JOptionPane;
 
 
@@ -1100,6 +1102,67 @@ public class ComputerScience30S
         output(text2);
         
         // Now experiment (optional) to start looking at "graphics"
+        
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
+        
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes') 
+        
+        // Temporary variables for the color in this example...
+        int red   = 0;
+        int green = 0;
+        int blue  = 0;
+        
+        // Create some colors
+        
+        Color background = new Color(red,green,blue);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)
+        
+        Color foreground = new Color(0,255,0);
+        
+        // Fonts are created in a simlar way (import, then declare an "object")
+        
+        // Temporary variables for the font in this example...
+        String name  = "Snap ITC";  // Must be a "named" font on the computer
+        int    style = Font.BOLD;   // Could also be italics, or plain
+        int    size  = 20;          // Measured in points
+       
+        // Create the font "object"
+        Font font = new Font(name,style,size);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
+        
+        // For images, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
