@@ -14,6 +14,7 @@ import java.awt.Font;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -1170,43 +1171,26 @@ public class ComputerScience30S
         // Finally, use a method to display all of this...
         String title = "The Matrix...";
         
-        output(text1,background,foreground,font,icon1,title);
+        // Call a method to display a "fancy" dialog
+        // (have a picture, formatted text: font, size, color)
+        output(text2,background,foreground,font,icon1,title);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
         // Or, you can do all this at once...
+        
+        // Another matrix, but they (matricies) can also be made with pre-set
+        // values (like 1D arrays)        
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
+        text2 = toString(TIC_TAC_TOE);        
         String imageName2 = "C:\\Users\\lawrence.wachs\\"
                 + "OneDrive - St. James-Assiniboia School Division\\"
                 + "Desktop\\fight.gif";
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        Icon icon2 = new ImageIcon(imageName2);        
+        output(text2,background, foreground, font, icon2, "Round two...");
         
         System.out.println("Completed learning Arrays!");
     }
