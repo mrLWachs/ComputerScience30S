@@ -1130,9 +1130,9 @@ public class ComputerScience30S
         // Fonts are created in a simlar way (import, then declare an "object")
         
         // Temporary variables for the font in this example...
-        String name  = "Snap ITC";  // Must be a "named" font on the computer
+        String name  = "Consolas";  // Must be a "named" font on the computer
         int    style = Font.BOLD;   // Could also be italics, or plain
-        int    size  = 20;          // Measured in points
+        int    size  = 10;          // Measured in points
        
         // Create the font "object"
         Font font = new Font(name,style,size);
@@ -1147,7 +1147,7 @@ public class ComputerScience30S
         // copy/paste. It will change the "\" to two "\\" and also type two of 
         // those at the end...
         
-        String first  = "C:\\temp\\";
+        String first  = "C:\\Computer Science\\ComputerScience30S\\";
         // More commonly called "folder", "path", "directory"
         
         String middle = "matrix";
@@ -1186,10 +1186,12 @@ public class ComputerScience30S
             { 'X', 'O', 'X' }
         };
         text2 = toString(TIC_TAC_TOE);        
-        String imageName2 = "C:\\Users\\lawrence.wachs\\"
-                + "OneDrive - St. James-Assiniboia School Division\\"
-                + "Desktop\\fight.gif";
-        Icon icon2 = new ImageIcon(imageName2);        
+        String imageName2 = "C:\\Computer Science\\"
+                + "ComputerScience30S\\Tic-tac-toe.gif";
+        Icon icon2 = new ImageIcon(imageName2);    
+        font = new Font("Cooper Black",Font.BOLD,40);
+        background = Color.white;
+        foreground = Color.BLACK;
         output(text2,background, foreground, font, icon2, "Round two...");
         
         System.out.println("Completed learning Arrays!");
@@ -1443,4 +1445,9 @@ public class ComputerScience30S
 // (24) When your code "crashes" and an error takes place (run-time error) try
 //      to READ what the error says down in the output window of NetBeans as
 //      it may offer clues on how to debug the error (and click on the links)
-
+// (25) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jump to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
+// (26) To view the same code editing window with two different views, go to
+//      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
