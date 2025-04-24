@@ -10,10 +10,10 @@ package computerscience30s;
  * needs to connect to another library (API) of code
  */
 import java.awt.Color;
-import java.awt.Font;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
+import java.awt.Font;                   // As you start to experiment with 
+import javax.swing.Icon;                // graphical items, more imports will
+import javax.swing.ImageIcon;           // be needed to bring these "libraries"
+import javax.swing.JOptionPane;         // of code into your projects
 import javax.swing.JTextArea;
 
 
@@ -34,10 +34,10 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) { 
-        //learnIntroToJava();  
+        learnIntroToJava();  
         
         // "Call" a method (means you use the name of the method)
-        //learnMethods();
+        learnMethods();
         learnArrays();
     }
 
@@ -1185,14 +1185,14 @@ public class ComputerScience30S
             { 'O', 'X', 'O' },
             { 'X', 'O', 'X' }
         };
-        text2 = toString(TIC_TAC_TOE);        
+        text2 = toString(TIC_TAC_TOE);              // Convert matrix to string
         String imageName2 = "C:\\Computer Science\\"
-                + "ComputerScience30S\\Tic-tac-toe.gif";
-        Icon icon2 = new ImageIcon(imageName2);    
-        font = new Font("Cooper Black",Font.BOLD,40);
-        background = Color.white;
+                + "ComputerScience30S\\Tic-tac-toe.gif";    // New full name
+        Icon icon2 = new ImageIcon(imageName2);             // Create icon
+        font = new Font("Cooper Black",Font.BOLD,40);       // Recreate font
+        background = Color.white;                           // Preset colors
         foreground = Color.BLACK;
-        output(text2,background, foreground, font, icon2, "Round two...");
+        output(text2,background, foreground, font, icon2, "Tic-Tac-Toe...");
         
         System.out.println("Completed learning Arrays!");
     }
