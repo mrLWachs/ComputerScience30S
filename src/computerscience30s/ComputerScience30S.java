@@ -1354,6 +1354,15 @@ public class ComputerScience30S
         // Class object = new Class() <--- implies a method?
         // that is the call to the constructor method
         
+        person.born();
+        person.name = "John Doe";
+        person.age  = 35;
+        person.gender = "non-binary";
+        person.birthday();
+        person.talk();
+        person.die();
+        person.talk();
+        
     }
     
 }
