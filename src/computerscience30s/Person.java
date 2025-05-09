@@ -28,10 +28,17 @@ public class Person {
         gender = "undefined";        
     }
     
+    /**
+     * The person dies (changing/modifying) the property (alive) through 
+     * this method
+     */
     void die() {
         alive = false;
     }
     
+    /**
+     * Outputs information about the person to the screen
+     */
     void talk() {
         if (alive == true) {
             System.out.println(name + " is " + age + " identifes as " + gender);
@@ -41,6 +48,9 @@ public class Person {
         }
     }
     
+    /**
+     * Gives the person a birthday
+     */
     void birthday() {
         age++;
     }    
