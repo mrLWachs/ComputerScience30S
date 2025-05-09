@@ -1353,9 +1353,11 @@ public class ComputerScience30S
         
         // Class object = new Class() <--- implies a method?
         // that is the call to the constructor method
+                
+        // person.born();
+        // The original "born" method was changed into a constructor
         
         // We can call (invoke) methods within the object
-        person.born();
         person.talk();
         person.name = "John Doe";
         person.age  = 35;
@@ -1364,6 +1366,20 @@ public class ComputerScience30S
         person.talk();
         person.die();
         person.talk();
+        
+        // Create (instantiate) another object with a different (overloaded) 
+        // constructor 
+        Person other = new Person("Anther name");
+        other.talk();
+        
+        // Another instance using the 3rd constructor option
+        Person third = new Person("Three Thurdy", 33, "fluid");
+        third.talk();
+        
+        
+        
+        
+        
         
     }
     
