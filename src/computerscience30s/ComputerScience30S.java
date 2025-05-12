@@ -1360,7 +1360,13 @@ public class ComputerScience30S
         // We can call (invoke) methods within the object
         person.talk();
         person.name = "John Doe";
-        person.age  = 35;
+        
+        // Note: the "age" property was originally public but then it was
+        // "encapsulated" by making it a "private" so it can no longer be 
+        // accessed (read) or modified (changed) outside the class
+        
+        // person.age  = 35;
+        
         person.gender = "non-binary";
         person.birthday();
         person.talk();
@@ -1369,7 +1375,7 @@ public class ComputerScience30S
         
         // Create (instantiate) another object with a different (overloaded) 
         // constructor 
-        Person other = new Person("Anther name");
+        Person other = new Person("Another name");
         other.talk();
         
         // Another instance using the 3rd constructor option

@@ -14,10 +14,18 @@ public class Person {
 
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
-    String name;
-    int age;
-    String gender;
-    boolean alive;
+    // We add a keyword to the front of the properties (modifier word) to
+    // determine if the property (variable, global variable) is encapsulated
+    // or not. Meaning is the variable accessable (can be read and changed)
+    // inside the class and/or outside the class (words "private" and "public")
+    
+    public String name;
+    
+    private int age;
+    
+    public String gender;
+    
+    private boolean alive;
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
     
@@ -81,8 +89,6 @@ public class Person {
         this.name   = name;
         this.gender = gender;
     }
-    
-    
     
     /**
      * The person dies (changing/modifying) the property (alive) through 
