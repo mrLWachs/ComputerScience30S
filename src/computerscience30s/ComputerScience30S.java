@@ -1340,14 +1340,12 @@ public class ComputerScience30S
         System.out.println("Start learning classes...");
         
         // Create a "person" (add a class called "Person" to this Java project)
-        // To do this, click on File - New File (or icon on toolbar)
-        // A dialog will appear and you select "Java" and "Java Class"
-        // Then next...
-        // Then give it a name (starts with a capital letter and camel casing)
-        // Then click finish!
+        // To do this, you can: see tip #27 in the "NetBeans Tips" comments
+        // section at the bottom of this code...
         
-        // use a line of code like this:
+        // Note: when in the past we used a line of code like this:
         // Random random = new Random();
+        // It related directly to what we are doing in this unit...
         
         Person person = new Person();
         
@@ -1393,10 +1391,17 @@ public class ComputerScience30S
         Person third = new Person("Three Thurdy", 33, "fluid");
         third.talk();
         
-        
+        // Create a Student object and call it's methods (including the 
+        // ones it inherited from the Person class)   
         Student student = new Student();
+        student.name   = "Slacker"; // We can access the properties we inherited
+        student.gender = "student";  
+        student.birthday(17);       // We can call the methods we inherited
         student.die();
-        student.name = "Slacker";
+        student.talk();
+        
+        
+        
         
         
         
@@ -1522,3 +1527,20 @@ public class ComputerScience30S
 //      adapts to it) - the loop variable "i" also represents the array "index"
 // (26) To view the same code editing window with two different views, go to
 //      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
+//
+// UNIT 4: Classes..............................................................
+//
+// (27) To add a new class to a project, you can: (1) Click on File -> New File,
+//      and a dialog will appear and you select "Java" and "Java Class", click 
+//      next, give it a name (start with a capital letter and then use camel 
+//      casing), then click finish, (2)Click on the first button on the Toolbar 
+//      to the left and then follow the same instructions as #1, (3) Right 
+//      click in "Projects" left side window in NetBeans on the "package" name
+//      (e.g. "computerscience30s") and then select "New" and "Java Class..." 
+//      from the flyout menus and then give the class a name and click finish
+// (28) The "Navigator" left side window when looking at classes uses custom
+//      colors and icons to identify specific pasts of the class at a glance. 
+//      For example, methods use a red circle, properties use a blue square, 
+//      constructor methods use a orange diamond, private properties or methods
+//      use a "lock" icon, etc.
+
