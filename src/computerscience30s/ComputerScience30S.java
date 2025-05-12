@@ -1375,6 +1375,11 @@ public class ComputerScience30S
         
         // person.birthday();
         
+        // I now can call a version of the birthday() (over-loaded) method
+        // that we added later...
+        
+        person.birthday(36);
+        
         person.talk();
         person.die();
         person.talk();

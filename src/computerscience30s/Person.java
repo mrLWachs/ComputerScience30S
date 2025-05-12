@@ -122,4 +122,19 @@ public class Person {
         age++;
     }    
     
+    /**
+     * Gives the person a birthday, changes the encapsulated property (age).
+     * This is a overloaded method meaning multiple methods with the same 
+     * name but different parameters.
+     * 
+     * @param age home many birthdays to give the person
+     */
+    public void birthday(int age) {
+        for (int i = 0; i < age; i++) {
+            birthday();
+        }
+        // or you could just write...
+        // this.age = age;
+    }
+    
 }
