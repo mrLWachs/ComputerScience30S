@@ -1393,15 +1393,18 @@ public class ComputerScience30S
         
         // Create a Student object and call it's methods (including the 
         // ones it inherited from the Person class)   
-        Student student = new Student();
-        student.name   = "Slacker"; // We can access the properties we inherited
-        student.gender = "student";  
-        student.birthday(17);       // We can call the methods we inherited
+        Student student = new Student("Robert Studentson",17,"stew",123);        
+        student.talk();
+        // Call (invoke) methods specifically for the student class   
+        student.study();
+        student.talk();
+        student.slackOff();
+        student.talk();
+        student.cram();
+        student.talk();
+        // Still can call inherited methods
         student.die();
         student.talk();
-        
-        
-        
         
         
         
