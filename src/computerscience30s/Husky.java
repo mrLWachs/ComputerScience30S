@@ -35,8 +35,14 @@ public class Husky extends Student
         this.pride = true;      // could have also been written "pride = true;"
     }
 
+    /**
+     * Talking overrides the same talk method of the parent class (Student)
+     * and outputs additional information to the screen
+     */
+    @Override
     public void talk() {
-        
+        super.talk();
+        System.out.println("\t\tPride is " + pride);
     }   
     
 }
