@@ -1406,8 +1406,9 @@ public class ComputerScience30S
         student.die();
         student.talk();
         
-        
-        
+        // Instantiate a Husky object
+        Husky husky = new Husky("Havoc", 18, "Dog", 2665);
+        husky.talk();
         
         
         
