@@ -24,7 +24,8 @@ public class Teacher extends Person
      * @param name the name for this Teacher Person
      */
     public Teacher(String name) {
-        
+        super(name,55,"teacher");
+        students = new Student[100];
     }
     
     /**
@@ -33,7 +34,15 @@ public class Teacher extends Person
      * study and talk...
      */
     public void teach() {
-        
+        super.talk();
+        System.out.println("\tHere are my students...");
+        // Loop through (traverse) the array...
+        for (int i = 0; i < students.length; i++) {
+            if (students[i] != null) {
+                students[i].study();
+                students[i].talk();
+            }
+        }
     }
     
 }
