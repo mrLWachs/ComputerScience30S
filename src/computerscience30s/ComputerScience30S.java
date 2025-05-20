@@ -39,7 +39,10 @@ public class ComputerScience30S
         // "Call" a method (means you use the name of the method)
 //        learnMethods();
 //        learnArrays();
-        learnClasses();
+//        learnClasses();
+
+        Graphics1 graphics1 = new Graphics1();
+
     }
 
     /**
