@@ -41,8 +41,12 @@ public class ComputerScience30S
 //        learnArrays();
 //        learnClasses();
 
-        Graphics1 graphics1 = new Graphics1();
-
+        // Create "Class" "objects" for the different examples and launch the 
+        // "constructor method" of each, to learn about "Graphics" in general 
+        // and more specifically the "Graphical User Interfaces" or "GUI"...
+        
+        Graphics1 graphics1 = new Graphics1();      // 1st GUI using designer 
+        
     }
 
     /**
