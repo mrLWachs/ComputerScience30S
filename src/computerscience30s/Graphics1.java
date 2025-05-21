@@ -44,8 +44,11 @@ public class Graphics1 extends javax.swing.JFrame
         // Add code after the call to the method in the line above (which do 
         // not erase that line - which is a method call) - now add a line to   
         // make the form (frame, container, window, etc.) appear to the user
+        // and other methods we can call to make visual changes...
         
-        
+        this.setTitle("Graphics Example 1");
+        //this.setResizable(false);       // Also could be done with properties 
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
     
@@ -73,6 +76,7 @@ public class Graphics1 extends javax.swing.JFrame
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jButton1.setText("ENTER");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -83,28 +87,44 @@ public class Graphics1 extends javax.swing.JFrame
 
         jLabel1.setText("Hello World");
 
-        jLabel2.setText("IMAGE HERE");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/spidey.gif"))); // NOI18N
+        jLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel2MouseMoved(evt);
+            }
+        });
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 189, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(264, 264, 264))
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(264, 264, 264))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,8 +136,8 @@ public class Graphics1 extends javax.swing.JFrame
                 .addGap(18, 18, 18)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(130, Short.MAX_VALUE))
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         pack();
@@ -132,9 +152,48 @@ public class Graphics1 extends javax.swing.JFrame
         // is also not editable (that is why is appears in grey) but you can 
         // add the code for the "action" for this event
         
-        
         System.out.println("Clicked a button");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // When I double click the Textbox (Textfield) it gives me this
+        // "event" but it might not be the exact event I want to use...
+        
+        System.out.println("Textbox (Textfield) default action");
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        // For other actions, like this, right click on the object in the 
+        // WYSIWYG ("What You See Is What You Get") designer and go to the
+        // menu -> Events -> then the action you wish to add 
+        
+        jLabel1.setText("Textbox Key pressed was " + evt.getKeyCode());     
+    }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        // The event "mouseClicked" is a simple example of using the 
+        // mouse as a user "input" device...
+        
+        System.out.println("Clicked the image");
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+        // The event "mouseEntered" and "mouseExited" are like "hover" effects
+        // of the mouse being "over" (or entering the space) of this object and
+        // then exiting (or leaving the space) of this label object
+        
+        jLabel1.setText("Mouse Over image at: " + evt.getX() + "," + evt.getY());
+        
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseMoved
+        // Several different mouse events are accessible like this event 
+        // of the mouse moving over the object (the label image) and you can
+        // use the "evt" parameter to access events from the mouse like the 
+        // (x, y) cooordinate of it as it relates to the label
+        
+        jLabel1.setText("Mouse " + evt.getX() + "," + evt.getY());
+    }//GEN-LAST:event_jLabel2MouseMoved
 
     
     
@@ -186,7 +245,14 @@ public class Graphics1 extends javax.swing.JFrame
 //            }
 //        });
 //    }
-
+    
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // NOTE: the NetBeans visual designer adds the code below for each 
+    // component (control, widget, property, global variable) which also 
+    // cannot be edited
+    ////////////////////////////////////////////////////////////////////////////
+      
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
