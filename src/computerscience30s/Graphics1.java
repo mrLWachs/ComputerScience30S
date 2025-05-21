@@ -20,7 +20,11 @@ package computerscience30s;
  * the WYSIWYG editor without having to write all the code. Editors just write 
  * code for you (both Visual Studio and this NetBeans editor) and "hide" that 
  * code (either in a collapsed method in NetBeans, or in another class in 
- * Visual studio). If you remember having to "name" all the objects in Visual
+ * Visual studio). You can find a Visual Studio C# version of this example
+ * here: https://bit.ly/4k5ccfN with the specific code page here:
+ * https://bit.ly/3SzFK9n
+ * 
+ * NOTE: If you remember having to "name" all the objects in Visual
  * Studio, you can also do this in NetBeans (although in this course that is not 
  * required) by right clicking on each object and selecting "Change Variable
  * Name..." and then typing in a new name. 
