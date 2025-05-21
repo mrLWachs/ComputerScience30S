@@ -46,7 +46,6 @@ public class ComputerScience30S
         // and more specifically the "Graphical User Interfaces" or "GUI"...
         
         Graphics1 graphics1 = new Graphics1();      // 1st GUI using designer 
-        
     }
 
     /**
