@@ -45,7 +45,8 @@ public class ComputerScience30S
         // "constructor method" of each, to learn about "Graphics" in general 
         // and more specifically the "Graphical User Interfaces" or "GUI"...
         
-        Graphics1 graphics1 = new Graphics1();      // 1st GUI using designer 
+        Graphics1 graphics1 = new Graphics1();      // 1st GUI using designer
+        Graphics2 graphics2 = new Graphics2();
     }
 
     /**

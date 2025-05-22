@@ -45,9 +45,10 @@ public class Graphics1 extends javax.swing.JFrame
         // not erase that line - which is a method call) - now add a line to   
         // make the form (frame, container, window, etc.) appear to the user
         // and other methods we can call to make visual changes...
-        
-        this.setTitle("Graphics Example 1");
-        //this.setResizable(false);       // Also could be done with properties 
+            
+        //this.setResizable(false);       // Also could be done with properties
+        this.setTitle("Graphics 1");
+        this.setSize(450, 580);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
@@ -70,13 +71,26 @@ public class Graphics1 extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        getContentPane().setLayout(null);
+
+        jLabel1.setText("Hello World");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel1MouseExited(evt);
+            }
+        });
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(30, 20, 370, 16);
 
         jButton1.setText("ENTER");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -84,8 +98,8 @@ public class Graphics1 extends javax.swing.JFrame
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jLabel1.setText("Hello World");
+        getContentPane().add(jButton1);
+        jButton1.setBounds(26, 52, 380, 40);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +111,8 @@ public class Graphics1 extends javax.swing.JFrame
                 jTextField1KeyPressed(evt);
             }
         });
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(26, 110, 380, 22);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/spidey.gif"))); // NOI18N
         jLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -104,41 +120,8 @@ public class Graphics1 extends javax.swing.JFrame
                 jLabel2MouseMoved(evt);
             }
         });
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel2MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel2MouseEntered(evt);
-            }
-        });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(264, 264, 264))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
-        );
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(10, 150, 400, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -170,30 +153,26 @@ public class Graphics1 extends javax.swing.JFrame
         jLabel1.setText("Textbox Key pressed was " + evt.getKeyCode());     
     }//GEN-LAST:event_jTextField1KeyPressed
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-        // The event "mouseClicked" is a simple example of using the 
-        // mouse as a user "input" device...
-        
-        System.out.println("Clicked the image");
-    }//GEN-LAST:event_jLabel2MouseClicked
-
-    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
-        // The event "mouseEntered" and "mouseExited" are like "hover" effects
-        // of the mouse being "over" (or entering the space) of this object and
-        // then exiting (or leaving the space) of this label object
-        
-        jLabel1.setText("Mouse Over image at: " + evt.getX() + "," + evt.getY());
-        
-    }//GEN-LAST:event_jLabel2MouseEntered
-
     private void jLabel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseMoved
         // Several different mouse events are accessible like this event 
         // of the mouse moving over the object (the label image) and you can
         // use the "evt" parameter to access events from the mouse like the 
         // (x, y) cooordinate of it as it relates to the label
         
-        jLabel1.setText("Mouse " + evt.getX() + "," + evt.getY());
+        jLabel1.setText("Mouse over Image at: " + evt.getX() + "," + evt.getY());
     }//GEN-LAST:event_jLabel2MouseMoved
+
+    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
+        // The event "mouseEntered" and "mouseExited" are like "hover" effects
+        // of the mouse being "over" (or entering the space) of this object and
+        // then exiting (or leaving the space) of this label object
+        
+        jTextField1.setVisible(false);
+    }//GEN-LAST:event_jLabel1MouseEntered
+
+    private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
+        jTextField1.setVisible(true);
+    }//GEN-LAST:event_jLabel1MouseExited
 
     
     
