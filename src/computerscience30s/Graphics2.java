@@ -66,7 +66,7 @@ public class Graphics2 extends JFrame
         this.setSize(450, 580);
         this.setTitle("Graphics 2");    // Sets the title at top of form (frame)
         this.setResizable(false);       // Makes it so the user cannot resize
-        this.setLocationRelativeTo(null);   // Centers the form on screen
+        this.setLocation(0, 0);            // Positions frame in top left corner
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         // Means when the close this form (frame, window, app, program, 
         // container) the entire program (all forms) also close

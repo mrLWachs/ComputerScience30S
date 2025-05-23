@@ -42,15 +42,22 @@ public class Graphics1 extends javax.swing.JFrame
         initComponents();
         
         // Add code after the call to the method in the line above (which do 
-        // not erase that line - which is a method call) - now add a line to   
+        // not erase that line - which is a method call) - now add code to   
         // make the form (frame, container, window, etc.) appear to the user
         // and other methods we can call to make visual changes...
             
-        //this.setResizable(false);       // Also could be done with properties
-        this.setTitle("Graphics 1");
-        this.setSize(450, 580);
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+        // Some properties could be coded and others can be set using the
+        // properties window in the designer
+        
+        // When designing, another option that could be done is to "right click"
+        // on the frame (the "container") and select "Set Layout" and then 
+        // select "null" - this give you more control over where items can be 
+        // placed but requires you to use code to set the size of the frame
+        // before it is shown...
+        
+        this.setSize(450, 580);             // The width and height
+        this.setLocationRelativeTo(null);   // This centers the frame on screen
+        this.setVisible(true);              // Display the frame
     }
     
     
@@ -77,6 +84,7 @@ public class Graphics1 extends javax.swing.JFrame
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Graphics 1");
         setResizable(false);
         getContentPane().setLayout(null);
 
