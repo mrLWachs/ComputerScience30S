@@ -34,19 +34,16 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) { 
-//        learnIntroToJava();  
-        
-        // "Call" a method (means you use the name of the method)
+//        learnIntroToJava(); 
+//        // "Call" a method (means you use the name of the method)
 //        learnMethods();
 //        learnArrays();
 //        learnClasses();
-
         // Create "Class" "objects" for the different examples and launch the 
         // "constructor method" of each, to learn about "Graphics" in general 
-        // and more specifically the "Graphical User Interfaces" or "GUI"...
-        
+        // and more specifically the "Graphical User Interfaces" or "GUI"...        
         Graphics1 graphics1 = new Graphics1();      // 1st GUI using designer
-        Graphics2 graphics2 = new Graphics2();
+        Graphics2 graphics2 = new Graphics2();      // 2nd GUI all coded
     }
 
     /**
@@ -1447,6 +1444,8 @@ public class ComputerScience30S
 }
 
 
+// <editor-fold defaultstate="collapsed" desc="NetBeans Tips">  
+
 // NETBEANS TIPS:
 // ==============
 //
@@ -1580,3 +1579,4 @@ public class ComputerScience30S
 //      constructor methods use a orange diamond, private properties or methods
 //      use a "lock" icon, etc.
 
+// </editor-fold>
