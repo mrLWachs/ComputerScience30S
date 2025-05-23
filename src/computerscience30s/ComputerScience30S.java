@@ -34,17 +34,17 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) { 
-//        learnIntroToJava(); 
-//        // "Call" a method (means you use the name of the method)
-//        learnMethods();
-//        learnArrays();
-//        learnClasses();
-//        // Create "Class" "objects" for the different examples and launch the 
-//        // "constructor method" of each, to learn about "Graphics" in general 
-//        // and more specifically the "Graphical User Interfaces" or "GUI"...        
-//        Graphics1 graphics1 = new Graphics1();      // 1st GUI using designer
-//        Graphics2 graphics2 = new Graphics2();      // 2nd GUI all coded
-        Graphics3 graphics3 = new Graphics3(); 
+        learnIntroToJava(); 
+        // "Call" a method (means you use the name of the method)
+        learnMethods();
+        learnArrays();
+        learnClasses();
+        // Create "Class" "objects" for the different examples and launch the 
+        // "constructor method" of each, to learn about "Graphics" in general 
+        // and more specifically the "Graphical User Interfaces" or "GUI"...        
+        Graphics1 graphics1 = new Graphics1();      // 1st GUI using designer
+        Graphics2 graphics2 = new Graphics2();      // 2nd GUI all coded
+        Graphics3 graphics3 = new Graphics3();      // 3rd GUI "hybrid" (mix) 
     }
 
     /**
