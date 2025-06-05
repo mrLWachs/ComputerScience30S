@@ -1,6 +1,7 @@
-/** Required package class namespace */
-package computerscience30s;
- 
+
+package semester1;
+
+
 /**
  * Student.java - represents a student. This class uses inheritance to inherit
  * the properties and methods from the Person class. This means the Student
@@ -8,18 +9,22 @@ package computerscience30s;
  * base class). This is sometimes simplified to a "is a" relationship
  *
  * @author Mr. Wachs
- * @since May 2025
+ * @since December 2024
  */
 public class Student extends Person
 {
-
+    
     /**
      * Represents a book object (this object "has a" relationship (association)
      * or "usage" with the student class
      */
-    private Book book;    
-    private int number;    
+    private Book book;
+    
+    // private (encapsulated) properties (global variables) identified (named)
+    // "number" that is of type "integer"
+    private int number;
     private double average;
+    
     
     /**
      * Constructor for the class, sets the class properties (including the
@@ -35,16 +40,13 @@ public class Student extends Person
         // case is "Person) and you can use the keyword to change properties
         // (but not encapsulated/private ones) and call methods
         super.name   = name;
-        super.gender = gender; 
-        // To deal with "age" as it is a "private" (encapculated) property
-        // we cannot access it directly, but we can through a method...
-        super.birthday(age);
+        super.gender = gender;
+        super.birthday(age);        
         // "this" is an explicit refernce to "this class"
         this.number = number;
         average = 0.0;
-        book = new Book();
     }
-
+    
     /**
      * Studying raises the student's average
      */
@@ -67,19 +69,19 @@ public class Student extends Person
         for (int i = 0; i < 10; i++) {
             study();
         }
-    }
+    } 
     
     /**
      * Talking overrides the same talk method of the parent class and outputs
      * additional information to the screen
-     */ 
+     */    
     @Override
     public void talk() {
         // Even with a class that inherits from another class, we 
         // can call the methods of the parent class
         super.talk();
-        System.out.println("\tStudent Number:  " + number);
-        System.out.println("\tStudent Average: " + average);
+        System.out.println("\tNumber:  \t" + number);
+        System.out.println("\tAverage: \t" + average);
     }
     
 }

@@ -1,5 +1,5 @@
 /** Required package class namespace */
-package computerscience30s;
+package semester1;
 
 /** Required API imports */
 import java.awt.Container;
@@ -7,7 +7,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import javax.swing.ImageIcon;
@@ -25,9 +24,9 @@ import javax.swing.JTextField;
  * base class). This is sometimes simplified to a "is a" relationship
  *
  * @author Mr. Wachs
- * @since May 2025
+ * @since December 2024
  */
-public class Graphics2 extends JFrame 
+public class Graphics2 extends JFrame
 {
     // Create some "global variables" or properties of this class ("things
     // about that class", descriptors, adjectives) which are the controls
@@ -38,7 +37,7 @@ public class Graphics2 extends JFrame
     private JTextField textbox;     // A text box area
     private JLabel     picture;     // There are other ways to show images
     
-    
+
     /**
      * Default class constructor, sets class properties - this method will be
      * called when a "Graphics2" object is created (instantiated) - which is 
@@ -51,11 +50,11 @@ public class Graphics2 extends JFrame
         setContainer();
         setControls();
         setActions();  
-                
+        
         // Reveal design to user (this should be done last in constructor)
         this.setVisible(true);          // Make the frame (container) visible
     }
-    
+
     /**
      * Setup the frame's (form) properties:
      */
@@ -63,10 +62,10 @@ public class Graphics2 extends JFrame
         // Use a reference to the object that will be created in the future
         // and use all the properties and call (invoke) all the methods
         // we inherited from the super-class (JFrame)
-        this.setSize(450, 580);
+        this.setSize(370, 540);
         this.setTitle("Graphics 2");    // Sets the title at top of form (frame)
         this.setResizable(false);       // Makes it so the user cannot resize
-        this.setLocation(0, 0);            // Positions frame in top left corner
+        this.setLocationRelativeTo(null);   // Centers the form on screen
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         // Means when the close this form (frame, window, app, program, 
         // container) the entire program (all forms) also close
@@ -87,7 +86,7 @@ public class Graphics2 extends JFrame
         button.setText("ENTER");
         // With image, little more code, why not "take" (copy/paste) the
         // code from the designer and adapt it as you like
-        final String FILE = "/computerscience30s/spidey.gif";
+        final String FILE = "/computerscience30s/image.gif";
         picture.setIcon(new ImageIcon(getClass().getResource(FILE))); 
         
         // Set the container's layout manager to posiition all the controls
@@ -101,10 +100,10 @@ public class Graphics2 extends JFrame
         container.add(button);
         
         // Position all controls using: x, y, width, height
-        text.setBounds(30, 20, 370, 16); // 6, 6, 213, 34
-        picture.setBounds(10, 150, 400, 400); //6, 125, 339, 392
-        textbox.setBounds(26, 110, 380, 22);   // 6, 46, 213, 22
-        button.setBounds(26, 52, 380, 40);    // 6, 80, 300, 39
+        text.setBounds(6, 6, 213, 34);
+        picture.setBounds(6, 125, 339, 392);
+        textbox.setBounds(6, 46, 213, 22);
+        button.setBounds(6, 80, 213, 39);   
     }
 
     /**
@@ -124,7 +123,7 @@ public class Graphics2 extends JFrame
             @Override
             public void actionPerformed(ActionEvent e) {
                 // (3) The code for the action
-                System.out.println("Clicked a button");
+                System.out.println("clicked a button");
             }
         };
         // (2) then connect ("add") that listener to the control (button)
@@ -137,7 +136,7 @@ public class Graphics2 extends JFrame
         textbox.addKeyListener( new KeyListener() {
             public void keyTyped(KeyEvent e) {   }
             public void keyPressed(KeyEvent e) {
-                text.setText("Textbox Key pressed was " + e.getKeyCode());
+                text.setText("Key pressed was " + e.getKeyCode());
             }
             public void keyReleased(KeyEvent e) {  }
         });
@@ -150,16 +149,6 @@ public class Graphics2 extends JFrame
             public void mouseMoved(MouseEvent e) {
                 mouseMoving(e);
             }
-        });        
-        
-        // One last time adding another event handler for an object
-        text.addMouseListener(new MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                mouseOver(false);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                mouseOver(true);
-            }
         });
     }
     
@@ -170,18 +159,7 @@ public class Graphics2 extends JFrame
      * @param event the mouse event information from the mouse
      */
     private void mouseMoving(MouseEvent event) {
-        text.setText("Mouse over Image at: " + event.getX() + "," + event.getY());
+        text.setText("Mouse " + event.getX() + "," + event.getY());
     }
     
-    /**
-     * When the mouse (like a "hover" effect) is "over" (or entering the space)
-     * of the text label object and then exiting (or leaving the space) of 
-     * this label object
-     * 
-     * @param state it is over (true) or not (false)
-     */
-    private void mouseOver(boolean state) {
-        textbox.setVisible(state);
-    }
-
 }

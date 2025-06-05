@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package computerscience30s;
+package semester1;
 
 
 /**
@@ -20,46 +20,30 @@ package computerscience30s;
  * the WYSIWYG editor without having to write all the code. Editors just write 
  * code for you (both Visual Studio and this NetBeans editor) and "hide" that 
  * code (either in a collapsed method in NetBeans, or in another class in 
- * Visual studio). You can find a Visual Studio C# version of this example
- * here: https://bit.ly/4k5ccfN with the specific code page here:
- * https://bit.ly/3SzFK9n
- * 
- * NOTE: If you remember having to "name" all the objects in Visual
+ * Visual studio). If you remember having to "name" all the objects in Visual
  * Studio, you can also do this in NetBeans (although in this course that is not 
  * required) by right clicking on each object and selecting "Change Variable
  * Name..." and then typing in a new name. 
  *
  * @author Mr. Wachs
- * @since May 2025
+ * @since December 2024
  */
 public class Graphics1 extends javax.swing.JFrame 
 {
 
     /** 
-     * Constructor method, creates new frame/form Graphics1 
+     * Creates new form Graphics2 (this is the constructor method) 
      */
     public Graphics1() {
         initComponents();
         
         // Add code after the call to the method in the line above (which do 
-        // not erase that line - which is a method call) - now add code to   
+        // not erase that line - which is a method call) - now add a line to   
         // make the form (frame, container, window, etc.) appear to the user
-        // and other methods we can call to make visual changes...
-            
-        // Some properties could be coded and others can be set using the
-        // properties window in the designer
-        
-        // When designing, another option that could be done is to "right click"
-        // on the frame (the "container") and select "Set Layout" and then 
-        // select "null" - this give you more control over where items can be 
-        // placed but requires you to use code to set the size of the frame
-        // before it is shown...
-        
-        this.setSize(450, 580);             // The width and height
-        this.setLocationRelativeTo(null);   // This centers the frame on screen
-        this.setVisible(true);              // Display the frame
+        this.setSize(370, 540);
+        this.setVisible(true);        
     }
-    
+
     
     ////////////////////////////////////////////////////////////////////////////
     // NOTE: the NetBeans visual designer adds the code below which can NOT be
@@ -67,7 +51,6 @@ public class Graphics1 extends javax.swing.JFrame
     // edit, add to, delete etc. The "Generated code" below can be seen by 
     // clicking the "plus sign +" to expand the code
     ////////////////////////////////////////////////////////////////////////////
-    
     
     /** This method is called from within the constructor to
      * initialize the form.
@@ -78,36 +61,27 @@ public class Graphics1 extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Graphics 1");
-        setResizable(false);
         getContentPane().setLayout(null);
 
-        jLabel1.setText("Hello World");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel1MouseExited(evt);
-            }
-        });
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(30, 20, 370, 16);
-
         jButton1.setText("ENTER");
+        jButton1.setToolTipText("");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(26, 52, 380, 40);
+        jButton1.setBounds(6, 80, 213, 39);
+
+        jLabel1.setText("Hello World");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(6, 6, 213, 34);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,16 +94,25 @@ public class Graphics1 extends javax.swing.JFrame
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(26, 110, 380, 22);
+        jTextField1.setBounds(6, 46, 213, 22);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/spidey.gif"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/image.gif"))); // NOI18N
+        jLabel2.setToolTipText("");
         jLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 jLabel2MouseMoved(evt);
             }
         });
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+        });
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(10, 150, 400, 400);
+        jLabel2.setBounds(6, 125, 339, 392);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -143,23 +126,32 @@ public class Graphics1 extends javax.swing.JFrame
         // is also not editable (that is why is appears in grey) but you can 
         // add the code for the "action" for this event
         
-        System.out.println("Clicked a button");
+        System.out.println("clicked a button");
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // When I double click the Textbox (Textfield) it gives me this
-        // "event" but it might not be the exact event I want to use...
-        
-        System.out.println("Textbox (Textfield) default action");
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         // For other actions, like this, right click on the object in the 
         // WYSIWYG ("What You See Is What You Get") designer and go to the
-        // menu -> Events -> then the action you wish to add 
+        // menu -> Events -> then the action you wish to add
         
-        jLabel1.setText("Textbox Key pressed was " + evt.getKeyCode());     
+        jLabel1.setText("Key pressed was " + evt.getKeyCode());
     }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        System.out.println("Textbox action happened - hitting ENTER");
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+        // The event "mouseEntered" and "mouseExited" are like "hover" effects
+        // of the mouse being "over" (or entering the space) of this object and
+        // then exiting (or leaving the space) of this label object
+        
+        jTextField1.setVisible(false);
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
+        jTextField1.setVisible(true);
+    }//GEN-LAST:event_jLabel2MouseExited
 
     private void jLabel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseMoved
         // Several different mouse events are accessible like this event 
@@ -167,22 +159,9 @@ public class Graphics1 extends javax.swing.JFrame
         // use the "evt" parameter to access events from the mouse like the 
         // (x, y) cooordinate of it as it relates to the label
         
-        jLabel1.setText("Mouse over Image at: " + evt.getX() + "," + evt.getY());
+        jLabel1.setText("Mouse " + evt.getX() + "," + evt.getY());
     }//GEN-LAST:event_jLabel2MouseMoved
 
-    private void jLabel1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseEntered
-        // The event "mouseEntered" and "mouseExited" are like "hover" effects
-        // of the mouse being "over" (or entering the space) of this object and
-        // then exiting (or leaving the space) of this label object
-        
-        jTextField1.setVisible(false);
-    }//GEN-LAST:event_jLabel1MouseEntered
-
-    private void jLabel1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseExited
-        jTextField1.setVisible(true);
-    }//GEN-LAST:event_jLabel1MouseExited
-
-    
     
     ////////////////////////////////////////////////////////////////////////////
     // NOTE: the NetBeans WYSIWYG visual designer also adds a version of the 
@@ -196,7 +175,7 @@ public class Graphics1 extends javax.swing.JFrame
     // can also change the project properties so that it "picks" which version 
     // of main to run (see Mr. Wachs for instructions on how to do this). I  
     // have removed the main method for this class (by commenting it out below)
-    ////////////////////////////////////////////////////////////////////////////     
+    //////////////////////////////////////////////////////////////////////////// 
     
 //    /**
 //     * @param args the command line arguments
@@ -232,14 +211,13 @@ public class Graphics1 extends javax.swing.JFrame
 //            }
 //        });
 //    }
-    
-    
+
     ////////////////////////////////////////////////////////////////////////////
     // NOTE: the NetBeans visual designer adds the code below for each 
     // component (control, widget, property, global variable) which also 
     // cannot be edited
     ////////////////////////////////////////////////////////////////////////////
-      
+        
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;

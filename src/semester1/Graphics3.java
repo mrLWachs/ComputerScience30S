@@ -1,6 +1,6 @@
 
-/** Required package class namespace */
-package computerscience30s;
+/** required package class namespace */
+package semester1;
 
 /** required imports */
 import java.awt.Color;
@@ -21,14 +21,14 @@ import javax.swing.Timer;
  * with our custom code (a 'hybrid' approach) to make a "mini final project" 
  * type of application (a mini 'PhotoShop')
  *
- * @author Mr. Wachs
- * @since May 23, 2025, 11:29:48 a.m.
+ * @author Mr. Wachs 
+ * @since December 2024 
  */
 public class Graphics3 extends javax.swing.JFrame 
 {
 
-    /** 
-     * Constructor method, creates new frame/form Graphics3 
+    /**
+     * Default class constructor, sets class properties
      */
     public Graphics3() {
         initComponents();
@@ -36,7 +36,6 @@ public class Graphics3 extends javax.swing.JFrame
     }
 
     // NetBeans designer code below ...........................................
-    
     
     /** This method is called from within the constructor to
      * initialize the form.
@@ -47,13 +46,13 @@ public class Graphics3 extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        titlelabel = new java.awt.Label();
         filledOvalRadioButton = new javax.swing.JRadioButton();
         openOvalRadioButton = new javax.swing.JRadioButton();
         filledRectangleRadioButton = new javax.swing.JRadioButton();
         openRectangleRadioButton = new javax.swing.JRadioButton();
         threeDRectangleRadioButton = new javax.swing.JRadioButton();
         arcRadioButton = new javax.swing.JRadioButton();
-        titleLabel = new javax.swing.JLabel();
         brushSizeLabel = new javax.swing.JLabel();
         brushSizeSpinner = new javax.swing.JSpinner();
         foregroundColorButton = new javax.swing.JButton();
@@ -63,7 +62,11 @@ public class Graphics3 extends javax.swing.JFrame
         drawingPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Wachs FotoShop");
+        setTitle("Wachs FotoShopish");
+        setResizable(false);
+
+        titlelabel.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
+        titlelabel.setText("Wachs FotoShopish");
 
         filledOvalRadioButton.setText("Filled Oval");
         filledOvalRadioButton.addActionListener(new java.awt.event.ActionListener() {
@@ -107,10 +110,8 @@ public class Graphics3 extends javax.swing.JFrame
             }
         });
 
-        titleLabel.setFont(new java.awt.Font("Book Antiqua", 1, 36)); // NOI18N
-        titleLabel.setText("Wachs FotoShop");
-
         brushSizeLabel.setText("Brush size:");
+        brushSizeLabel.setToolTipText("");
 
         brushSizeSpinner.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -162,11 +163,11 @@ public class Graphics3 extends javax.swing.JFrame
         drawingPanel.setLayout(drawingPanelLayout);
         drawingPanelLayout.setHorizontalGroup(
             drawingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 816, Short.MAX_VALUE)
+            .addGap(0, 676, Short.MAX_VALUE)
         );
         drawingPanelLayout.setVerticalGroup(
             drawingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 625, Short.MAX_VALUE)
+            .addGap(0, 407, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -174,85 +175,84 @@ public class Graphics3 extends javax.swing.JFrame
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(brushSizeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(54, 54, 54)
-                        .addComponent(brushSizeSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(titlelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 867, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(titleLabel)
-                            .addComponent(filledOvalRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(openOvalRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(filledRectangleRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(filledOvalRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(openOvalRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(filledRectangleRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(openRectangleRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(threeDRectangleRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(arcRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(starBurstButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(clearButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(backgroundColorButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
-                                .addComponent(foregroundColorButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(drawingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                            .addComponent(arcRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(brushSizeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(brushSizeSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(foregroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(backgroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(starBurstButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(10, 10, 10)
+                        .addComponent(drawingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(10, 10, 10)
+                .addComponent(titlelabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(titleLabel)
-                        .addGap(41, 41, 41)
+                        .addGap(11, 11, 11)
                         .addComponent(filledOvalRadioButton)
-                        .addGap(19, 19, 19)
+                        .addGap(12, 12, 12)
                         .addComponent(openOvalRadioButton)
-                        .addGap(19, 19, 19)
+                        .addGap(12, 12, 12)
                         .addComponent(filledRectangleRadioButton)
-                        .addGap(19, 19, 19)
+                        .addGap(12, 12, 12)
                         .addComponent(openRectangleRadioButton)
-                        .addGap(19, 19, 19)
+                        .addGap(12, 12, 12)
                         .addComponent(threeDRectangleRadioButton)
-                        .addGap(19, 19, 19)
-                        .addComponent(arcRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(31, 31, 31)
+                        .addGap(12, 12, 12)
+                        .addComponent(arcRadioButton)
+                        .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(brushSizeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addComponent(brushSizeLabel))
-                            .addComponent(brushSizeSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)
-                        .addComponent(foregroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(backgroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)
-                        .addComponent(starBurstButton, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(drawingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
+                                .addGap(2, 2, 2)
+                                .addComponent(brushSizeSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(19, 19, 19)
+                        .addComponent(foregroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(backgroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(starBurstButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(drawingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void foregroundColorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_foregroundColorButtonActionPerformed
-        setForeground();
+        setForeground();        // jump to custom method
     }//GEN-LAST:event_foregroundColorButtonActionPerformed
 
     private void backgroundColorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backgroundColorButtonActionPerformed
-        setBackground();
+        setBackground();        // jump to custom method
     }//GEN-LAST:event_backgroundColorButtonActionPerformed
 
     private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
-        clear();
+        clear();                // jump to custom method
     }//GEN-LAST:event_clearButtonActionPerformed
 
     private void starBurstButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_starBurstButtonActionPerformed
-        starBurst();
+        starBurst();            // jump to custom method
     }//GEN-LAST:event_starBurstButtonActionPerformed
 
     private void filledOvalRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filledOvalRadioButtonActionPerformed
@@ -305,9 +305,10 @@ public class Graphics3 extends javax.swing.JFrame
     private javax.swing.JRadioButton openRectangleRadioButton;
     private javax.swing.JButton starBurstButton;
     private javax.swing.JRadioButton threeDRectangleRadioButton;
-    private javax.swing.JLabel titleLabel;
+    private java.awt.Label titlelabel;
     // End of variables declaration//GEN-END:variables
 
+    
     // Global variables (properties) below ....................................
     
     // constants:
@@ -365,8 +366,7 @@ public class Graphics3 extends javax.swing.JFrame
                 tick();
             }
         });
-        this.setSize(1170, 720);
-        this.setResizable(false);
+        this.setSize(950, 560);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
@@ -520,5 +520,5 @@ public class Graphics3 extends javax.swing.JFrame
         graphics.setColor(color);
         graphics.fillPolygon(polygon);
     }
-
+    
 }

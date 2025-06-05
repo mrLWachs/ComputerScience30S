@@ -1,6 +1,7 @@
 /** Required package class namespace */
-package computerscience30s;
+package semester1;
  
+
 /**
  * Person.java - represents a person. This is a class with properties (things 
  * about the class, adjectives, descriptors) and methods (things the class 
@@ -8,9 +9,10 @@ package computerscience30s;
  * objects (which are instances of that class).
  * 
  * @author Mr. Wachs
- * @since May 2025
+ * @since December 2024
  */
-public class Person {
+public class Person 
+{
 
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
@@ -18,17 +20,18 @@ public class Person {
     // determine if the property (variable, global variable) is encapsulated
     // or not. Meaning is the variable accessable (can be read and changed)
     // inside the class and/or outside the class (words "private" and "public")
-    
+        
     public String name;
     
-    private int age;
+    private int age;        // Encapsulated this property
     
-    public String gender;
+    public String gender; // Can be changed through methods
     
     private boolean alive;
     
-    // Methods: (things it can do, verbs, actions, return, parameter(s))
     
+    // Methods: (things it can do, verbs, actions, return, parameter(s))
+   
     /**
      * Constructor method is a special method that has:
      *    (1) the same name as the class
@@ -48,16 +51,6 @@ public class Person {
         gender = "undefined";
     }
     
-    // This method was originally written and then deleted (commented out)
-    // because the new constructor method performs the same purpose....
-    
-    // void born() {
-    //     alive  = true;
-    //     age    = 0;
-    //     name   = "undefined";
-    //     gender = "undefined";        
-    // }
-    
     /**
      * Constructor method, sets the class properties. Constructor methods 
      * should be public
@@ -65,9 +58,9 @@ public class Person {
      * @param newName the new name for this person
      */
     public Person(String newName) {
-        alive  = true;
-        age    = 0;
-        name   = newName;
+        alive = true;
+        age = 0;
+        name = newName;
         gender = "undefined";
     }
     
@@ -81,7 +74,7 @@ public class Person {
      * @param gender the identified gender of this person
      */
     public Person(String name, int age, String gender) {
-        alive  = true;
+        alive = true;
         // Assign the parameter to the property (global variable of this class)
         // To do this, we use the keyword "this" which acts as a placeholder
         // for the name of the object (which will be created at a later time)
@@ -89,6 +82,16 @@ public class Person {
         this.name   = name;
         this.gender = gender;
     }
+    
+    // This method was originally written and then deleted (commented out)
+    // because the new constructor method performs the same purpose....
+    
+    // void born() {
+    //     alive = true;
+    //     age = 0;
+    //     name = "undefined";
+    //     gender = "undefined";
+    // }
     
     /**
      * The person dies (changing/modifying) the property (alive) through 
@@ -105,7 +108,7 @@ public class Person {
         if (alive == true) {
             System.out.println(name + " is " + age + " identifes as " + gender);
         }
-        else {
+        else  {
             System.out.println("Boooooooo!");
         }
     }
@@ -120,7 +123,7 @@ public class Person {
      */
     private void birthday() {
         age++;
-    }    
+    }
     
     /**
      * Gives the person a birthday, changes the encapsulated property (age).
@@ -136,5 +139,5 @@ public class Person {
         // or you could just write...
         // this.age = age;
     }
-    
+        
 }

@@ -1,5 +1,5 @@
 /** Required package class namespace */
-package computerscience30s;
+package semester1;
  
 /**
  * Teacher.java - represents a Teacher. This class uses inheritance to inherit
@@ -8,7 +8,7 @@ package computerscience30s;
  * the class. This is sometimes simplified as a "has a" relationship.
  *
  * @author Mr. Wachs
- * @since May 2025
+ * @since December 2024
  */
 public class Teacher extends Person
 {
@@ -24,7 +24,7 @@ public class Teacher extends Person
      * @param name the name for this Teacher Person
      */
     public Teacher(String name) {
-        super(name,55,"teacher");
+        super(name);
         students = new Student[100];
     }
     
@@ -36,7 +36,6 @@ public class Teacher extends Person
     public void teach() {
         super.talk();
         System.out.println("\tHere are my students...");
-        // Loop through (traverse) the array...
         for (int i = 0; i < students.length; i++) {
             if (students[i] != null) {
                 students[i].study();

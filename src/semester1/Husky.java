@@ -1,7 +1,6 @@
 /** Required package class namespace */
-package computerscience30s;
-
-
+package semester1;
+ 
 /**
  * Husky.java - represents a Husky. This class uses inheritance to inherit
  * the properties and methods from the Students class, which was already 
@@ -9,13 +8,12 @@ package computerscience30s;
  * inherits from both (a double inheritance).
  *
  * @author Mr. Wachs
- * @since May 2025
+ * @since December 2024
  */
 public class Husky extends Student
 {
-    
-    private boolean pride;                          // encapsulated property
 
+    private boolean pride;                          // encapsulated property
     
     /**
      * Constructor for the class, sets the class properties to the default 
@@ -27,12 +25,8 @@ public class Husky extends Student
      * @param number the number of this Husky "is a" Student 
      */
     public Husky(String name, int age, String gender, int number) {
-        super(name, age, gender, number);
-        // You can have a class constructor call the constructor of this
-        // class' super class constructor by using the keyword "super" 
-        // with round brackets "super()" - this is called a call to the
-        // "super-constructor"
-        this.pride = true;      // could have also been written "pride = true;"
+        super(name, age, gender, number);           // calling super constructor
+        this.pride = true;                          // set internal property
     }
 
     /**
@@ -42,7 +36,7 @@ public class Husky extends Student
     @Override
     public void talk() {
         super.talk();       // call to super talk(), it calls super talk() also
-        System.out.println("\t\tPride is " + pride);
-    }   
+        System.out.println("\tPride is \t" + pride);
+    }
     
 }
