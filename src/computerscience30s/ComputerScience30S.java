@@ -1,6 +1,8 @@
 
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 public class ComputerScience30S {
 
     public static void main(String[] args) { 
@@ -44,8 +46,10 @@ public class ComputerScience30S {
         // "forms", "graphical rectangles" and are somewhat "fancier" ways to
         // do an input/output with a dialog box (in C# it was "Message box")
         
+        JOptionPane.showMessageDialog(null, "Hello World");
         
-        
+        // Above line of code is the ONLY one needed for assignment, final 
+        // project, etc.
         
         
         
