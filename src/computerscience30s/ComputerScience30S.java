@@ -51,6 +51,19 @@ public class ComputerScience30S {
         // Above line of code is the ONLY one needed for assignment, final 
         // project, etc.
         
+        // For inputs (meaning the user is involved in giving us data)...
+        // An "input" dialog box
+        
+        JOptionPane.showInputDialog("Enter something");
+        
+        // The simpliest version (is the one you will need to know)
+        
+        
+        
+        
+        
+        
+        
         
         
         
