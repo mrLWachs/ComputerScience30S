@@ -24,6 +24,25 @@ public class ComputerScience30S {
         System.out.print("Hello World");
         
         System.out.print(" I'm in the World");
+        // Spaces, you have to add them inside the quotes
+        
+        // There are "shortcuts" to coding a IDE like NetBeans (see tips below)        
+        System.out.println("Good-bye World!");
+        
+        // Additional output tips... (these are "special" characters)
+        // (possibly never need to use these)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
