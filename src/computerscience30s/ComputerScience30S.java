@@ -232,8 +232,8 @@ public class ComputerScience30S {
 }
 
 
-// NETBEANS TIPS:
-// ==============
+// TIPS - for using NetBeans, Java, and Mr. Wachs' Computer Science course:
+// ========================================================================
 //
 // UNIT 1: Introduction To Java.................................................
 //
