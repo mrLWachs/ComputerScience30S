@@ -6,22 +6,22 @@ import javax.swing.JOptionPane;
 public class ComputerScience30S {
 
     public static void main(String[] args) { 
-        
-        // This is a comment
-        
-        // All typing after "//" until the line ends is called a comment        
-        // Commments are not code, so you can write what you want   
-        
-        // Curly brackets (braces, parenthesis) { and } are important        
-        // All code right now goes between these two brackets. Comments are 
-        // not code, so you can write what you want
-        
-        /*  
-            This is for multiple line comments, as it covers as many lines as
-            you want starting with "slash star" until it sees the closing 
-            "star slash"
-        */
-        
+//        
+//        // This is a comment
+//        
+//        // All typing after "//" until the line ends is called a comment        
+//        // Commments are not code, so you can write what you want   
+//        
+//        // Curly brackets (braces, parenthesis) { and } are important        
+//        // All code right now goes between these two brackets. Comments are 
+//        // not code, so you can write what you want
+//        
+//        /*  
+//            This is for multiple line comments, as it covers as many lines as
+//            you want starting with "slash star" until it sees the closing 
+//            "star slash"
+//        */
+//        
 //        // A basic output...
 //        System.out.print("Hello World");
 //        
@@ -142,50 +142,50 @@ public class ComputerScience30S {
 //                "Plain title",
 //                JOptionPane.PLAIN_MESSAGE
 //        );   
-        
-        // More different (and optional) dialogs...
-        
-        JOptionPane.showConfirmDialog(null, "confirm");
-        
-        JOptionPane.showConfirmDialog(
-                null, 
-                "Confirm Example 2",
-                "Information",
-                JOptionPane.YES_NO_CANCEL_OPTION,
-                JOptionPane.INFORMATION_MESSAGE
-        );
-        
-        JOptionPane.showConfirmDialog(
-                null, 
-                "Confirm Example 3",
-                "Question",
-                JOptionPane.YES_NO_OPTION,
-                JOptionPane.QUESTION_MESSAGE
-        );
-        
-        JOptionPane.showConfirmDialog(
-                null, 
-                "Confirm Example 4",
-                "Warning",
-                JOptionPane.OK_CANCEL_OPTION,
-                JOptionPane.WARNING_MESSAGE
-        );
-        
-        JOptionPane.showConfirmDialog(
-                null, 
-                "Confirm Example 5",
-                "Error",
-                JOptionPane.DEFAULT_OPTION,
-                JOptionPane.ERROR_MESSAGE
-        );
-                
-        JOptionPane.showConfirmDialog(
-                null, 
-                "Confirm Example 6",
-                "Plain",
-                JOptionPane.DEFAULT_OPTION,
-                JOptionPane.PLAIN_MESSAGE
-        );
+//        
+//        // More different (and optional) dialogs...
+//        
+//        JOptionPane.showConfirmDialog(null, "confirm");
+//        
+//        JOptionPane.showConfirmDialog(
+//                null, 
+//                "Confirm Example 2",
+//                "Information",
+//                JOptionPane.YES_NO_CANCEL_OPTION,
+//                JOptionPane.INFORMATION_MESSAGE
+//        );
+//        
+//        JOptionPane.showConfirmDialog(
+//                null, 
+//                "Confirm Example 3",
+//                "Question",
+//                JOptionPane.YES_NO_OPTION,
+//                JOptionPane.QUESTION_MESSAGE
+//        );
+//        
+//        JOptionPane.showConfirmDialog(
+//                null, 
+//                "Confirm Example 4",
+//                "Warning",
+//                JOptionPane.OK_CANCEL_OPTION,
+//                JOptionPane.WARNING_MESSAGE
+//        );
+//        
+//        JOptionPane.showConfirmDialog(
+//                null, 
+//                "Confirm Example 5",
+//                "Error",
+//                JOptionPane.DEFAULT_OPTION,
+//                JOptionPane.ERROR_MESSAGE
+//        );
+//                
+//        JOptionPane.showConfirmDialog(
+//                null, 
+//                "Confirm Example 6",
+//                "Plain",
+//                JOptionPane.DEFAULT_OPTION,
+//                JOptionPane.PLAIN_MESSAGE
+//        );
         
         ///////////////////////////////////////////////////////////////////////
         // VARIABLES:
@@ -194,14 +194,24 @@ public class ComputerScience30S {
         // A variable is a piece of code that tells the computer to
         // store (or "remember") information (or "data")
         
+        // This is an example of the simpliest variable type:
+        boolean a = true;
         
+        // type name = value ;
+        int b = 0;
         
+        double c = 0.0;
         
+        // When you write a line of code to create (declare) a variable
         
+        // Variables can change ("vary")
+        a = false;
+        b = 1;
+        c = 1.2;
         
-        
-        
-        
+        // Variables are used to remember (store) values ("data", "information")
+        // and they used when the user gives us information, and for 
+        // calculations / formulas
         
         
         
@@ -240,4 +250,5 @@ public class ComputerScience30S {
 //      (on the right)
 // (11) To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
-
+// (12) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+//      error and a potential fix (if you click on the lightbulb)
