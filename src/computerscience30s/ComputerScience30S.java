@@ -248,46 +248,89 @@ public class ComputerScience30S {
 //        String e = "apple";
 //        
 //        System.out.println("e = " + e);
-                
-        // Manipulate ("use") the varibles... 
-       
-        int x = 0;
+//                
+//        // Manipulate ("use") the varibles... 
+//       
+//        int x = 0;
+//        
+//        System.out.println("x = " + x);
+//        
+//        x = 30;
+//        
+//        System.out.println("x = " + x);
+//        
+//        int y = x + 10;
+//        
+//        System.out.println("y = " + y);
+//        
+//        // Optional ("you don't have to use this code") shorthand...        
+//        y++;    // Means the same as y = y + 1;
+//        y--;    // Means the same as y = y - 1;
+//        
+//        // Even more shorthand (less recommended)        
+//        y += 10;    // Means the same as y = y + 10;
+//        y -= 10;    // Means the same as y = y - 10;
+//        y *= 10;    // Means the same as y = y * 10;
+//        y /= 10;    // Means the same as y = y / 10;
+//        
+//        System.out.println("y = " + y);
+//        
+//        // Modulus (mod) division gives you the remainder of a division
+//        // (not the normal answer) - in Java it uses the percentage "%"
+//        // symbol for this
+//        
+//        x = 28;
+//        y = x / 5;
+//        
+//        System.out.println("y = " + y);
+//        
+//        int z = x % 5;
+//        
+//        System.out.println("z = " + z);
         
-        System.out.println("x = " + x);
+        // Constants are variables that don't change (they stay "constant"),
+        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+        // to seperate words
         
-        x = 30;
+        final double  PI               = 3.141592653589793;
+        final int     PROBLEMS         = 99;
+        final char    YES              = 'Y';
+        final boolean FOUND            = false;
+        final String  COMPUTER_TEACHER = "Wachs";
         
-        System.out.println("x = " + x);
+        System.out.println(
+                PI       + "," + 
+                PROBLEMS + "," + 
+                YES      + "," + 
+                FOUND    + "," + 
+                COMPUTER_TEACHER
+        );
         
-        int y = x + 10;
+        // In a line of code, one space or multiple spaces doesn't matter
+        // as seen above when declaring constants (it only matter when
+        // between quotation marks). You can hit enter in a line of code
+        // to break to a new line, because the computer will still consider
+        // it ONE line of code until we reach the semicolon.
         
-        System.out.println("y = " + y);
+        // Constants are used for things like: easier code to maintain,
+        // easier to read/understand (especially for other programmers)
         
-        // Optional ("you don't have to use this code") shorthand...        
-        y++;    // Means the same as y = y + 1;
-        y--;    // Means the same as y = y - 1;
         
-        // Even more shorthand (less recommended)        
-        y += 10;    // Means the same as y = y + 10;
-        y -= 10;    // Means the same as y = y - 10;
-        y *= 10;    // Means the same as y = y * 10;
-        y /= 10;    // Means the same as y = y / 10;
         
-        System.out.println("y = " + y);
         
-        // Modulus (mod) division gives you the remainder of a division
-        // (not the normal answer) - in Java it uses the percentage "%"
-        // symbol for this
         
-        x = 28;
-        y = x / 5;
         
-        System.out.println("y = " + y);
         
-        int z = x % 5;
         
-        System.out.println("z = " + z);
         
+        
+        
+        
+        
+        
+
+
+
         
         
         
