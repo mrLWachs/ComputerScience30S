@@ -14,279 +14,279 @@ import javax.swing.JOptionPane;
 public class ComputerScience30S {
 
     public static void main(String[] args) { 
-//        
-//        // This is a comment
-//        
-//        // All typing after "//" until the line ends is called a comment        
-//        // Commments are not code, so you can write what you want   
-//        
-//        // Curly brackets (braces, parenthesis) { and } are important        
-//        // All code right now goes between these two brackets. Comments are 
-//        // not code, so you can write what you want
-//        
-//        /*  
-//            This is for multiple line comments, as it covers as many lines as
-//            you want starting with "slash star" until it sees the closing 
-//            "star slash"
-//        */
-//        
-//        // A basic output...
-//        System.out.print("Hello World");
-//        
-//        System.out.print(" I'm in the World");
-//        // Spaces, you have to add them inside the quotes
-//        
-//        // There are "shortcuts" to coding a IDE like NetBeans (see tips below)        
-//        System.out.println("Good-bye World!");
-//        
-//        // Additional output tips... (these are "special" characters)
-//        // (possibly never need to use these)
-//        
-//        System.out.println("Make a quote \" appear");
-//        System.out.println("Make a slash \\ appear");
-//        System.out.println("Make a tab   \t appear");
-//        System.out.println("Make a new line \n appear");
-//        
-//        // In all these, the key is to use the "\" backslash
-//        // which is called an "escape character"
-//        
-//        // Dialog types of input and outputs, and are little tiny "windows", 
-//        // "forms", "graphical rectangles" and are somewhat "fancier" ways to
-//        // do an input/output with a dialog box (in C# it was "Message box")
-//        
-//        JOptionPane.showMessageDialog(null, "Hello World");
-//        
-//        // Above line of code is the ONLY one needed for assignment, final 
-//        // project, etc.
-//        
-//        // For inputs (meaning the user is involved in giving us data)...
-//        // An "input" dialog box
-//        
-//        JOptionPane.showInputDialog("Enter something");
-//        
-//        // The simpliest version (is the one you will need to know)
-//        
-//        // However.............................................................
-//        
-//        // Optionally (not required) now some examples of other things you can
-//        // do with these message/input dialog boxes...
-//        
-//        // Code could span multiple lines until it reaches a semi colon ";"
-//        // The light red line on the far right -------------------------------->
-//        // can be thought of as a "barrier" and you should try not to code too
-//        // much past this line
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Information icon is i",
-//                "Information Title",
-//                JOptionPane.INFORMATION_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Question icon is ?",
-//                "Question Title",
-//                JOptionPane.QUESTION_MESSAGE
-//        );
-//                
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Warning icon is !",
-//                "Warning Title",
-//                JOptionPane.WARNING_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Error icon is X",
-//                "Error Title",
-//                JOptionPane.ERROR_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Plain icon (no icon)",
-//                "Plain Title",
-//                JOptionPane.PLAIN_MESSAGE
-//        );
-//        
-//        // Some other optional input dialogs...
-//        
-//        // NOTE: There is a little more to using this input dialog that we will 
-//        // cover after learning variables
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Information icon is i",
-//                "Information title",
-//                JOptionPane.INFORMATION_MESSAGE
-//        );
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Question icon is i",
-//                "Question title",
-//                JOptionPane.QUESTION_MESSAGE
-//        );
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Warning icon is i",
-//                "Warning title",
-//                JOptionPane.WARNING_MESSAGE
-//        );
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Error icon is x",
-//                "Error title",
-//                JOptionPane.ERROR_MESSAGE
-//        );
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Plain icon is i",
-//                "Plain title",
-//                JOptionPane.PLAIN_MESSAGE
-//        );   
-//        
-//        // More different (and optional) dialogs...
-//        
-//        JOptionPane.showConfirmDialog(null, "confirm");
-//        
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Example 2",
-//                "Information",
-//                JOptionPane.YES_NO_CANCEL_OPTION,
-//                JOptionPane.INFORMATION_MESSAGE
-//        );
-//        
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Example 3",
-//                "Question",
-//                JOptionPane.YES_NO_OPTION,
-//                JOptionPane.QUESTION_MESSAGE
-//        );
-//        
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Example 4",
-//                "Warning",
-//                JOptionPane.OK_CANCEL_OPTION,
-//                JOptionPane.WARNING_MESSAGE
-//        );
-//        
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Example 5",
-//                "Error",
-//                JOptionPane.DEFAULT_OPTION,
-//                JOptionPane.ERROR_MESSAGE
-//        );
-//                
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Example 6",
-//                "Plain",
-//                JOptionPane.DEFAULT_OPTION,
-//                JOptionPane.PLAIN_MESSAGE
-//        );
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // VARIABLES:
-//        ///////////////////////////////////////////////////////////////////////
-//        
-//        // A variable is a piece of code that tells the computer to
-//        // store (or "remember") information (or "data"). Variables are also
-//        // used when the user gives us information, and for 
-//        // calculations / formulas. You write a line of code to create 
-//        // (declare) a variable...
-//        
-//        // This is an example of the simpliest variable type:
-//        boolean a = true;
-//        
-//        // type name = value ;
-//        int b = 0;
-//        double c = 0.0;
-//        
-//        // Output our variables (before we do anything to them) - when 
-//        // outputting a variable it always the value stored in the variable
-//        // (not the name of the variable)
-//        
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
-//        
-//        // Variables can change ("vary")
-//        a = false;
-//        b = 1;
-//        c = 1.2;
-//        
-//        // Variables always go on the left hand side (LHS) of the equals
-//        // sign (=) and the value going into the variable always goes on
-//        // the right hand side (RHS)
-//        
-//        // Output them again - after they have been changed...
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
-//        
-//        // The "char" is short for "character" it holds (remembers) ONE
-//        // character
-//        
-//        char d = 'A';
-//        
-//        System.out.println("d = " + d);
-//        
-//        // The boolean ("bool" in C#), integer (int), double, and character
-//        // (char) are all simple (primitive) data types, now a "complex" data
-//        // type....
-//        
-//        String e = "apple";
-//        
-//        System.out.println("e = " + e);
-//                
-//        // Manipulate ("use") the varibles... 
-//       
-//        int x = 0;
-//        
-//        System.out.println("x = " + x);
-//        
-//        x = 30;
-//        
-//        System.out.println("x = " + x);
-//        
-//        int y = x + 10;
-//        
-//        System.out.println("y = " + y);
-//        
-//        // Optional ("you don't have to use this code") shorthand...        
-//        y++;    // Means the same as y = y + 1;
-//        y--;    // Means the same as y = y - 1;
-//        
-//        // Even more shorthand (less recommended)        
-//        y += 10;    // Means the same as y = y + 10;
-//        y -= 10;    // Means the same as y = y - 10;
-//        y *= 10;    // Means the same as y = y * 10;
-//        y /= 10;    // Means the same as y = y / 10;
-//        
-//        System.out.println("y = " + y);
-//        
-//        // Modulus (mod) division gives you the remainder of a division
-//        // (not the normal answer) - in Java it uses the percentage "%"
-//        // symbol for this
-//        
-//        x = 28;
-//        y = x / 5;
-//        
-//        System.out.println("y = " + y);
-//        
-//        int z = x % 5;
-//        
-//        System.out.println("z = " + z);
+        
+        // This is a comment
+        
+        // All typing after "//" until the line ends is called a comment        
+        // Commments are not code, so you can write what you want   
+        
+        // Curly brackets (braces, parenthesis) { and } are important        
+        // All code right now goes between these two brackets. Comments are 
+        // not code, so you can write what you want
+        
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
+        
+        // A basic output...
+        System.out.print("Hello World");
+        
+        System.out.print(" I'm in the World");
+        // Spaces, you have to add them inside the quotes
+        
+        // There are "shortcuts" to coding a IDE like NetBeans (see tips below)        
+        System.out.println("Good-bye World!");
+        
+        // Additional output tips... (these are "special" characters)
+        // (possibly never need to use these)
+        
+        System.out.println("Make a quote \" appear");
+        System.out.println("Make a slash \\ appear");
+        System.out.println("Make a tab   \t appear");
+        System.out.println("Make a new line \n appear");
+        
+        // In all these, the key is to use the "\" backslash
+        // which is called an "escape character"
+        
+        // Dialog types of input and outputs, and are little tiny "windows", 
+        // "forms", "graphical rectangles" and are somewhat "fancier" ways to
+        // do an input/output with a dialog box (in C# it was "Message box")
+        
+        JOptionPane.showMessageDialog(null, "Hello World");
+        
+        // Above line of code is the ONLY one needed for assignment, final 
+        // project, etc.
+        
+        // For inputs (meaning the user is involved in giving us data)...
+        // An "input" dialog box
+        
+        JOptionPane.showInputDialog("Enter something");
+        
+        // The simpliest version (is the one you will need to know)
+        
+        // However.............................................................
+        
+        // Optionally (not required) now some examples of other things you can
+        // do with these message/input dialog boxes...
+        
+        // Code could span multiple lines until it reaches a semi colon ";"
+        // The light red line on the far right -------------------------------->
+        // can be thought of as a "barrier" and you should try not to code too
+        // much past this line
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE
+        );
+                
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Error icon is X",
+                "Error Title",
+                JOptionPane.ERROR_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain icon (no icon)",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        // Some other optional input dialogs...
+        
+        // NOTE: There is a little more to using this input dialog that we will 
+        // cover after learning variables
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Information icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Question icon is i",
+                "Question title",
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Warning icon is i",
+                "Warning title",
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Error icon is x",
+                "Error title",
+                JOptionPane.ERROR_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Plain icon is i",
+                "Plain title",
+                JOptionPane.PLAIN_MESSAGE
+        );   
+        
+        // More different (and optional) dialogs...
+        
+        JOptionPane.showConfirmDialog(null, "confirm");
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 2",
+                "Information",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 3",
+                "Question",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 4",
+                "Warning",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 5",
+                "Error",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.ERROR_MESSAGE
+        );
+                
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 6",
+                "Plain",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        ///////////////////////////////////////////////////////////////////////
+        // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
+        
+        // A variable is a piece of code that tells the computer to
+        // store (or "remember") information (or "data"). Variables are also
+        // used when the user gives us information, and for 
+        // calculations / formulas. You write a line of code to create 
+        // (declare) a variable...
+        
+        // This is an example of the simpliest variable type:
+        boolean a = true;
+        
+        // type name = value ;
+        int b = 0;
+        double c = 0.0;
+        
+        // Output our variables (before we do anything to them) - when 
+        // outputting a variable it always the value stored in the variable
+        // (not the name of the variable)
+        
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        
+        // Variables can change ("vary")
+        a = false;
+        b = 1;
+        c = 1.2;
+        
+        // Variables always go on the left hand side (LHS) of the equals
+        // sign (=) and the value going into the variable always goes on
+        // the right hand side (RHS)
+        
+        // Output them again - after they have been changed...
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        
+        // The "char" is short for "character" it holds (remembers) ONE
+        // character
+        
+        char d = 'A';
+        
+        System.out.println("d = " + d);
+        
+        // The boolean ("bool" in C#), integer (int), double, and character
+        // (char) are all simple (primitive) data types, now a "complex" data
+        // type....
+        
+        String e = "apple";
+        
+        System.out.println("e = " + e);
+                
+        // Manipulate ("use") the varibles... 
+       
+        int x = 0;
+        
+        System.out.println("x = " + x);
+        
+        x = 30;
+        
+        System.out.println("x = " + x);
+        
+        int y = x + 10;
+        
+        System.out.println("y = " + y);
+        
+        // Optional ("you don't have to use this code") shorthand...        
+        y++;    // Means the same as y = y + 1;
+        y--;    // Means the same as y = y - 1;
+        
+        // Even more shorthand (less recommended)        
+        y += 10;    // Means the same as y = y + 10;
+        y -= 10;    // Means the same as y = y - 10;
+        y *= 10;    // Means the same as y = y * 10;
+        y /= 10;    // Means the same as y = y / 10;
+        
+        System.out.println("y = " + y);
+        
+        // Modulus (mod) division gives you the remainder of a division
+        // (not the normal answer) - in Java it uses the percentage "%"
+        // symbol for this
+        
+        x = 28;
+        y = x / 5;
+        
+        System.out.println("y = " + y);
+        
+        int z = x % 5;
+        
+        System.out.println("z = " + z);
         
         // Constants are variables that don't change (they stay "constant"),
         // and constants are written in ALL_CAPITAL_LETTERS with underscores
