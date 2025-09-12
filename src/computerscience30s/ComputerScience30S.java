@@ -195,44 +195,91 @@ public class ComputerScience30S {
 //                JOptionPane.PLAIN_MESSAGE
 //        );
 //        
-        ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
-        ///////////////////////////////////////////////////////////////////////
+//        ///////////////////////////////////////////////////////////////////////
+//        // VARIABLES:
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // A variable is a piece of code that tells the computer to
+//        // store (or "remember") information (or "data"). Variables are also
+//        // used when the user gives us information, and for 
+//        // calculations / formulas. You write a line of code to create 
+//        // (declare) a variable...
+//        
+//        // This is an example of the simpliest variable type:
+//        boolean a = true;
+//        
+//        // type name = value ;
+//        int b = 0;
+//        double c = 0.0;
+//        
+//        // Output our variables (before we do anything to them) - when 
+//        // outputting a variable it always the value stored in the variable
+//        // (not the name of the variable)
+//        
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
+//        
+//        // Variables can change ("vary")
+//        a = false;
+//        b = 1;
+//        c = 1.2;
+//        
+//        // Variables always go on the left hand side (LHS) of the equals
+//        // sign (=) and the value going into the variable always goes on
+//        // the right hand side (RHS)
+//        
+//        // Output them again - after they have been changed...
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
+//        
+//        // The "char" is short for "character" it holds (remembers) ONE
+//        // character
+//        
+//        char d = 'A';
+//        
+//        System.out.println("d = " + d);
+//        
+//        // The boolean ("bool" in C#), integer (int), double, and character
+//        // (char) are all simple (primitive) data types, now a "complex" data
+//        // type....
+//        
+//        String e = "apple";
+//        
+//        System.out.println("e = " + e);
+                
+        // Manipulate ("use") the varibles... 
+       
+        int x = 0;
         
-        // A variable is a piece of code that tells the computer to
-        // store (or "remember") information (or "data"). Variables are also
-        // used when the user gives us information, and for 
-        // calculations / formulas. You write a line of code to create 
-        // (declare) a variable...
+        System.out.println("x = " + x);
         
-        // This is an example of the simpliest variable type:
-        boolean a = true;
+        x = 30;
         
-        // type name = value ;
-        int b = 0;
-        double c = 0.0;
+        System.out.println("x = " + x);
         
-        // Output our variables (before we do anything to them) - when 
-        // outputting a variable it always the value stored in the variable
-        // (not the name of the variable)
+        int y = x + 10;
         
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
+        System.out.println("y = " + y);
         
-        // Variables can change ("vary")
-        a = false;
-        b = 1;
-        c = 1.2;
+        // Optional ("you don't have to use this code") shorthand...        
+        y++;    // Means the same as y = y + 1;
+        y--;    // Means the same as y = y - 1;
         
-        // Variables always go on the left hand side (LHS) of the equals
-        // sign (=) and the value going into the variable always goes on
-        // the right hand side (RHS)
+        // Even more shorthand (less recommended)        
+        y += 10;    // Means the same as y = y + 10;
+        y -= 10;    // Means the same as y = y - 10;
+        y *= 10;    // Means the same as y = y * 10;
+        y /= 10;    // Means the same as y = y / 10;
         
-        // Output them again - after they have been changed...
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
+        System.out.println("y = " + y);
+        
+        // Modulus (mod) division gives you the remainder of a division
+        // (not the normal answer) - in Java it uses the percentage "%"
+        // symbol for this
+        
+        
         
         
         
