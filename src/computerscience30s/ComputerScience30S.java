@@ -15,14 +15,14 @@ public class ComputerScience30S {
 
     public static void main(String[] args) { 
         
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
+        
         // This is a comment
         
         // All typing after "//" until the line ends is called a comment        
         // Commments are not code, so you can write what you want   
-        
-        // Curly brackets (braces, parenthesis) { and } are important        
-        // All code right now goes between these two brackets. Comments are 
-        // not code, so you can write what you want
         
         /*  
             This is for multiple line comments, as it covers as many lines as
@@ -30,6 +30,10 @@ public class ComputerScience30S {
             "star slash"
         */
         
+        // Brackets (braces, parenthesis) and specifically the "curly" braces
+        // the { and } are important to the structure of code. All code right 
+        // now goes between these two brackets.
+                
         // A basic output...
         System.out.print("Hello World");
         
@@ -199,11 +203,10 @@ public class ComputerScience30S {
         // VARIABLES:
         ///////////////////////////////////////////////////////////////////////
         
-        // A variable is a piece of code that tells the computer to
-        // store (or "remember") information (or "data"). Variables are also
-        // used when the user gives us information, and for 
-        // calculations / formulas. You write a line of code to create 
-        // (declare) a variable...
+        // A variable is a piece of code that tells the computer to store 
+        // (or "remember") information (or "data"). Variables are also used
+        // when the user gives us information, and for calculations / formulas.
+        // You write a line of code to create (declare) a variable...
         
         // This is an example of the simpliest variable type:
         boolean a = true;
@@ -213,8 +216,8 @@ public class ComputerScience30S {
         double c = 0.0;
         
         // Output our variables (before we do anything to them) - when 
-        // outputting a variable it always the value stored in the variable
-        // (not the name of the variable)
+        // outputting a variable it always displays the value stored in the 
+        // variable (not the name of the variable)
         
         System.out.println("a = " + a);
         System.out.println("b = " + b);
@@ -235,32 +238,26 @@ public class ComputerScience30S {
         System.out.println("c = " + c);
         
         // The "char" is short for "character" it holds (remembers) ONE
-        // character
-        
-        char d = 'A';
-        
+        // character        
+        char d = 'A';        
         System.out.println("d = " + d);
         
         // The boolean ("bool" in C#), integer (int), double, and character
         // (char) are all simple (primitive) data types, now a "complex" data
-        // type....
+        // type (the "String" with a capital "S")....
         
-        String e = "apple";
-        
+        String e = "apple";        
         System.out.println("e = " + e);
                 
         // Manipulate ("use") the varibles... 
        
-        int x = 0;
-        
+        int x = 0;        
         System.out.println("x = " + x);
         
-        x = 30;
-        
+        x = 30;        
         System.out.println("x = " + x);
         
-        int y = x + 10;
-        
+        int y = x + 10;        
         System.out.println("y = " + y);
         
         // Optional ("you don't have to use this code") shorthand...        
@@ -280,12 +277,10 @@ public class ComputerScience30S {
         // symbol for this
         
         x = 28;
-        y = x / 5;
-        
+        y = x / 5;        
         System.out.println("y = " + y);
         
-        int z = x % 5;
-        
+        int z = x % 5;        
         System.out.println("z = " + z);
         
         // Constants are variables that don't change (they stay "constant"),
