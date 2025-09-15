@@ -328,6 +328,22 @@ public class ComputerScience30S {
         // called "casting" which means it converts (temporarily) to another
         // data type - which meant it ignored the decimal part
         
+        double k = 2.9999999999;
+        int    l = (int)k;
+        double m = (double)l;
+        
+        // Casting can also happen with other data types...
+        
+        char n = 'A';
+        int  o = (int)n;
+        char p = (char)70;
+        
+        System.out.println("k = " + k);
+        System.out.println("l = " + l);
+        System.out.println("m = " + m);
+        System.out.println("n = " + n);
+        System.out.println("o = " + o);
+        System.out.println("p = " + p);
         
         
         
