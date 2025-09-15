@@ -309,58 +309,76 @@ public class ComputerScience30S {
 //        
 //        // Constants are used for things like: easier code to maintain,
 //        // easier to read/understand (especially for other programmers)
-        
-        // Converting between variable data types...
-        
-        int f = 25;
-        System.out.println("f = " + f);
-        
-        double g = f;
-        System.out.println("g = " + g);
-        
-        g = 25.999999999;
-        System.out.println("g = " + g);
-        
-        int h = (int) g;
-        System.out.println("h = " + h);
-        
-        // When we use round brackets ( )  with a data type inside, this is
-        // called "casting" which means it converts (temporarily) to another
-        // data type - which meant it ignored the decimal part
-        
-        double k = 2.9999999999;
-        int    l = (int)k;
-        double m = (double)l;
-        
-        // Casting can also happen with other data types...
-        
-        char n = 'A';
-        int  o = (int)n;
-        char p = (char)70;
-        
-        System.out.println("k = " + k);
-        System.out.println("l = " + l);
-        System.out.println("m = " + m);
-        System.out.println("n = " + n);
-        System.out.println("o = " + o);
-        System.out.println("p = " + p);
-        
-        // How to use dialog (JOptionPane) boxes (specifically the input)
-        // with variables...
-        
-        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
-        // at the front of the line that makes the input dialog (code above is
-        // wrong, always make a string variable then the input dialog)
-        
-        String q = JOptionPane.showInputDialog("Enter a string");
-        
-        JOptionPane.showMessageDialog(null, q);
+//        
+//        // Converting between variable data types...
+//        
+//        int f = 25;
+//        System.out.println("f = " + f);
+//        
+//        double g = f;
+//        System.out.println("g = " + g);
+//        
+//        g = 25.999999999;
+//        System.out.println("g = " + g);
+//        
+//        int h = (int) g;
+//        System.out.println("h = " + h);
+//        
+//        // When we use round brackets ( )  with a data type inside, this is
+//        // called "casting" which means it converts (temporarily) to another
+//        // data type - which meant it ignored the decimal part
+//        
+//        double k = 2.9999999999;
+//        int    l = (int)k;
+//        double m = (double)l;
+//        
+//        // Casting can also happen with other data types...
+//        
+//        char n = 'A';
+//        int  o = (int)n;
+//        char p = (char)70;
+//        
+//        System.out.println("k = " + k);
+//        System.out.println("l = " + l);
+//        System.out.println("m = " + m);
+//        System.out.println("n = " + n);
+//        System.out.println("o = " + o);
+//        System.out.println("p = " + p);
+//        
+//        // How to use dialog (JOptionPane) boxes (specifically the input)
+//        // with variables...
+//        
+//        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+//        // at the front of the line that makes the input dialog (code above is
+//        // wrong, always make a string variable then the input dialog)
+//        
+//        String q = JOptionPane.showInputDialog("Enter a string");
+//        
+//        JOptionPane.showMessageDialog(null, q);
         
         // The variable (always has to start as a string) stores what the 
         // user types in the input dialog box
         
         // With numbers, you HAVE to start off with a string, and then convert
         // it to a number. This is like Convert.ToInt32(text); in C#
+        
+        String r = JOptionPane.showInputDialog("Enter a int");
+        
+        // We convert it using code to "parse" (means to "read")
+        
+        int s = Integer.parseInt(r);
+        
+        JOptionPane.showMessageDialog(null, r + " as an int is " + s);
+        
+        // Always use a capital "I" and whole word "Integer" for this parsing
+        // the string into a number
+        
+        
+        
+        
+        
+        
+        
         
         
 
