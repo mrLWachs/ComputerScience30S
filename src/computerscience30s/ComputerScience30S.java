@@ -345,14 +345,22 @@ public class ComputerScience30S {
         System.out.println("o = " + o);
         System.out.println("p = " + p);
         
+        // How to use dialog (JOptionPane) boxes (specifically the input)
+        // with variables...
         
+        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+        // at the front of the line that makes the input dialog (code above is
+        // wrong, always make a string variable then the input dialog)
         
+        String q = JOptionPane.showInputDialog("Enter a string");
         
+        JOptionPane.showMessageDialog(null, q);
         
+        // The variable (always has to start as a string) stores what the 
+        // user types in the input dialog box
         
-        
-        
-        
+        // With numbers, you HAVE to start off with a string, and then convert
+        // it to a number. This is like Convert.ToInt32(text); in C#
         
         
 
