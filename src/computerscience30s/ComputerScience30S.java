@@ -533,6 +533,35 @@ public class ComputerScience30S {
         // "||" for "or"
         // "!"  for "not"
         
+        int age = 17;
+        double iq = 180.0;
+        
+        if (age >= 21 && iq > 130) {
+            // with "AND" (&&) BOTH have to be true
+            System.out.println("Get in");
+        }
+        else if (age >= 18 || iq >= 100) {
+            // with "OR" (||) EITHER can be true
+            System.out.println("Keep trying...");
+        }
+        else {
+            System.out.println("Get out!");
+        }
+        
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
+        
+        // Simple loop...
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
