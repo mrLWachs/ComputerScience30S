@@ -659,3 +659,37 @@ public class ComputerScience30S {
 //      error and a potential fix (if you click on the lightbulb)
 // (13) Under the menu "Window" you can select "Reset Windows" to reset NetBeans
 //      back to it's starting user interface settings
+// (14) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
+// (15) To make projects easier and automate some tasks, go to 
+//      Tools -> Templates, scroll down and click on the ">" beside "Java", 
+//      select "Java Main Class", and "Open in Editor" and the enter 
+//      the text below (by uncommenting it, then copying it, and pasting it 
+//      into the temple (first delete all the text in the template and then 
+//      replace what is there with this by pasting it):
+//
+///** Required package class namespace */
+//package ${package};
+//
+//
+///*
+// * ${name} - description
+// * 
+// * @author YOUR NAME
+// * @since ${date}
+//*/
+//public class ${name}
+//{
+//
+//    /**
+//     * Main method for the project
+//     * 
+//     * @param args the command line arguments
+//     */
+//    public static void main(String[] args) {
+//        // TODO code application logic here
+//        
+//    }
+//
+//}
+//
