@@ -589,6 +589,35 @@ public class ComputerScience30S {
         // The for loop creates its own variable (by default NetBeans calls
         // it "i") - short for "iteration"
 
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+        
+        // Variations on the for loop:
+            // start at 100
+            // end (stop) at zero (including zero)
+            // count down (not up)
+            // count by 10s
+        
+        for (int i = 100; i >= 0; i-=10) {
+            System.out.println("i = " + i);
+        }
+        
+        for (int counting = 100; counting <= 500; counting*=2) {
+            System.out.println("counting = " + counting);
+        }
+        
+        ///////////////////////////////////////////////////////////////////////
+        // EXAMPLE ASSIGNMENT:
+        ///////////////////////////////////////////////////////////////////////
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
