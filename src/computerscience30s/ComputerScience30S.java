@@ -611,18 +611,37 @@ public class ComputerScience30S {
         // EXAMPLE ASSIGNMENT:
         ///////////////////////////////////////////////////////////////////////
         
+        // Create welcome screen for the user (message dialog box)
+        String message = "You are an intern at radio station, C-RAP, The \n"
+                       + "disk jockeys announce the current temperature \n"
+                       + "in both Fahrenheit and Celsius every half-hour.\n"
+                       + "They would like an easy way to display both the \n"
+                       + "Fahrenheit and Celsius temperatures quickly and \n"
+                       + "at the same time. The local airport phones in \n"
+                       + "the temperature (but only in Celsius). They \n"
+                       + "have requested that you develop an application \n"
+                       + "that will display both temperatures after the \n"
+                       + "Celsius temperature is inputted. Note: Use \n"
+                       + "this conversion formula F = (C ∗ 1.8) + 32";     
+        JOptionPane.showMessageDialog(null, message);
+        // Get user input (temperature in celcius) - dialog
+        String userInput = JOptionPane.showInputDialog("Enter temperature "
+                + "in Celcius");
+        // convert this to a number I can do math with
+        double celcius = Double.parseDouble(userInput);
+        // apply a formula  (F = (C ∗ 1.8) + 32 )
+        double fahrenheit = (celcius * 1.8) + 32;
+        // Show the user the results (fahrenheit) in a dialog
+        JOptionPane.showMessageDialog(null, "Your temperature in "
+                + "Fahrenheit is " + fahrenheit);
+        // show ending message
+        JOptionPane.showMessageDialog(null, "Thank you!");
+                
+        // This line terminates any running java program at any point
+        // System.exit(0);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // Curly brackets (braces, parenthesis) { and } are important - all 
+        // code goes between these two brackets 
         
     }
     
@@ -692,4 +711,27 @@ public class ComputerScience30S {
 //    }
 //
 //}
+//
+// (16) To autoformat code (fixes indents, extra spaces, etc.) you select the
+//      code with mouse or keyboard (if you select nothing it will autoformat
+//      all the code) and pres ALT + SHIFT + F (you should do this before you 
+//      hand in your code)
+// (17) When preparing a solution for hand in, when in NetBeans (after the  
+//      code is cleaned up and ready - see tip 13) go to:
+//      "File -> Print to HTML..." and then use the dialog box that appears
+//      to select a location you can find the HTML file, and give the file  
+//      you are saving a good name (with your name in the file name). Do 
+//      not forget to also create a file (a Microsoft Word file is 
+//      recommended) that has screen captures (pictures) to prove your 
+//      program ran. Make as many or few to prove your solutions works 
+//      (this is part of the mark). Note: when naming both files (outputs and
+//      code files) make sure you include YOUR NAME in the file name itself.
+//      Then hand in both the code file (html) and the outputs file (Word file)
+//      on Mr. Wachs' hand in page here: https://bit.ly/3iiTvbu
+// (18) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 13) by going to Tools -> Options, then click on the "Editor"
+//      button at the top of this dialog, then click on the "Formatting" Tab.
+//      Then under "Language" select "Java" and under "Category" choose 
+//      various categories and make adjustments to your preferred style (see 
+//      Mr. Wachs if you cannot find the style change you want)
 //
