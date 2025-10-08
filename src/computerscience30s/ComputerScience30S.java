@@ -675,8 +675,60 @@ public class ComputerScience30S {
         // for: (1) to break up a problem (2) reusability (3) to avoid 
         // repeating code
         
+        // Code to "jump" to a method, is "calling" the method (method call) 
+        writeStar();
+        
+        // Call it again
+        writeStar();
+        
+        // When we call a method, we sometimes place "data" (information) 
+        // inside the round brackets and that data is "passed" (sending) over 
+        // to the method. The data being passed is technically called the
+        // "argument" and the data being recieved is called the "parameter(s)". 
+        // You can always change the arguement.
+        
+        write("something");
+        
+        write("Spider-man");
+        
+        write("Batman");
+        write("Superman");
+        write("Omni-man");
+        write("Mr. Wachs");
+        
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are seperated with commas ","
+        
+        writeLotsOf("Dalmations",101);
+        
+        writeLotsOf("Problems", 99);
+        
+        
+        
+        
+        
+        
+        System.out.println("Completed learning methods!");        
     }
-    
+
+    private static void writeStar() {
+        System.out.println("*");
+    }
+
+    private static void write(String thing) {
+        System.out.println(thing);
+    }
+
+    private static void writeLotsOf(String thing, int times) {
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // if it has more than one parameter, they are separated by commas
+        for (int i = 0; i < times; i++) {
+            write(thing);
+            // Reminder that methods can call other methods (which themselves
+            // can call other methds)
+        }
+    }
+
 }
 
 
@@ -777,3 +829,7 @@ public class ComputerScience30S {
 //      mouse to jump to the method (even ones we don't write)
 // (21) If you write the "call" to a method, before writing the method 
 //      itself, the lightbulb (see tip #12) will help you write it
+// (22) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
