@@ -16,8 +16,11 @@ public class ComputerScience30S {
     public static void main(String[] args) { 
         
         // learnIntroductionToJava();
-        // "Call" a method (means you use the name of the method)
-                
+        
+        // When you "Call" a method (this means you use the name of the method
+        // to make the code "jump" to the method and its logic, and after the 
+        // logic in the method is complete, the code will "jump" back to the  
+        // next line after this one)
         learnMethods();
         
     }
