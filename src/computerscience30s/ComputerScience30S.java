@@ -769,11 +769,11 @@ public class ComputerScience30S {
 //
 // UNIT 2: Methods..............................................................
 //
-// (17) The + and - signs and gray lines along the side in NetBeans
+// (19) The + and - signs and gray lines along the side in NetBeans
 //      help to "expand" and "collapse" the method body (block of code)
 //      press CTRL and SHIFT and "-" it collapses all methods, and
 //      CTRL and SHIFT and "+" expands all code folds
-// (18) If you hold down the CTRL key, method calls become links with the
+// (20) If you hold down the CTRL key, method calls become links with the
 //      mouse to jump to the method (even ones we don't write)
-// (19) If you write the "call" to a method, before writing the method 
+// (21) If you write the "call" to a method, before writing the method 
 //      itself, the lightbulb (see tip #12) will help you write it
