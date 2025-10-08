@@ -11,6 +11,15 @@ package computerscience30s;
  */
 import javax.swing.JOptionPane;
 
+
+/**
+ * ComputerScience30s.java - the large in class example we continue to work on
+ * in each unit adding example code on the new concepts of each unit along with
+ * any in class requests for code example that might come up over the course.
+ * 
+ * @author Mr. Wachs
+ * @since September 2025
+ */
 public class ComputerScience30S {
 
     public static void main(String[] args) { 
