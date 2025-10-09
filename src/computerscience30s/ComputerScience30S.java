@@ -732,7 +732,7 @@ public class ComputerScience30S
     }
 
     /**
-     * 
+     * Writes a star on the screen
      */
     private static void writeStar() {
         System.out.println("*");
