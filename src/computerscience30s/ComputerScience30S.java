@@ -707,7 +707,9 @@ public class ComputerScience30S {
         // previous methods needed information (inputs) as parameters or 
         // empty brackets () if they did not need information passed
         
+        int number = giveMeNumber();
         
+        write("Number was " + number);
         
         
         
@@ -738,6 +740,21 @@ public class ComputerScience30S {
             // Reminder that methods can call other methods (which themselves
             // can call other methds)
         }
+    }
+
+    private static int giveMeNumber() {
+        return 7;
+    }
+    
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = ( H - L + 1 ) * seed + L;
+        return (int)number;
+        
+        // Note: the code could also be written other ways like...
+        //return (int)(( high - low + 1) * Math.random() + low);   
     }
 
 }
