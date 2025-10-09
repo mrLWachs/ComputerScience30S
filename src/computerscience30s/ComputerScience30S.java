@@ -20,20 +20,27 @@ import javax.swing.JOptionPane;
  * @author Mr. Wachs
  * @since September 2025
  */
-public class ComputerScience30S {
+public class ComputerScience30S 
+{
 
-    public static void main(String[] args) { 
-        
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {         
         // learnIntroductionToJava();
         
         // When you "Call" a method (this means you use the name of the method
         // to make the code "jump" to the method and its logic, and after the 
         // logic in the method is complete, the code will "jump" back to the  
         // next line after this one)
-        learnMethods();
-        
+        learnMethods();        
     }
 
+    /**
+     * Learn the content of the introduction unit (unit 1)
+     */
     private static void learnIntroductionToJava() {
         ///////////////////////////////////////////////////////////////////////
         // JAVA BASIC INPUT AND OUTPUTS
@@ -664,7 +671,10 @@ public class ComputerScience30S {
         // code goes between these two brackets 
         
     }
-
+    
+    /**
+     * Learn the content of the methods unit (unit 2)
+     */
     private static void learnMethods() {
         System.out.println("Start learning methods...");
         
@@ -907,3 +917,11 @@ public class ComputerScience30S {
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
+// (23) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
+// (24) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
+// (25) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
+//
