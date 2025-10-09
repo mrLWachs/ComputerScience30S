@@ -703,6 +703,17 @@ public class ComputerScience30S {
         
         writeLotsOf("Problems", 99);
         
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
