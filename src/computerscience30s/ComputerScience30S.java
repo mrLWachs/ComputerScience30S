@@ -724,14 +724,28 @@ public class ComputerScience30S {
         System.out.println("Completed learning methods!");        
     }
 
+    /**
+     * 
+     */
     private static void writeStar() {
         System.out.println("*");
     }
 
+    /**
+     * Writes a thing on the screen
+     * 
+     * @param thing the something to write (input)
+     */
     private static void write(String thing) {
         System.out.println(thing);
     }
 
+    /**
+     * Writes something on the screen multiple times
+     * 
+     * @param thing the something to write
+     * @param times how many times to write it 
+     */
     private static void writeLotsOf(String thing, int times) {
         // Methods can have no parameters, one parameter, or lots of parameters,
         // if it has more than one parameter, they are separated by commas
@@ -742,10 +756,23 @@ public class ComputerScience30S {
         }
     }
 
+    /**
+     * Gives you a random number
+     * 
+     * @return random number between 1 and 10 (output)
+     */
     private static int giveMeNumber() {
-        return 7;
+        return random(1, 10);
     }
     
+    /**
+     * Generates a random number in a range between two numbers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number less than or equal to low and greater than or 
+     * equal to high 
+     */
     private static int random(int low, int high) {
         double seed   = Math.random();
         double L      = (double)low;
