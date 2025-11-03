@@ -35,7 +35,8 @@ public class ComputerScience30S
         // to make the code "jump" to the method and its logic, and after the 
         // logic in the method is complete, the code will "jump" back to the  
         // next line after this one)
-        learnMethods();        
+        // learnMethods();    
+        learnArrays();
     }
 
     /**
@@ -811,6 +812,16 @@ public class ComputerScience30S
         // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit (unit 3)
+     */
+    private static void learnArrays() {
+        System.out.println("Start Learning Arrays...");
+        
+        
+        System.out.println("Completed Learning Arrays!");
     }
 
 }
