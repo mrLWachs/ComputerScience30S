@@ -933,6 +933,24 @@ public class ComputerScience30S
         // we gives array should be a plural word (e.g. 'scores' (array name)
         // not 'score' (variable name), 'names' not 'name', etc.) 
         
+        final String[] OPTIONS = { 
+            "New Game",
+            "Save Game",
+            "Quit"        
+        };
+        
+        // When using arrays, use individual elements (spots, indices - the 
+        // plural of "index") of the array like regular variables, for example
+        
+        int[] numbers = new int[100];
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
