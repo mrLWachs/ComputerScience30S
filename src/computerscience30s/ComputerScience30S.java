@@ -859,6 +859,43 @@ public class ComputerScience30S
         //       +-------+-------+-------+-------+-------+
         //           0       1       2       3       4
         
+        array[0] = 25;
+        array[1] = 250;
+        array[2] = 2;
+        array[3] = 0;
+        array[4] = -25;
+        
+        //       +-------+-------+-------+-------+-------+
+        // array |   25  |  250  |   2   |   0   |  -25  | (now filled)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
+        
+        // These next lines would be errors when the code runs:
+        // array[5] = 25;
+        // array[1000] = 25;
+        // array[-1] = 25;
+        // array[2.5] = 25;
+        // The above lines would all be "out of bounds" errors (or "range" error)
+        
+        double[] a;
+        
+        // In memory...
+        //
+        // a
+        //
+        
+        // Later on (in the code) you can re-create (re-declare, re-dimension, 
+        // or resize) using the same array but now giving it some size (but 
+        // still empty)
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
