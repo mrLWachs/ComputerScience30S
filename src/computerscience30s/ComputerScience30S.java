@@ -973,9 +973,15 @@ public class ComputerScience30S
         // number (which can be the length), and it uses the varaibles name
         // "i" (which can stand for "index")
         
+        // When using the for loop with arrays, it is even BETTER to use a
+        // built-in feature of all arrays! All arrays have a ".length" feature
+        // for example
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Second time i = " + numbers[i]);
+        }
         
-        
-        
+        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
+        // So if the array size changes, the loop adapts to it
         
         
         
