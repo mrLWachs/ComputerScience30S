@@ -1044,6 +1044,56 @@ public class ComputerScience30S
         }        
         return a;                             // Return the converted new array 
     }
+    
+    /**
+     * Generates an array of a set size filled with random integers in the 
+     * range between low and high
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @param size the size to make the array
+     * @return an array of random integers
+     */
+    private static int[] random(int low, int high, int size) {
+        int[] numbers = new int[size];      // Create empty array of passed size
+        for (int i = 0; i < size; i++) {    // Traverse array 
+            numbers[i] = random(low, high); // Assign random value to each index
+        }
+        return numbers;                     // Return completed array
+    }
+
+    /**
+     * Generates a random character between tow low and high characters
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
+    private static char random(char low, char high) {
+        return (char)random((int)low, (int)high);     // cast to int and back  
+    }
+
+    /**
+     * Change the matrix into a single string (for outputting)
+     * 
+     * @param matrix the 2D array of characters
+     * @return a single string representing the matrix
+     */
+    private static String toString(char[][] matrix) {
+        String text = "";   // Create string variable to store all values
+        // Use the nested for loops (with simplier varaibles names) and
+        // use the ".length" but also in the nested loop, we will use 
+        // the ".length" of that particular array
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                // Means the length of "this row"  
+                text = text + matrix[r][c] + " ";
+            }     
+            text = text + "\n";     // Add a line break after each row
+        }     
+        return text;            // Return the filled up string
+    }
+    
 
 }
 
