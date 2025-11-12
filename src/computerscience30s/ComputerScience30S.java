@@ -1037,7 +1037,7 @@ public class ComputerScience30S
         
         char[][] matrix = new char[ROWS][COLUMNS];
         
-         // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
+        // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
         // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
         // could be "seen" as...
         //
@@ -1057,10 +1057,15 @@ public class ComputerScience30S
         
         // Fill the matrix with random characters...
         
+        // Test our random character method first...
         
+        char character = random('A', 'Z');
+        System.out.println("Random character was " + character);
         
-        
-        
+        // Fill our matrix (meaning put content in every location/index/spot
+        // in the matrix) by traversing (travelling, 'visit' every spot) the
+        // matrix and adding random characters (our method) - when traversing
+        // matricies (plural of matrix) we use multiple nested for loops
         
         
         
