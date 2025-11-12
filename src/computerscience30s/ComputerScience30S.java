@@ -1004,6 +1004,36 @@ public class ComputerScience30S
         // array filled with other arrays, 2D, etc.) - and also known as a 
         // table, grid, or a MATRIX
         
+         // We declare (create) a matrix , by adding multiple sets of square
+        // brackets (a set of brackets for each dimension)
+        
+        char[][] twoDArray = new char[2][3];
+        
+        // Visualize this as...
+        // Note: the way we "visualzie" this matrix is up to US! we decide 
+        //       whether the rows is the first dimension or the columns is the 
+        //       first dimension (I will pick rows as the first dimension)
+        //
+        //      0     1     2
+        //   +-----+-----+-----+
+        // 0 |     |     |     |
+        //   +-----+-----+-----+   total of 2 "rows"
+        // 1 |     |     |     |
+        //   +-----+-----+-----+
+        //
+        //     total of 3 "columns"
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1096,7 +1126,7 @@ public class ComputerScience30S
      */
     private static String toString(char[][] matrix) {
         String text = "";   // Create string variable to store all values
-        // Use the nested for loops (with simplier varaibles names) and
+        // Use the nested for loops (with simplier variable names) and
         // use the ".length" but also in the nested loop, we will use 
         // the ".length" of that particular array
         for (int r = 0; r < matrix.length; r++) {
