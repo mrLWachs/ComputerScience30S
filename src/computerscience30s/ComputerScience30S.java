@@ -48,10 +48,11 @@ public class ComputerScience30S
      * Learn the content of the introduction unit (unit 1)
      */
     private static void learnIntroductionToJava() {
-        ///////////////////////////////////////////////////////////////////////
-        // JAVA BASIC INPUT AND OUTPUTS
-        ///////////////////////////////////////////////////////////////////////
         
+        // =====================================================================
+        // (1) COMMENTS (various types)
+        // =====================================================================
+                 
         // This is a comment
         
         // All typing after "//" until the line ends is called a comment        
@@ -66,7 +67,11 @@ public class ComputerScience30S
         // Brackets (braces, parenthesis) and specifically the "curly" braces
         // the { and } are important to the structure of code. All code right 
         // now goes between these two brackets.
-                
+            
+        // =====================================================================
+        // (2) INPUTS/OUTPUT (simple, dialogs, and options)
+        // =====================================================================
+         
         // A basic output...
         System.out.print("Hello World");
         
@@ -232,10 +237,10 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE
         );
         
-        ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
-        ///////////////////////////////////////////////////////////////////////
-        
+        // =====================================================================
+        // (3) VARIABLES (remembering data, int, double, string, etc)
+        // =====================================================================
+         
         // A variable is a piece of code that tells the computer to store 
         // (or "remember") information (or "data"). Variables are also used
         // when the user gives us information, and for calculations / formulas.
@@ -489,10 +494,10 @@ public class ComputerScience30S
         int card = (int) ( ( 53 - 2 + 1 ) * Math.random() + 2 );
         System.out.println("card = " + card);
         
-        ///////////////////////////////////////////////////////////////////////
-        // CONDITIONAL STATEMENTS
-        ///////////////////////////////////////////////////////////////////////
-        
+        // =====================================================================
+        // (4) CONDITIONAL STATEMENTS (making decisions, if, else, else if)
+        // =====================================================================
+         
         // The simple if statement, you use this when comparing if something is
         // true, as it checks that one thing ("asks a true/false question")
         
@@ -581,10 +586,10 @@ public class ComputerScience30S
             System.out.println("Get out!");
         }
         
-        ///////////////////////////////////////////////////////////////////////
-        // LOOPING
-        ///////////////////////////////////////////////////////////////////////
-        
+        // =====================================================================
+        // (5) LOOPING (repeating instructions, while, do while, for)
+        // =====================================================================
+                 
         // Simple loop...
         
         int counter = 0;
@@ -640,10 +645,10 @@ public class ComputerScience30S
             System.out.println("counting = " + counting);
         }
         
-        ///////////////////////////////////////////////////////////////////////
-        // EXAMPLE ASSIGNMENT:
-        ///////////////////////////////////////////////////////////////////////
-        
+        // =====================================================================
+        // (6) EXAMPLE ASSIGNMENT (modeling procedures and expectations)
+        // =====================================================================
+                 
         // Create welcome screen for the user (message dialog box)
         String message = "You are an intern at radio station, C-RAP, The \n"
                        + "disk jockeys announce the current temperature \n"
@@ -676,6 +681,7 @@ public class ComputerScience30S
         // Curly brackets (braces, parenthesis) { and } are important - all 
         // code goes between these two brackets 
         
+        // =====================================================================
     }
     
     /**
@@ -684,6 +690,10 @@ public class ComputerScience30S
     private static void learnMethods() {
         System.out.println("Start learning methods...");
         
+        // =====================================================================
+        // (1) WHAT is a method, creating a method, and "calling" a method
+        // =====================================================================
+         
         // Methods (functions, procedures, actions) are named in a style like 
         // variables are named (lowercase then camel casing), but use verb
         // type words starting with lowercase then using camel casing the
@@ -697,6 +707,10 @@ public class ComputerScience30S
         // Call it again
         writeStar();
         
+        // =====================================================================
+        // (2) PARAMETERS for methods ("inputs"), passing, and arguments
+        // =====================================================================
+         
         // When we call a method, we sometimes place "data" (information) 
         // inside the round brackets and that data is "passed" (sending) over 
         // to the method. The data being passed is technically called the
@@ -719,6 +733,10 @@ public class ComputerScience30S
         
         writeLotsOf("Problems", 99);
         
+        // =====================================================================
+        // (3) RETURNING from a method (output) or void methods
+        // =====================================================================
+         
         // You can make methods that "send back" (output) information, the 
         // previous methods needed information (inputs) as parameters or 
         // empty brackets () if they did not need information passed
@@ -727,13 +745,20 @@ public class ComputerScience30S
         
         write("Number was " + number);
         
+        // =====================================================================
+        // (4) OVERLOADING a method (multiple methods with same name)
+        // =====================================================================
+         
+        // An "overloaded" method is when you have multiple (two or more) 
+        // methods that all have the same name, BUT each method has different
+        // parameters, so that when the methods is called, based on the 
+        // arguments we know which version of the method to call
+        
         output("Hello");
         
         output("Good-bye","Learning Methods");
         
-        // Overloaded methods are methods with the same name, BUT different
-        // parameters / arguments
-          
+        // =====================================================================
         System.out.println("Completed learning methods!");        
     }
 
@@ -825,6 +850,10 @@ public class ComputerScience30S
     private static void learnArrays() {
         System.out.println("Start Learning Arrays...");
         
+        // =====================================================================
+        // (1) WHAT is an array (vs. a variable)
+        // =====================================================================
+                
         // Create (declare) a simple variable (for comparison)
         int variable = 5;
         
@@ -834,6 +863,10 @@ public class ComputerScience30S
         // variable |   5   | (type integer)
         //          +-------+
         
+        // =====================================================================
+        // (2) DECLARING (or "creating" an array
+        // =====================================================================
+         
         int array[] = new int[5];
         
         // The order of words in declaring an array:
@@ -944,6 +977,10 @@ public class ComputerScience30S
             "Quit"        
         };
         
+        // =====================================================================
+        // (3) USING an array
+        // =====================================================================
+                 
         // When using arrays, use individual elements (spots, indices - the 
         // plural of "index") of the array like regular variables, for example
         
@@ -966,6 +1003,10 @@ public class ComputerScience30S
         //         +-----+-----+-----+
         //            0    ...   99
         
+        // =====================================================================
+        // (4) LOOPS (the "for") with arrays (and ".length")
+        // =====================================================================
+         
         // To work with, and to "travel" (means to "visit" every spot) the
         // entire array, we use a loop! - Specifically the "for" loop!
         
@@ -988,6 +1029,10 @@ public class ComputerScience30S
         // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
         // So if the array size changes, the loop adapts to it
         
+        // =====================================================================
+        // (5) METHODS with arrays (as parameters and return types)
+        // =====================================================================
+         
         // Arrays can easily work with methods, the arrays can be sent into a 
         // method (as one of multiple parameters, or the only parameter), and 
         // arrays can be outputted (returned) from a method - in other words:
@@ -1005,6 +1050,10 @@ public class ComputerScience30S
         int[] values = random(1, 10, 50);
         output(values);
         
+        // =====================================================================
+        // (6) MATRIX or multidimensional (2D) arrays
+        // =====================================================================
+         
         // Multi-dimensional array (also known as a "array of arrays", or a 
         // array filled with other arrays, 2D, etc.) - and also known as a 
         // table, grid, or a MATRIX
@@ -1086,11 +1135,15 @@ public class ComputerScience30S
         // a string (which we can then output with one of our existing methods)
         
         String text1 = toString(twoDArray);
-        output(text1);
+        System.out.println(text1);
         
         String text2 = toString(matrix);
-        output(text2);
+        System.out.println(text2);
         
+        // =====================================================================
+        // (7) OPTIONAL introduction to graphics items
+        // =====================================================================
+         
         // Now experiment (optional) to start looking at "graphics"
         
         // We set up some 'graphical' "things" to make the dialog more 
@@ -1132,7 +1185,8 @@ public class ComputerScience30S
         // copy/paste. It will change the "\" to two "\\" and also type two of 
         // those at the end...
         
-        String first  = "C:\\Users\\lawrence.wachs\\Downloads\\";
+        String first  = "C:\\Users\\lawrence.wachs\\Documents\\"
+                      + "NetBeansProjects\\ComputerScience30S\\";
         // More commonly called "folder", "path", "directory"
         
         String middle = "matrix";
@@ -1170,14 +1224,16 @@ public class ComputerScience30S
             { 'X', 'O', 'X' }
         };
         text2 = toString(TIC_TAC_TOE);              // Convert matrix to string
-        String imageName2 = "C:\\Users\\lawrence.wachs\\Downloads"
-                + "\\cereal-tic-tac-toe.gif";    // New full name
+        String imageName2 = "C:\\Users\\lawrence.wachs\\Documents\\"
+                + "NetBeansProjects\\ComputerScience30S\\"
+                + "cereal-tic-tac-toe.gif";    // New full name
         Icon icon2 = new ImageIcon(imageName2);             // Create icon
-        font = new Font("Cooper Black",Font.BOLD,40);       // Recreate font
+        font = new Font("Comic Sans MS",Font.BOLD,50);      // Recreate font
         background = Color.white;                           // Preset colors
         foreground = Color.BLACK;
         output(text2,background, foreground, font, icon2, "Tic-Tac-Toe...");
         
+        // =====================================================================
         System.out.println("Completed Learning Arrays!");
     }
     
@@ -1311,9 +1367,11 @@ public class ComputerScience30S
                 // Means the length of "this row"  
                 text = text + matrix[r][c] + " ";
             }     
-            text = text + "\n";     // Add a line break after each row
+            if (r < matrix.length - 1) {                  // Not at the last row
+                text = text + "\n";           // Add a line break after each row
+            }
         }     
-        return text;            // Return the filled up string
+        return text;                              // Return the filled up string
     }
     
 
