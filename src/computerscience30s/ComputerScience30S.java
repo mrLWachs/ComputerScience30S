@@ -9,7 +9,12 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -1101,23 +1106,122 @@ public class ComputerScience30S
         int green = 0;
         int blue  = 0;
         
+        Color background = new Color(red,green,blue);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)
         
+        Color foreground = new Color(0,255,0);
         
+        // Fonts are created in a simlar way (import, then declare an "object")
         
+        // Temporary variables for the font in this example...
+        String name  = "Consolas";  // Must be a "named" font on the computer
+        int    style = Font.BOLD;   // Could also be italics, or plain
+        int    size  = 20;          // Measured in points
+       
+        // Create the font "object"
+        Font font = new Font(name,style,size);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
         
+        // For images, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...
         
+        String first  = "C:\\Users\\lawrence.wachs\\Downloads\\";
+        // More commonly called "folder", "path", "directory"
         
+        String middle = "matrix";
+        // What the user usually enters
         
+        String last   = ".gif";
+        // File "extension" or type
         
+        // Every file has a "first", "middle", and "last" name
+        String imageName1 = first + middle + last;
         
+        // For images, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...
         
+        Icon icon1 = new ImageIcon(imageName1);
         
+        // Finally, use a method to display all of this...
+        String title = "The Matrix...";
         
+        // Call a method to display a "fancy" dialog
+        // (have a picture, formatted text: font, size, color)
+        output(text2,background,foreground,font,icon1,title);
         
+        // Or, you can do all this at once...
         
-        
+        // Another matrix, but they (matricies) can also be made with pre-set
+        // values (like 1D arrays)        
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
+        text2 = toString(TIC_TAC_TOE);              // Convert matrix to string
+        String imageName2 = "C:\\Users\\lawrence.wachs\\Downloads"
+                + "\\cereal-tic-tac-toe.gif";    // New full name
+        Icon icon2 = new ImageIcon(imageName2);             // Create icon
+        font = new Font("Cooper Black",Font.BOLD,40);       // Recreate font
+        background = Color.white;                           // Preset colors
+        foreground = Color.BLACK;
+        output(text2,background, foreground, font, icon2, "Tic-Tac-Toe...");
         
         System.out.println("Completed Learning Arrays!");
+    }
+    
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font (includes the type of font and the size) along with text and 
+     * title.
+     * 
+     * @param text what text to show in the dialog
+     * @param background the background color of the dialog
+     * @param foreground the foreground color (or text color) of the dialog
+     * @param font the font for the text in the dialog
+     * @param icon a image icon (picture) to display in the dialog
+     * @param title what to show at the top of the dialog
+     */
+    private static void output(
+            String text, 
+            Color  background, 
+            Color  foreground, 
+            Font   font, 
+            Icon   icon, 
+            String title) {
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)  
+        JTextArea area = new JTextArea();
+        
+        // Now we add things into the area, using methods built into the text 
+        // area object
+        area.setText(text);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setFont(font);
+        
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title, 
+                JOptionPane.PLAIN_MESSAGE, 
+                icon
+        );
     }
     
     /**
