@@ -1067,6 +1067,48 @@ public class ComputerScience30S
         // matrix and adding random characters (our method) - when traversing
         // matricies (plural of matrix) we use multiple nested for loops
         
+        // Create some constants for the characters
+        final char LOW  = '!';
+        final char HIGH = '~'; 
+        
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[row][column] = random(LOW, HIGH);
+            }
+        }
+        
+        // Output the matrix, using a method which turns the entire matrix into
+        // a string (which we can then output with one of our existing methods)
+        
+        String text1 = toString(twoDArray);
+        output(text1);
+        
+        String text2 = toString(matrix);
+        output(text2);
+        
+        // Now experiment (optional) to start looking at "graphics"
+        
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
+        
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes') 
+        
+        // Temporary variables for the color in this example...
+        int red   = 0;
+        int green = 0;
+        int blue  = 0;
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
