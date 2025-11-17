@@ -1111,8 +1111,7 @@ public class ComputerScience30S
         
         // Fill the matrix with random characters...
         
-        // Test our random character method first...
-        
+        // Test our random character method first...        
         char character = random('A', 'Z');
         System.out.println("Random character was " + character);
         
