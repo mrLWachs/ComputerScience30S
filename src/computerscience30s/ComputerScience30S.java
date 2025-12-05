@@ -33,15 +33,40 @@ public class ComputerScience30S
      * 
      * @param args the command line arguments
      */
-    public static void main(String[] args) {         
+    public static void main(String[] args) {   
+        // =====================================================================
+        // UNIT 1: Introduction to Java (variables, conditionals, loops)
+        // =====================================================================
         // learnIntroductionToJava();
         
-        // When you "Call" a method (this means you use the name of the method
-        // to make the code "jump" to the method and its logic, and after the 
-        // logic in the method is complete, the code will "jump" back to the  
+        // NOTE: this code was originally all here in the main method, but
+        // after the class learned what methods were, the code was shifted into 
+        // the method above
+        
+        // =====================================================================
+        // UNIT 2: Methods (calling, parameters, returning)
+        // =====================================================================
+        // learnMethods();
+        
+        // NOTE: when you "Call" a method (this means you use the name of the 
+        // method to make the code "jump" to the method and its logic, and after 
+        // the logic in the method is complete, the code will "jump" back to the  
         // next line after this one)
-        // learnMethods();    
-        learnArrays();
+            
+        // =====================================================================
+        // UNIT 3: Arrays (index, length, traversals, matrices)
+        // =====================================================================
+        // learnArrays();
+        
+        // =====================================================================
+        // UNIT 4: Classes (properties, methods, inheritance, association)
+        // =====================================================================
+        LearnClasses learnClasses = new LearnClasses();
+        
+        // NOTE: the line above required us to use the "lightbulb" in NetBeans
+        // to "Create class LearnClasses in source package" which created a new
+        // code module that you can see in the Projects window on the left in 
+        // NetBeans (it is a "class" of code we will learn the unit in)
     }
 
     /**
