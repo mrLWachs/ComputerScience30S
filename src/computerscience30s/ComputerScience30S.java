@@ -1523,3 +1523,13 @@ public class ComputerScience30S
 // (28) To view the same code editing window with two different views, go to
 //      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
 //
+// UNIT 4: Classes..............................................................
+//
+// (29) To add a new class to a project, you can: (1) Click on File -> New File,
+//      and a dialog will appear and you select "Java" and "Java Class", click 
+//      next, give it a name (start with a capital letter and then use camel 
+//      casing), then click finish, (2)Click on the first button on the Toolbar 
+//      to the left and then follow the same instructions as #1, (3) Right 
+//      click in "Projects" left side window in NetBeans on the "package" name
+//      (e.g. "computerscience30s") and then select "New" and "Java Class..." 
+//      from the flyout menus and then give the class a name and click finish
