@@ -1533,3 +1533,9 @@ public class ComputerScience30S
 //      click in "Projects" left side window in NetBeans on the "package" name
 //      (e.g. "computerscience30s") and then select "New" and "Java Class..." 
 //      from the flyout menus and then give the class a name and click finish
+// (30) The "Navigator" left side window when looking at classes uses custom
+//      colors and icons to identify specific pasts of the class at a glance. 
+//      For example, methods use a red circle, properties use a blue square, 
+//      constructor methods use a orange diamond, private properties or methods
+//      use a "lock" icon, etc.
+//
