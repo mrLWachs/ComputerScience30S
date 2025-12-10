@@ -22,13 +22,11 @@ public class Person
     
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
-    
-    
+        
     /**
      * Constructor method is a special method that has:
-     *    (1) the same name as the class
-     *    (2) the name starts with a capital letter
-     *    (3) it has NO return type (not even the word "void")
+     *    (1) the same name as the class (including a capital letter)
+     *    (2) it has NO return type (not even the word "void")
      * These methods are called when the class is used to build (construct, 
      * instantiate) an object. We previously had a "born()" method that did 
      * this, that we changed it into this constructor method. This method 
@@ -84,8 +82,6 @@ public class Person
         alive  = true;
     }
     
-    
-        
     void die() {
         alive = false;
     }

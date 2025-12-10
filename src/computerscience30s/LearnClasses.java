@@ -3,16 +3,19 @@
 package computerscience30s;
  
 /**
- * A "class" of code (also known as a module) and in NetBeans and Java it 
- * creates a file that ends with ".java" is a way to organize the code. You can 
- * have more than one of these all in one project. This is similar to in C# and
- * Visual Studio when you added more than one form.
+ * LearnClasses.java - A "class" of code (also known as a module) and in 
+ * NetBeans and Java it creates a file that ends with ".java" is a way to 
+ * organize the code. You can have more than one of these all in one project. 
+ * This is similar to in C# and Visual Studio when you added more than one form.
  * 
  * @author Mr. Wachs
  */
 public class LearnClasses 
 {
     
+    /**
+     * Default constructor method
+     */
     public LearnClasses() {
         System.out.println("Start learning classes...");
         
@@ -58,16 +61,29 @@ public class LearnClasses
         Person person = new Person();
         
         // Class object = new Class() <--- implies a method?
-        
+            
         //person.born();
         // The original "born" method was changed into a constructor
         
         // We can call (invoke) methods within the object
-        person.talk();
+        person.talk();        
+        // We can also "access" the properties (variables) of that object
         person.name = "John Doe";
         person.gender = "Non binary";
         person.birthday();
         person.talk();
+        
+        // =====================================================================
+        // (5) CONSTRUCTOR METHODS
+        // =====================================================================        
+        // These are special methods created in a class that are called 
+        // (invoked) when a class is used to create an object - these methods 
+        // have: (1) The same name as the class (including a capital letter)
+        // and (2) No return type - not even the word "void". They are used to 
+        // set the properties to starting (or "default") values - When the 
+        // constructor is called, it is "creating" an object, or 
+        // "instantiating" an "instance", "declaring" a "variable" of the 
+        // class type. We can also overload the constructor methods 
         
         // We can create ("declared", "instantiate") another Person object
         Person jane = new Person();
@@ -83,7 +99,16 @@ public class LearnClasses
         Person fourth = new Person("Forth Forthy",4,"four");
         fourth.talk();
         
-        
+        // =====================================================================
+        // (6) THIS keyword
+        // =====================================================================        
+        // The keyword "this" is used as a "placeholder" to refer to the object
+        // that will (eventually) be created. Often used in constructor methods
+        // or other methods to refer to the class properties. Often used to 
+        // avoid confusion with any method parameters that have the "same name" 
+        // as the properties. It can also be used to implicitly call (invoke) 
+        // methods within a class as the word "this" makes that implicit 
+        // reference to the object itself
         
         
         
