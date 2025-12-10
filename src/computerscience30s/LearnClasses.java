@@ -59,7 +59,10 @@ public class LearnClasses
         
         // Class object = new Class() <--- implies a method?
         
-        person.born();
+        //person.born();
+        // The original "born" method was changed into a constructor
+        
+        // We can call (invoke) methods within the object
         person.talk();
         person.name = "John Doe";
         person.gender = "Non binary";
@@ -71,6 +74,20 @@ public class LearnClasses
         jane.name = "Jane Doe";
         jane.gender = "female";
         jane.talk();
+        
+        // Creating a third person... (using the 2nd constructor option)
+        Person james = new Person("James Rogowy");
+        james.talk();
+        
+        // Create a 4th person... (using a different constructor method)
+        Person fourth = new Person("Forth Forthy",4,"four");
+        fourth.talk();
+        
+        
+        
+        
+        
+        
         
         
         

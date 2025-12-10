@@ -23,13 +23,69 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
     
-    void born() {
+    
+    /**
+     * Constructor method is a special method that has:
+     *    (1) the same name as the class
+     *    (2) the name starts with a capital letter
+     *    (3) it has NO return type (not even the word "void")
+     * These methods are called when the class is used to build (construct, 
+     * instantiate) an object. We previously had a "born()" method that did 
+     * this, that we changed it into this constructor method. This method 
+     * "brings the person to life" meaning it is used when the class is used to  
+     * create a Person object. The method sets all the class properties (global 
+     * variables) to their starting values ("defaults").
+     */
+    Person() {
         name   = "undefined";
         gender = "undefined";
         age    = 0;
         alive  = true;
     }
     
+    // This method was originally written and then deleted (commented out)
+    // because the new constructor method performs the same purpose....
+    
+    // void born() {
+    //     alive  = true;
+    //     age    = 0;
+    //     name   = "undefined";
+    //     gender = "undefined";        
+    // }
+    
+    /**
+     * Another overloaded (which means multiple methods with the same name, but
+     * different parameters) constructor method
+     * 
+     * @param newName the name to assign this person object
+     */
+    Person(String newName) {
+        name   = newName;
+        gender = "undefined";
+        age    = 0;
+        alive  = true;
+    }
+        
+    /**
+     * A third overloaded constructor method, sets the class properties. 
+     * Constructor methods with NO parameters are called default constructors
+     * 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param gender the identified gender of this person
+     */
+    Person(String name, int age, String gender) {
+        // Assign the parameter to the property (global variable of this class)
+        // To do this, we use the keyword "this" which acts as a placeholder
+        // for the name of the object (which will be created at a later time)
+        this.name   = name;
+        this.gender = gender;
+        this.age    = age;
+        alive  = true;
+    }
+    
+    
+        
     void die() {
         alive = false;
     }
