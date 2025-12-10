@@ -20,6 +20,7 @@ public class Person
     String gender;      // Represents this person's identified gender
     boolean alive;      // Represents whether this person is alive or not
     
+    
     // Methods: (things it can do, verbs, actions, return, parameter(s))
     
     void born() {

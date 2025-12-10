@@ -59,11 +59,18 @@ public class LearnClasses
         
         // Class object = new Class() <--- implies a method?
         
+        person.born();
+        person.talk();
+        person.name = "John Doe";
+        person.gender = "Non binary";
+        person.birthday();
+        person.talk();
         
-        
-        
-        
-        
+        // We can create ("declared", "instantiate") another Person object
+        Person jane = new Person();
+        jane.name = "Jane Doe";
+        jane.gender = "female";
+        jane.talk();
         
         
         
