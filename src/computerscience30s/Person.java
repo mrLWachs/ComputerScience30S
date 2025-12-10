@@ -27,12 +27,13 @@ public class Person
      * Constructor method is a special method that has:
      *    (1) the same name as the class (including a capital letter)
      *    (2) it has NO return type (not even the word "void")
+     * 
      * These methods are called when the class is used to build (construct, 
      * instantiate) an object. We previously had a "born()" method that did 
      * this, that we changed it into this constructor method. This method 
      * "brings the person to life" meaning it is used when the class is used to  
-     * create a Person object. The method sets all the class properties (global 
-     * variables) to their starting values ("defaults").
+     * 'create' a Person object. The method sets all the class properties  
+     * (global variables) to their starting values ("defaults").
      */
     Person() {
         name   = "undefined";
@@ -41,21 +42,21 @@ public class Person
         alive  = true;
     }
     
-    // This method was originally written and then deleted (commented out)
-    // because the new constructor method performs the same purpose....
+    // The method below was originally written and then deleted (commented out)
+    // because the new constructor method above performs the same purpose....
     
     // void born() {
-    //     alive  = true;
-    //     age    = 0;
     //     name   = "undefined";
-    //     gender = "undefined";        
+    //     gender = "undefined";
+    //     age    = 0;
+    //     alive  = true;        
     // }
     
     /**
      * Another overloaded (which means multiple methods with the same name, but
      * different parameters) constructor method
      * 
-     * @param newName the name to assign this person object
+     * @param newName the 'new' name to assign this person object
      */
     Person(String newName) {
         name   = newName;
@@ -86,6 +87,10 @@ public class Person
         alive = false;
     }
     
+    void birthday() {
+        age++;
+    }
+    
     void talk() {
         if (alive == true) {
             System.out.println(name + " is " + age + " identifies " + gender);
@@ -93,10 +98,6 @@ public class Person
         else {
             System.out.println("Boooooo!!!");
         }
-    }
-    
-    void birthday() {
-        age++;
     }
     
 }
