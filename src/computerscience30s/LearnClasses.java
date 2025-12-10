@@ -39,6 +39,10 @@ public class LearnClasses
         // Methods are things the class can do, or actions, or verbs (they are 
         // written with parameters, return types, etc.)
         
+        // NOTE: Create class "Person" (add a class called "Person" to this Java 
+        // project). To do this, you can: see tip #27 in the "NetBeans Tips" 
+        // comments section at the bottom of the ComputerScience30S code...
+        
         // =====================================================================
         // (4) OBJECTS
         // =====================================================================        
@@ -49,20 +53,16 @@ public class LearnClasses
         // thing. Objects area specific instances of the general class. 
         // Analogy: classes are like "cookie cutters", and objects are the 
         // "cookies" -> ClassName objectName = new ClassName();
-                
-        // Create class "Person" (add a class called "Person" to this Java 
-        // project). To do this, you can: see tip #27 in the "NetBeans Tips" 
-        // comments section at the bottom of the ComputerScience30S code...
-        
-        // Note: when in the past we used a line of code like this:
+              
+        // NOTE: In past Computer Science courses, when we wrote a line like the  
+        // one below, it related directly to what we are doing in this unit:
         // Random random = new Random();
-        // It related directly to what we are doing in this unit...
         
         Person person = new Person();
         
         // Class object = new Class() <--- implies a method?
             
-        //person.born();
+        // person.born();
         // The original "born" method was changed into a constructor
         
         // We can call (invoke) methods within the object
