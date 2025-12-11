@@ -110,9 +110,35 @@ public class LearnClasses
         // methods within a class as the word "this" makes that implicit 
         // reference to the object itself
         
+        // =====================================================================
+        // (7) ENCAPSULATION (private and public)
+        // =====================================================================        
+        // A concept applied to both properties and methods of classes to 
+        // determine if they can be "used" only within the class or by other 
+        // classes "communicating" with this class. The modifier word "private"
+        // means the property can only be accessed and changed within the class
+        // (not from other classes) and if used with methods, the methods can 
+        // only be called by other methods inside the class (sometimes call 
+        // "helper" or "utility" methods). The modifier word "public" means the
+        // property can be accessed and changed within the class and outside 
+        // the class (from other classes) and if used with methods, the methods
+        // can be called anywhere (inside or outside the class)
+        
+        // Note: the "age" property was originally public but then it was
+        // "encapsulated" by making it a "private" so it can no longer be 
+        // accessed (read) or modified (changed) outside the class. Also the
+        // "think()" method was made private so it can only be called within
+        // the Person class - not here in this class
         
         // person.age = 10;
         // person.think();
+        
+        
+        
+        
+        
+        
+        
         
         
         
