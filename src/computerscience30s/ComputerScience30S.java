@@ -62,7 +62,7 @@ public class ComputerScience30S
         // UNIT 4: Classes (properties, methods, inheritance, association)
         // =====================================================================
         LearnClasses learnClasses = new LearnClasses();
-        
+         
         // NOTE: the line above required us to use the "lightbulb" in NetBeans
         // to "Create class LearnClasses in source package" which created a new
         // code module that you can see in the Projects window on the left in 

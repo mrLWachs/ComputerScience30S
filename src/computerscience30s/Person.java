@@ -14,7 +14,7 @@ package computerscience30s;
 public class Person 
 {
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
-    
+     
     String name;        // Represents this person's full name
     int age;            // Represents this person's age in years
     String gender;      // Represents this person's identified gender

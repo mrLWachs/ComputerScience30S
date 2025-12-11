@@ -72,7 +72,7 @@ public class LearnClasses
         person.gender = "Non binary";
         person.birthday();
         person.talk();
-        
+         
         // =====================================================================
         // (5) CONSTRUCTOR METHODS
         // =====================================================================        
