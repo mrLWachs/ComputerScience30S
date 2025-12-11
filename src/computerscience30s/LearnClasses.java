@@ -111,8 +111,8 @@ public class LearnClasses
         // reference to the object itself
         
         
-        
-        
+        // person.age = 10;
+        // person.think();
         
         
         

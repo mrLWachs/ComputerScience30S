@@ -15,10 +15,18 @@ public class Person
 {
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
      
-    String name;        // Represents this person's full name
-    int age;            // Represents this person's age in years
-    String gender;      // Represents this person's identified gender
-    boolean alive;      // Represents whether this person is alive or not
+    // We add a keyword to the front of the properties (modifier word) to
+    // determine if the property (variable, global variable) is encapsulated
+    // or not. Meaning is the variable accessable (can be read and changed)
+    // inside the class and/or outside the class (words "private" and "public")
+    
+    public String name;        // Represents this person's full name
+    
+    private int age;            // Represents this person's age in years
+    
+    public String gender;      // Represents this person's identified gender
+    
+    private boolean alive;      // Represents whether this person is alive or not
     
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
@@ -35,7 +43,7 @@ public class Person
      * 'create' a Person object. The method sets all the class properties  
      * (global variables) to their starting values ("defaults").
      */
-    Person() {
+    public Person() {
         name   = "undefined";
         gender = "undefined";
         age    = 0;
@@ -58,7 +66,7 @@ public class Person
      * 
      * @param newName the 'new' name to assign this person object
      */
-    Person(String newName) {
+    public Person(String newName) {
         name   = newName;
         gender = "undefined";
         age    = 0;
@@ -73,7 +81,7 @@ public class Person
      * @param age the age of this person
      * @param gender the identified gender of this person
      */
-    Person(String name, int age, String gender) {
+    public Person(String name, int age, String gender) {
         // Assign the parameter to the property (global variable of this class)
         // To do this, we use the keyword "this" which acts as a placeholder
         // for the name of the object (which will be created at a later time)
@@ -83,21 +91,49 @@ public class Person
         alive  = true;
     }
     
-    void die() {
+    /**
+     * The person dies (changing/modifying) the property (alive) through 
+     * this method
+     */
+    public void die() {
         alive = false;
     }
     
-    void birthday() {
+    /**
+     * Gives the person a birthday, changes the encapsulated property (age)
+     */
+    public void birthday() {
         age++;
     }
     
-    void talk() {
+    /**
+     * Outputs information about the person to the screen
+     */
+    public void talk() {
         if (alive == true) {
-            System.out.println(name + " is " + age + " identifies " + gender);
+            // Below was the original line that we moved to the method think()
+            // System.out.println(name + " is " + age + " identifies " + gender);
+            
+            // Private methods (sometimes called "helper" methods or "utility"
+            // methods) CAN be called within a class (but not outside the class)
+            String thought = think();
+            System.out.println(thought);            
         }
         else {
             System.out.println("Boooooo!!!");
         }
+    }
+    
+    /**
+     * This method is a private (encapsulated) method means it can be called 
+     * (invoked) only from inside the class by other methods of the class. 
+     * Private methods are rare and sometimes called "helper" or "utility"
+     *  methods as they just help other methods.
+     * 
+     * @return information about the person (name, age, gender)
+     */
+    private String think() {
+        return name + " is " + age + " identifies " + gender;
     }
     
 }
