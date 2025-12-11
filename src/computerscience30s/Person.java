@@ -92,8 +92,8 @@ public class Person
     }
     
     /**
-     * The person dies (changing/modifying) the property (alive) through 
-     * this method
+     * The person dies (changing/modifying) the encapsulated (private) property
+     * (alive) through this method
      */
     public void die() {
         alive = false;
