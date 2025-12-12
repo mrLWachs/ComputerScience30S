@@ -157,7 +157,10 @@ public class LearnClasses
         // relationship - this is also simply put as a "has a" relationship
         // (see an example in the Student class)
         
+        // Create a Student object - which inherits all properties and methods 
+        // from it's parent (super) class Person ("Student 'is a' Person")
         Student student = new Student();
+        // Now call (invoke) the 'inherited' methods...
         student.birthday();
         student.talk();
         
