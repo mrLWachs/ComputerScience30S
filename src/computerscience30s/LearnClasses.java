@@ -157,6 +157,11 @@ public class LearnClasses
         // relationship - this is also simply put as a "has a" relationship
         // (see an example in the Student class)
         
+        Student student = new Student();
+        student.birthday();
+        student.talk();
+        
+        
         
         
         
