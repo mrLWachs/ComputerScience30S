@@ -108,7 +108,7 @@ public class LearnClasses
         // avoid confusion with any method parameters that have the "same name" 
         // as the properties. It can also be used to implicitly call (invoke) 
         // methods within a class as the word "this" makes that implicit 
-        // reference to the object itself
+        // reference to the object itself (see an example in the Person class)
         
         // =====================================================================
         // (7) ENCAPSULATION (private and public)
@@ -122,7 +122,8 @@ public class LearnClasses
         // "helper" or "utility" methods). The modifier word "public" means the
         // property can be accessed and changed within the class and outside 
         // the class (from other classes) and if used with methods, the methods
-        // can be called anywhere (inside or outside the class)
+        // can be called anywhere (inside or outside the class) - See examples
+        // in the Person class
         
         // Note: the "age" property was originally public but then it was
         // "encapsulated" by making it a "private" so it can no longer be 
@@ -133,9 +134,27 @@ public class LearnClasses
         // person.age = 10;
         // person.think();
         
+        // =====================================================================
+        // (8) INHERITANCE
+        // =====================================================================        
+        // The ways two or more classes of code "communicate" with each other 
+        // to transfer data or represent (model) a "real world" relationship of 
+        // concepts. Inheritance is where one class "inherits" all the 
+        // properties and methods of the other class - like biology you can 
+        // have a parent (or "super" or "base") class and a child (or "sub") 
+        // class that inherits from the parent class - this is also simply put 
+        // as a "is a" relationship (see an example in the Student class)
         
-        
-        
+        // =====================================================================
+        // (9) ASSOCIATION
+        // =====================================================================        
+        // The ways two or more classes of code "communicate" with each other 
+        // to transfer data or represent (model) a "real world" relationship of 
+        // concepts. Association is where one class and another class "use" one
+        // another - this can be also classified as a "usage" (one class using 
+        // the other), or "composition" (one class composed of another) 
+        // relationship - this is also simply put as a "has a" relationship
+        // (see an example in the Student class)
         
         
         

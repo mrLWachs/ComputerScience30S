@@ -128,7 +128,7 @@ public class Person
      * This method is a private (encapsulated) method means it can be called 
      * (invoked) only from inside the class by other methods of the class. 
      * Private methods are rare and sometimes called "helper" or "utility"
-     *  methods as they just help other methods.
+     * methods as they just help other methods.
      * 
      * @return information about the person (name, age, gender)
      */
