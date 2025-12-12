@@ -84,6 +84,7 @@ public class LearnClasses
         // constructor is called, it is "creating" an object, or 
         // "instantiating" an "instance", "declaring" a "variable" of the 
         // class type. We can also overload the constructor methods 
+        // (see examples in the Person class)
         
         // We can create ("declared", "instantiate") another Person object
         Person jane = new Person();
@@ -123,7 +124,7 @@ public class LearnClasses
         // property can be accessed and changed within the class and outside 
         // the class (from other classes) and if used with methods, the methods
         // can be called anywhere (inside or outside the class) - See examples
-        // in the Person class
+        // in the Person class 
         
         // Note: the "age" property was originally public but then it was
         // "encapsulated" by making it a "private" so it can no longer be 
