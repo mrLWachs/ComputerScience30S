@@ -180,7 +180,8 @@ public class LearnClasses
         // The keyword "super" is also used as a reference to the parent class 
         // that this class inherits from (extends). Used with the dot operator,
         // you can access any public properties or call any public methods from
-        // the parent or "super" class
+        // the parent or "super" class (you can see an example of this in the
+        // "Student" class)
         
         // =====================================================================
         // (11) OVER-RIDE METHODS
@@ -194,7 +195,8 @@ public class LearnClasses
         // list) as a method that was already inherited from the super (parent)
         // class. Instead of calling the inherited method, when you call this 
         // method from the sub (child) class, this sub classes method code 
-        // "over-rides" that method and it's code runs instead
+        // "over-rides" that method and it's code runs instead (you can see an 
+        // example of this in the "Student" class)
         
         // =====================================================================
         // (12) POLYMORPHISM
@@ -203,6 +205,8 @@ public class LearnClasses
         // ("poly") different types of objects. For example, a method that can 
         // take a class type as a parameter will accept all objects of that 
         // type, but also all children (sub-class) objects of that class as well
+        // (you can see an example of this if you complete the bonus section of
+        // this example...)
         
         System.out.println("Completed learning classes!");
     }    
