@@ -159,18 +159,50 @@ public class LearnClasses
         
         // Create a Student object - which inherits all properties and methods 
         // from it's parent (super) class Person ("Student 'is a' Person")
-        Student student = new Student();
+        Student student = new Student("Pubert Studentson",16,"male",67);
         // Now call (invoke) the 'inherited' methods...
         student.birthday();
         student.talk();
+        // Call (invoke) methods specifically for the student class
+        student.study();
+        student.talk();
+        student.slackOff();
+        student.talk();
+        student.cram();
+        student.talk();
+        // Calling another inherited method
+        student.die();
+        student.talk();
         
+        // =====================================================================
+        // (10) SUPER KEYWORD
+        // =====================================================================        
+        // The keyword "super" is also used as a reference to the parent class 
+        // that this class inherits from (extends). Used with the dot operator,
+        // you can access any public properties or call any public methods from
+        // the parent or "super" class
         
+        // =====================================================================
+        // (11) OVER-RIDE METHODS
+        // =====================================================================        
+        // A type of method - so this means (like the unit on methods) it may 
+        // or may not have parameter(s) and it may or may not (void) return 
+        // something. This applies to classes that inherit from another class.
+        // It is similar to the concept of over-loading a method (two or 
+        // methods with the same name but different parameters) - but not quite
+        // the same. The method is named the same name (with the same parameter
+        // list) as a method that was already inherited from the super (parent)
+        // class. Instead of calling the inherited method, when you call this 
+        // method from the sub (child) class, this sub classes method code 
+        // "over-rides" that method and it's code runs instead
         
-        
-        
-        
-        
-        
+        // =====================================================================
+        // (12) POLYMORPHISM
+        // =====================================================================        
+        // Is the idea that our code can adapt or change ("morph") to many 
+        // ("poly") different types of objects. For example, a method that can 
+        // take a class type as a parameter will accept all objects of that 
+        // type, but also all children (sub-class) objects of that class as well
         
         System.out.println("Completed learning classes!");
     }    
