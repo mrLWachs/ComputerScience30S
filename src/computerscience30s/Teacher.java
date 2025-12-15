@@ -25,7 +25,7 @@ public class Teacher extends Person
      * @param name the name for this Teacher Person
      */
     public Teacher(String name) {
-        super(name,55,"teacher");
+        super(name,56,"teacher");
         students = new Student[100];
     }
     
