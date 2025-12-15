@@ -208,6 +208,35 @@ public class LearnClasses
         // (you can see an example of this if you complete the bonus section of
         // this example...)
         
+        // Instantiate a Husky object
+        Husky husky = new Husky("Havoc", 18, "Dog", 2665);
+        husky.talk();
+        
+        // Make a Teacher instance (an object)
+        Teacher teacher = new Teacher("Mr. Wachs");
+        
+        // Assign student objects to this teacher 
+        // "give the teacher some students"        
+        teacher.students[0] = student;
+        teacher.students[1] = husky;
+        
+        // Now call the method...
+        teacher.teach();
+        
+        // Build (declare, initiaize, instantiate) a Meeting object
+        Meeting meeting = new Meeting();
+        
+        // Calling our polymorphic method
+        meeting.attend(person);
+        meeting.attend(jane);
+        meeting.attend(james);
+        meeting.attend(fourth);        
+        meeting.attend(student);
+        meeting.attend(husky);
+        meeting.attend(teacher);
+        
+        meeting.hold();
+                
         System.out.println("Completed learning classes!");
     }    
     
