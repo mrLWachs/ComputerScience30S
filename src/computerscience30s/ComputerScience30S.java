@@ -71,7 +71,7 @@ public class ComputerScience30S
         // =====================================================================
         // UNIT 4: Classes (properties, methods, inheritance, association)
         // =====================================================================
-        LearnClasses learnClasses = new LearnClasses();
+        // LearnClasses learnClasses = new LearnClasses();
          
         // NOTE: the line above required us to use the "lightbulb" in NetBeans
         // to "Create class LearnClasses in source package" which created a new
@@ -92,6 +92,8 @@ public class ComputerScience30S
         // Class" where we will be coding this entire example (no designer 
         // assisting us) and the third example will be a hybrid combination of 
         // designer and code (so add a JFrame Form class which we will code)
+        
+        
         
     }
 
