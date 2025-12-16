@@ -1,3 +1,13 @@
+// =============================================================================
+// COMPUTER SCIENCE 30S CLASS EXAMPLE
+// =============================================================================
+// NOTE: This is the "in-class" example Mr. Wachs will be constantly adding 
+// code to as we learn each unit of the Computer Science 30S course. By the 
+// end of this course, it will have example code and comments explaining each 
+// concept of each unit of this intermediate Computer Science course. You can
+// always use this example as a learning reference. This example will always
+// be demonstrated during lessons in class and then this code will always be 
+// shared on Mr. Wachs' GitHub page here: https://bit.ly/4p104OH
 
 /**
  * Required package class namespace - the line below is put in automatically,
@@ -77,10 +87,11 @@ public class ComputerScience30S
         // button) then select "Swing GUI Forms" and then select "JFrame Form" 
         // to add this class (name it starting with a captial letter) and  
         // NetBeans changes to a designer interface similar to Visual Studio. 
-        // For the other example graphics files, one will be just a "Java 
-        // Class" where we will be coding the entire example (no designer 
+        // For the other example graphics files, one will be just add by 
+        // going to File -> New File, select "Java", and then select "Java 
+        // Class" where we will be coding this entire example (no designer 
         // assisting us) and the third example will be a hybrid combination of 
-        // designer and code
+        // designer and code (so add a JFrame Form class which we will code)
         
     }
 
@@ -1416,6 +1427,7 @@ public class ComputerScience30S
 
 }
 
+// <editor-fold defaultstate="collapsed" desc="NetBeans Tips">  
 
 // TIPS - for using NetBeans, Java, and Mr. Wachs' Computer Science course:
 // ========================================================================
@@ -1554,3 +1566,31 @@ public class ComputerScience30S
 //      constructor methods use a orange diamond, private properties or methods
 //      use a "lock" icon, etc.
 //
+// UNIT 5: Graphics and User Interfaces (GUI)...................................
+//
+// (31) To have NetBeans help you build a user interface (UI) with a visual 
+//      designer similar to the one used in Visual Studio, you go to 
+//      "File -> New File" and  select "JFrame Form" and the UI editor will 
+//      appear
+// (32) To switch between code and the designer, use the buttons under the 
+//      name of the file with the tabs named "Source" and "Design"
+// (33) Use the editor's "Palette" and "Properties" windows to build and change
+//      the design and then adding code as needed by either double clicking the
+//      object you want to add code to, or right clicking the object and 
+//      selecting "Events" and then the action event you want
+// (34) To "name" all the objects in NetBeans (although in this course that is
+//      not required) right click on each object and selecting "Change Variable
+//      Name..." and then type in a new name
+// (35) The NetBeans visual designer adds a constructor method with a call to
+//      a method called "initComponents()" - do not erase this line as it sets
+//      up the UI for you
+// (36) The NetBeans WYSIWYG visual designer also adds a version of the "main"
+//      method to this class of code (each JFrame form when added also adds a 
+//      main method for each JFrame form (just like the original class file 
+//      when you build a project). You can certainly delete that original 
+//      project class file, and then the project will use a JFrame version of 
+//      main when the project runs (when you click the green triangle on the
+//      toolbar) or you can delete the main method and have other code call 
+//      this class's constructor to show the form
+
+// </editor-fold>
