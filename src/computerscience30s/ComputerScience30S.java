@@ -67,6 +67,21 @@ public class ComputerScience30S
         // to "Create class LearnClasses in source package" which created a new
         // code module that you can see in the Projects window on the left in 
         // NetBeans (it is a "class" of code we will learn the unit in)
+        
+        // =====================================================================
+        // (OPTIONAL) UNIT 5: GRAPHICS AND USER INTERFACES (UI)
+        // =====================================================================
+               
+        // NOTE: To create the first graphics example Java class file for a 
+        // user interface, go to File -> New File (or click the first toolbar
+        // button) then select "Swing GUI Forms" and then select "JFrame Form" 
+        // to add this class (name it starting with a captial letter) and  
+        // NetBeans changes to a designer interface similar to Visual Studio. 
+        // For the other example graphics files, one will be just a "Java 
+        // Class" where we will be coding the entire example (no designer 
+        // assisting us) and the third example will be a hybrid combination of 
+        // designer and code
+        
     }
 
     /**
