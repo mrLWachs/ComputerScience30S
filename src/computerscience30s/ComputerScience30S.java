@@ -1429,8 +1429,9 @@ public class ComputerScience30S
 
 // <editor-fold defaultstate="collapsed" desc="NetBeans Tips">  
 
-// TIPS - for using NetBeans, Java, and Mr. Wachs' Computer Science course:
-// ========================================================================
+// =============================================================================
+// TIPS: for using NetBeans, Java, GitHub, and Mr. Wachs' course:
+// =============================================================================
 //
 // UNIT 1: Introduction To Java.................................................
 //
