@@ -93,7 +93,7 @@ public class ComputerScience30S
         // assisting us) and the third example will be a hybrid combination of 
         // designer and code (so add a JFrame Form class which we will code)
         
-        
+        Graphics1 graphics1 = new Graphics1();
         
     }
 
