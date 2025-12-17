@@ -1,11 +1,16 @@
+
 /** Required package class namespace */
 package computerscience30s;
  
 /**
- * Graphics2.java - description
+ * Graphics2.java - the beginning of making a container (the frame) and 
+ * various controls inside of it. This class uses inheritance to inherit
+ * the properties and methods from the JFrame class. This means this
+ * class is the child (sub-class) of the parent class (super class, 
+ * base class). This is sometimes simplified to a "is a" relationship
  *
- * @author YOUR NAME
- * @since Dec 16, 2025, 9:41:47 AM
+ * @author Mr. Wachs
+ * @since December 2025
  */
 public class Graphics2 
 {

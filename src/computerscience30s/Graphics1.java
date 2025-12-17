@@ -1,12 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
+/** Required package class namespace */
 package computerscience30s;
 
 /**
+ * Graphics1.java - this is a form (or frame, or 'container', or user interface)
+ * built using the NetBeans WYSIWYG ("what you see is what you get") UI 
+ * designer. To make this type of JFrame, you go to "File -> New File" and  
+ * select "JFrame Form" and the UI editor will appear. To switch between code  
+ * and the designer, use the buttons under the "Graphics2.java" tab named 
+ * "Source" and "Design". We will be using the editor's "Palette" and 
+ * "Properties" windows to build and change the design and then adding code as 
+ * needed. We will examine this frame and Graphics1 to compare doing the same 
+ * things using a designer vs. writing all the code ourselves. 
+ * 
+ * NOTE: For those students who took the introductory Computer Science 20S 
+ * course and used Visual Studio and the C# programming language, an editor 
+ * like this should seem familiar to you. That IDE allows programmers to use
+ * the WYSIWYG editor without having to write all the code. Editors just write 
+ * code for you (both Visual Studio and this NetBeans editor) and "hide" that 
+ * code (either in a collapsed method in NetBeans, or in another class in 
+ * Visual studio). You can find a Visual Studio C# version of this example
+ * here: https://bit.ly/4k5ccfN with the specific code page here:
+ * https://bit.ly/3SzFK9n
+ * 
+ * NOTE: If you remember having to "name" all the objects in Visual
+ * Studio, you can also do this in NetBeans (although in this course that is not 
+ * required) by right clicking on each object and selecting "Change Variable
+ * Name..." and then typing in a new name. 
  *
- * @author lawrence.wachs
+ * @author Mr. Wachs
+ * @since December 2025
  */
 public class Graphics1 extends javax.swing.JFrame {
     
