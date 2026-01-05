@@ -47,7 +47,7 @@ public class ComputerScience30S
         // =====================================================================
         // UNIT 1: Introduction to Java (variables, conditionals, loops)
         // =====================================================================
-        // learnIntroductionToJava();
+         learnIntroductionToJava();
         
         // NOTE: this code was originally all here in the main method, but
         // after the class learned what methods were, the code was shifted into 
@@ -56,7 +56,7 @@ public class ComputerScience30S
         // =====================================================================
         // UNIT 2: Methods (calling, parameters, returning)
         // =====================================================================
-        // learnMethods();
+         learnMethods();
         
         // NOTE: when you "Call" a method (this means you use the name of the 
         // method to make the code "jump" to the method and its logic, and after 
@@ -66,12 +66,12 @@ public class ComputerScience30S
         // =====================================================================
         // UNIT 3: Arrays (index, length, traversals, matrices)
         // =====================================================================
-        // learnArrays();
+         learnArrays();
         
         // =====================================================================
         // UNIT 4: Classes (properties, methods, inheritance, association)
         // =====================================================================
-        // LearnClasses learnClasses = new LearnClasses();
+         LearnClasses learnClasses = new LearnClasses();
          
         // NOTE: the line above required us to use the "lightbulb" in NetBeans
         // to "Create class LearnClasses in source package" which created a new
@@ -94,7 +94,8 @@ public class ComputerScience30S
         // designer and code (so add a JFrame Form class which we will code)
         
         Graphics1 graphics1 = new Graphics1();
-        
+        Graphics2 graphics2 = new Graphics2();
+        Graphics3 graphics3 = new Graphics3();   
     }
 
     /**
