@@ -1,17 +1,41 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+
+/**
+ * Required package class namespace - we added a second package to this project
+ * by "right clicking" on "Source Packages" in the right Projects window and 
+ * selecting "New -> Java Package" and gave it a name. Packages in Java are like 
+ * "folder" on your computer to organize files
  */
 package finalproject;
 
+
 /**
- *
- * @author lawrence.wachs
+ * OpeningScreen.java - this is the first "screen" (or form/frame) for a sample
+ * Java (using NetBeans and its visual designer) final project. Since we are 
+ * using a 'hybrid' method (using the NetBeas designer and modifying designs
+ * with code) the designer added "main" method is left and controls are coded 
+ * by double clicking or right clicking the objects. For more details and 
+ * information about the designer, etc. please refer to the examples: Graphics1,
+ * Graphics2, and Graphics3.java files from our original optional Graphics and  
+ * User Interface (UI) unit in this same project...
+ * 
+ * @author Mr. Wachs
+ * @since January 2026
  */
 public class OpeningScreen extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(OpeningScreen.class.getName());
+    // =========================================================================
+    // The line below is added by the NetBeans editor, but can be left in place
+    // or deleted...
+    // =========================================================================
+    
+     private static final java.util.logging.Logger logger = 
+            java.util.logging.Logger.getLogger(OpeningScreen.class.getName());
 
+    // =========================================================================
+    // The NetBeans added constructor method, the "initComponents" method, and
+    // the method(s) written as action listeners for buttons, etc. are below...
+    // =========================================================================
+     
     /**
      * Creates new form OpeningScreen
      */
@@ -28,21 +52,66 @@ public class OpeningScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 78, 169));
+        jLabel1.setText("Welcome to the Game");
+
+        jButton1.setText("START");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/finalproject/cool.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(187, 187, 187)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(129, 129, 129)
+                        .addComponent(jLabel2)))
+                .addContainerGap(68, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(31, 31, 31)
+                .addComponent(jLabel1)
+                .addGap(33, 33, 33)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49)
+                .addComponent(jLabel2)
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        // Jump to the second screen
+        GameScreen gameScreen = new GameScreen();
+        gameScreen.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +139,8 @@ public class OpeningScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
