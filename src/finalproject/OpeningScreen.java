@@ -41,6 +41,14 @@ public class OpeningScreen extends javax.swing.JFrame {
      */
     public OpeningScreen() {
         initComponents();
+        
+        // =====================================================================
+        // The designer creates the "constructor" method which calls the 
+        // "initComponents" method (written by the designer - in "locked" code)
+        // but we can add other code after this method call to effect the form
+        // as it loads up
+        // =====================================================================
+        this.setLocationRelativeTo(null);           // Center form on the screen
     }
 
     /**
@@ -78,26 +86,26 @@ public class OpeningScreen extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
+                        .addGap(20, 20, 20)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(187, 187, 187)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(89, 89, 89)
+                        .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(129, 129, 129)
-                        .addComponent(jLabel2)))
-                .addContainerGap(68, Short.MAX_VALUE))
+                        .addGap(144, 144, 144)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 307, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(49, 49, 49)
+                .addGap(27, 27, 27)
                 .addComponent(jLabel2)
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         pack();
@@ -106,11 +114,12 @@ public class OpeningScreen extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
+        // =====================================================================
         // Jump to the second screen
         GameScreen gameScreen = new GameScreen();
         gameScreen.setVisible(true);
         this.setVisible(false);
-        
+        // =====================================================================
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

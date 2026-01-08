@@ -2,6 +2,10 @@
 /** Required package class namespace */
 package finalproject;
 
+/** Required imports for the project */
+import java.awt.event.KeyEvent;
+
+
 /**
  * GameScreen.java - this is the second "screen" (or form/frame) for a sample
  * Java (using NetBeans and its visual designer) final project. Since we do not
@@ -12,14 +16,26 @@ package finalproject;
  */
 public class GameScreen extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = 
-            java.util.logging.Logger.getLogger(GameScreen.class.getName());
+    // =========================================================================
+    // On this form, I have deleted the line below (by commenting it out)
+    // as it is not needed here
+    // =========================================================================
+    
+//    private static final java.util.logging.Logger logger = 
+//            java.util.logging.Logger.getLogger(GameScreen.class.getName());
 
     /**
      * Creates new form GameScreen
      */
     public GameScreen() {
         initComponents();
+        
+        // =====================================================================
+        moveTarget();                          // Call method to position target
+        // Set some final design options for the user
+        this.setSize(1700, 950);                                // Set form size
+        this.setLocationRelativeTo(null);           // Center form on the screen
+        // =====================================================================
     }
 
     /**
@@ -31,22 +47,81 @@ public class GameScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        timeLabel = new javax.swing.JLabel();
+        targetLabel = new javax.swing.JLabel();
+        hitsLabel = new javax.swing.JLabel();
+        missesLabel = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                formMouseClicked(evt);
+            }
+        });
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+        });
+        getContentPane().setLayout(null);
+
+        timeLabel.setText("Time Remaining:");
+        getContentPane().add(timeLabel);
+        timeLabel.setBounds(320, 10, 190, 16);
+
+        targetLabel.setBackground(new java.awt.Color(255, 255, 51));
+        targetLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        targetLabel.setText("TARGET");
+        targetLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        targetLabel.setOpaque(true);
+        targetLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                targetLabelMouseClicked(evt);
+            }
+        });
+        getContentPane().add(targetLabel);
+        targetLabel.setBounds(170, 280, 140, 120);
+
+        hitsLabel.setText("Hits:");
+        getContentPane().add(hitsLabel);
+        hitsLabel.setBounds(10, 10, 110, 16);
+
+        missesLabel.setText("Misses:");
+        getContentPane().add(missesLabel);
+        missesLabel.setBounds(170, 10, 110, 16);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void targetLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_targetLabelMouseClicked
+        // =====================================================================
+        stats[0] = stats[0] + 1;     // Add one to the array index tracking hits
+        hitsLabel.setText("Hits: " + stats[0]);               // Display to user
+        moveTarget();                                       // Move target again
+        // =====================================================================
+    }//GEN-LAST:event_targetLabelMouseClicked
+
+    private void formMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseClicked
+        // =====================================================================
+        stats[1] = stats[1] + 1;   // Add one to the array index tracking misses
+        missesLabel.setText("Misses: " + stats[1]);           // Display to user
+        // =====================================================================
+    }//GEN-LAST:event_formMouseClicked
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        // =====================================================================
+        if (evt.getKeyCode() == KeyEvent.VK_ESCAPE) {  // Check for specific key
+            System.exit(0);                                      // Exit program
+        }
+        // =====================================================================
+    }//GEN-LAST:event_formKeyPressed
+
+    
+    // =========================================================================
+    // On this form, I have deleted the main method (by commenting it out)
+    // as it is not needed here
+    // =========================================================================
+    
 //    /**
 //     * @param args the command line arguments
 //     */
@@ -73,5 +148,47 @@ public class GameScreen extends javax.swing.JFrame {
 //    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel hitsLabel;
+    private javax.swing.JLabel missesLabel;
+    private javax.swing.JLabel targetLabel;
+    private javax.swing.JLabel timeLabel;
     // End of variables declaration//GEN-END:variables
+
+    // =========================================================================
+    // Added code (global variables, other methods, etc.) can be put at the 
+    // bottom of this form, or other places within the class
+    // =========================================================================
+    
+    int[] stats = new int[2];                   // Array storing game statistics
+
+    /**
+     * Generates a random number in a range between two numbers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number less than or equal to low and greater than or 
+     * equal to high 
+     */
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = ( H - L + 1 ) * seed + L;
+        return (int)number;
+        
+        // Note: the code could also be written other ways like...
+        //return (int)(( high - low + 1) * Math.random() + low);   
+    }
+
+    /**
+     * Randomly position the target label on screen
+     */
+    private void moveTarget() {
+        int w = targetLabel.getWidth();              // Get width from the label
+        int h = targetLabel.getHeight();            // Get height from the label
+        int x = random(0, 1700 - w);                // Generate a random x value
+        int y = random(0, 950 - h);                 // Generate a random y value
+        targetLabel.setBounds(x,y,w,h);                      // Reposition label
+    }
+
 }
