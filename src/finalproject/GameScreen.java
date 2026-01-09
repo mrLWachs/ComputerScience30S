@@ -3,7 +3,10 @@
 package finalproject;
 
 /** Required imports for the project */
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import javax.swing.Timer;
 
 
 /**
@@ -32,6 +35,9 @@ public class GameScreen extends javax.swing.JFrame {
         
         // =====================================================================
         moveTarget();                          // Call method to position target
+        
+        timer.start();                          // Start the time object running
+        
         // Set some final design options for the user
         this.setSize(1700, 950);                                // Set form size
         this.setLocationRelativeTo(null);           // Center form on the screen
@@ -159,8 +165,32 @@ public class GameScreen extends javax.swing.JFrame {
     // bottom of this form, or other places within the class
     // =========================================================================
     
-    int[] stats = new int[2];                   // Array storing game statistics
-
+    private int[] stats = new int[2];           // Array storing game statistics
+    private int time = 60;                   // Variable tracking time countdown
+    private final int INTERVAL = 1000;           // Delay interval for the timer
+    
+    
+    /**
+     * A Timer object is something you write in code and is imported (I 
+     * recommend the "swing" Timer object. Use Intellisense (CTRL + SPACE) to 
+     * help write the specific code you see below or get some help from 
+     * Mr. Wachs. The code below creates the timer (but does not start it, that
+     * code is in this class's constructor method above), assigns an "action"
+     * method that runs every "tick" of the timer (based on the delay interval
+     * measured in milliseconds).
+     */
+    private Timer timer = new Timer(INTERVAL, new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            time--;                                           // Reduce variable  
+            timeLabel.setText("Time Remaining: " + time);           // Show user
+            if (time == 0) {                            // Check if time is done
+                System.exit(0);                         // Terminate application    
+            }
+        }
+    });
+    
+    
     /**
      * Generates a random number in a range between two numbers
      * 
