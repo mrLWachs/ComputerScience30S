@@ -18,6 +18,11 @@ package finalproject;
  * Graphics2, and Graphics3.java files from our original optional Graphics and  
  * User Interface (UI) unit in this same project...
  * 
+ * NOTE: In class, I also showed the comparison of how this same project could 
+ * be built in Visual Studio using C# (like the CS20S does). You can find an
+ * online repository of this project here:
+ * https://github.com/mrLWachs/CS30SFinalProjectJavaToCSharp
+ * 
  * @author Mr. Wachs
  * @since January 2026
  */
