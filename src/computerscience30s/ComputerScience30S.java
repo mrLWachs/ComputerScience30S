@@ -134,7 +134,7 @@ public class ComputerScience30S
         // now goes between these two brackets.
             
         // =====================================================================
-        // (2) INPUTS/OUTPUT (simple, dialogs, and options)
+        // (2) INPUTS/OUTPUTS (simple, dialogs, and options)
         // =====================================================================
          
         // A basic output...
