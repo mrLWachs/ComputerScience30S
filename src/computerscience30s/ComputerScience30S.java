@@ -52,10 +52,11 @@ public class ComputerScience30S {
 //      then click "Finish" ... start coding!
 // (2)  To zoom in and out on the code, hold ALT and roll the mouse
 // (3)  Double click the top of a tab to hide side windows or show them
-// (4)  The curly brackets (braces, parenthesis) are important "{" and "}" so
-//      do not remove them or an error may occur
-// (5)  All characters in code are color coded, black is the default and can
+// (4)  All characters in code are color coded, black is the default and can
 //      mean all different types of things (like variables, etc.), blue 
 //      indicates "key" words that have special meaning, and grey indicates
 //      comments (not code) - and code can be letters (a-z,A-Z), numbers (0-9),
 //      and symbols ( {} () [] + - * / = etc)
+// (5)  The curly brackets (braces, parenthesis) are important "{" and "}" so
+//      do not remove them or an error may occur
+// (6)  Click the green triangle on the top toolbar to run code
