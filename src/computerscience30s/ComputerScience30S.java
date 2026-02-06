@@ -9,13 +9,15 @@ public class ComputerScience30S {
         
         /* opens a multi line comment which ends with */
         
-        /* 
-        
+        /*         
         Write some 
         stuff
-        on many lines
-        
+        on many lines        
         */
+        
+        System.out.println("Hello World");
+        
+        
         
     }
     
