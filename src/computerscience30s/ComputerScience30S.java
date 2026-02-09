@@ -100,3 +100,5 @@ public class ComputerScience30S {
 // (6)  Click the green triangle on the top toolbar to run code
 // (7)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
 // (8)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (8)  When on a GitHub webpage, click on the line numbers on the left and then
+//      when you refresh the page, it will automatically scroll to that line
