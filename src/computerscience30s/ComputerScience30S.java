@@ -1,4 +1,3 @@
-
 package computerscience30s;
 
 public class ComputerScience30S {
@@ -30,7 +29,16 @@ public class ComputerScience30S {
          
         // A basic output...
         System.out.print("Hello World");
-                
+        
+        // Tips for typing (so you don't have to type)
+            // Autocomplete ("Intellisense")
+            // Keyboard shortcuts ("hot keys")
+            // see the notes at the bottom of this java file...
+        
+        System.out.println("I'm in the world");
+        
+        System.out.println("Good-bye world!");
+         
                
         
         
@@ -60,3 +68,5 @@ public class ComputerScience30S {
 // (5)  The curly brackets (braces, parenthesis) are important "{" and "}" so
 //      do not remove them or an error may occur
 // (6)  Click the green triangle on the top toolbar to run code
+// (7)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (8)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
