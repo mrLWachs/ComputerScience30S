@@ -38,7 +38,37 @@ public class ComputerScience30S {
         System.out.println("I'm in the world");
         
         System.out.println("Good-bye world!");
-         
+        
+        // Additional output tips... (these are "special" characters)
+        // (possibly never need to use these) 
+        
+        System.out.println("Make a quote:     \" appear");
+        System.out.println("Make a backslash: \\ appear");
+        System.out.println("Make a tab:       \t appear");
+        System.out.println("Make a new line:  \n appear");
+        
+        // In all these, the key is to use the "\" backslash
+        // which is called an "escape character"
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
                
         
         
