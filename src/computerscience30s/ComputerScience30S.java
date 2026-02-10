@@ -202,6 +202,30 @@ public class ComputerScience30S {
         // (3) VARIABLES (remembering data, int, double, string, etc)
         // =====================================================================
          
+        // A variable is a piece of code that tells the computer to store 
+        // (or "remember") information (or "data"). Variables are also used
+        // when the user gives us information, and for calculations / formulas.
+        // You write a line of code to create (declare) a variable...
+        
+        // This is an example of the simpliest variable type:
+        boolean a = true;
+        
+        // type name = value ;
+        
+        int b = 0;
+        double c = 0.0;
+        
+        // Output our variables (before we do anything to them) - when 
+        // outputting a variable it always displays the value stored in the 
+        // variable (not the name of the variable)
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
