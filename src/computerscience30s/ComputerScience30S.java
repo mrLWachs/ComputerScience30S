@@ -86,6 +86,73 @@ public class ComputerScience30S {
                 JOptionPane.INFORMATION_MESSAGE
         );
         
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE
+        );
+                
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Error icon is X",
+                "Error Title",
+                JOptionPane.ERROR_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain icon (no icon)",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        // Some other optional input dialogs...
+        
+        // NOTE: There is a little more to using this input dialog that we will 
+        // cover after learning variables
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Information icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Question icon is i",
+                "Question title",
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Warning icon is i",
+                "Warning title",
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Error icon is x",
+                "Error title",
+                JOptionPane.ERROR_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Plain icon is i",
+                "Plain title",
+                JOptionPane.PLAIN_MESSAGE
+        );   
         
         
         
