@@ -308,43 +308,58 @@ public class ComputerScience30S {
 //        
 //        // Constants are used for things like: easier code to maintain,
 //        // easier to read/understand (especially for other programmers)
+//        
+//        // Converting between variable data types...
+//        
+//        int f = 25;
+//        double g = f;
+//        
+//        System.out.println("f = " + f);
+//        System.out.println("g = " + g);
+//        
+//        g = 25.999999999999;
+//        int h = (int) g;
+//        
+//        System.out.println("g = " + g);
+//        System.out.println("h = " + h); 
+//                
+//        // When we use round brackets ( )  with a data type inside, this is
+//        // called "casting" which means it converts (temporarily) to another
+//        // data type - which meant it ignored the decimal part
+//        
+//        double k = 2.999999;
+//        int    l = (int)k;
+//        double m = (double)l;
+//        
+//        // Casting can also happen with other data types...
+//        
+//        char n = 'A';
+//        int  o = (int)n;
+//        char p = (char)70;
+//        
+//        System.out.println("k = " + k);
+//        System.out.println("l = " + l); 
+//        System.out.println("m = " + n);
+//        System.out.println("n = " + n); 
+//        System.out.println("o = " + o);
+//        System.out.println("p = " + p); 
         
-        // Converting between variable data types...
+        // How to use dialog (JOptionPane) boxes (specifically the input)
+        // with variables...
         
-        int f = 25;
-        double g = f;
+        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+        // at the front of the line that makes the input dialog (code above is
+        // wrong, always make a string variable then the input dialog)
         
-        System.out.println("f = " + f);
-        System.out.println("g = " + g);
+        String q = JOptionPane.showInputDialog("Enter a string");
         
-        g = 25.999999999999;
-        int h = (int) g;
+        JOptionPane.showMessageDialog(null, q);
         
-        System.out.println("g = " + g);
-        System.out.println("h = " + h); 
-                
-        // When we use round brackets ( )  with a data type inside, this is
-        // called "casting" which means it converts (temporarily) to another
-        // data type - which meant it ignored the decimal part
+        // The variable (always has to start as a string) stores what the 
+        // user types in the input dialog box
         
-        double k = 2.999999;
-        int    l = (int)k;
-        double m = (double)l;
-        
-        // Casting can also happen with other data types...
-        
-        char n = 'A';
-        int  o = (int)n;
-        char p = (char)70;
-        
-        System.out.println("k = " + k);
-        System.out.println("l = " + l); 
-        System.out.println("m = " + n);
-        System.out.println("n = " + n); 
-        System.out.println("o = " + o);
-        System.out.println("p = " + p); 
-        
-        
+        // With numbers, you HAVE to start off with a string, and then convert
+        // it to a number. This is like Convert.ToInt32(text); in C#
         
         
         
