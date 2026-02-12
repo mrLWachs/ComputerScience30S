@@ -208,47 +208,47 @@ public class ComputerScience30S {
         // You write a line of code to create (declare) a variable...
         
         // This is an example of the simpliest variable type:
-//        boolean a = true;
-//        
-//        // type name = value ;
-//        
-//        int b = 0;
-//        double c = 0.0;
-//        
-//        // Output our variables (before we do anything to them) - when 
-//        // outputting a variable it always displays the value stored in the 
-//        // variable (not the name of the variable)
-//        
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
-//        
-//        // Variables can change ("vary")
-//        a = false;
-//        b = 1;
-//        c = 1.2;
-//        
-//        // Variables always go on the left hand side (LHS) of the equals
-//        // sign (=) and the value going into the variable always goes on
-//        // the right hand side (RHS)
-//        
-//        // Output them again - after they have been changed...
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
-//        
-//        // The "char" is short for "character" it holds (remembers) ONE
-//        // character   
-//        
-//        char d = 'A';
-//        System.out.println("d = " + d);
-//        
-//        // The boolean ("bool" in C#), integer (int), double, and character
-//        // (char) are all simple (primitive) data types, now a "complex" data
-//        // type (the "String" with a capital "S")....       
-//        
-//        String e = "apple";
-//        System.out.println("e = " + e);
+        boolean a = true;
+        
+        // type name = value ;
+        
+        int b = 0;
+        double c = 0.0;
+        
+        // Output our variables (before we do anything to them) - when 
+        // outputting a variable it always displays the value stored in the 
+        // variable (not the name of the variable)
+        
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        
+        // Variables can change ("vary")
+        a = false;
+        b = 1;
+        c = 1.2;
+        
+        // Variables always go on the left hand side (LHS) of the equals
+        // sign (=) and the value going into the variable always goes on
+        // the right hand side (RHS)
+        
+        // Output them again - after they have been changed...
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        
+        // The "char" is short for "character" it holds (remembers) ONE
+        // character   
+        
+        char d = 'A';
+        System.out.println("d = " + d);
+        
+        // The boolean ("bool" in C#), integer (int), double, and character
+        // (char) are all simple (primitive) data types, now a "complex" data
+        // type (the "String" with a capital "S")....       
+        
+        String e = "apple";
+        System.out.println("e = " + e);
         
         // Manipulate ("use") the varibles... 
         
