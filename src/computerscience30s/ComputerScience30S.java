@@ -197,119 +197,154 @@ public class ComputerScience30S {
 //                JOptionPane.DEFAULT_OPTION,
 //                JOptionPane.PLAIN_MESSAGE
 //        );
-        
-        // =====================================================================
-        // (3) VARIABLES (remembering data, int, double, string, etc)
-        // =====================================================================
-         
-        // A variable is a piece of code that tells the computer to store 
-        // (or "remember") information (or "data"). Variables are also used
-        // when the user gives us information, and for calculations / formulas.
-        // You write a line of code to create (declare) a variable...
-        
-        // This is an example of the simpliest variable type:
-//        boolean a = true;
 //        
-//        // type name = value ;
+//        // =====================================================================
+//        // (3) VARIABLES (remembering data, int, double, string, etc)
+//        // =====================================================================
+//         
+//        // A variable is a piece of code that tells the computer to store 
+//        // (or "remember") information (or "data"). Variables are also used
+//        // when the user gives us information, and for calculations / formulas.
+//        // You write a line of code to create (declare) a variable...
 //        
-//        int b = 0;
-//        double c = 0.0;
+//        // This is an example of the simpliest variable type:
+////        boolean a = true;
+////        
+////        // type name = value ;
+////        
+////        int b = 0;
+////        double c = 0.0;
+////        
+////        // Output our variables (before we do anything to them) - when 
+////        // outputting a variable it always displays the value stored in the 
+////        // variable (not the name of the variable)
+////        
+////        System.out.println("a = " + a);
+////        System.out.println("b = " + b);
+////        System.out.println("c = " + c);
+////        
+////        // Variables can change ("vary")
+////        a = false;
+////        b = 1;
+////        c = 1.2;
+////        
+////        // Variables always go on the left hand side (LHS) of the equals
+////        // sign (=) and the value going into the variable always goes on
+////        // the right hand side (RHS)
+////        
+////        // Output them again - after they have been changed...
+////        System.out.println("a = " + a);
+////        System.out.println("b = " + b);
+////        System.out.println("c = " + c);
+////        
+////        // The "char" is short for "character" it holds (remembers) ONE
+////        // character   
+////        
+////        char d = 'A';
+////        System.out.println("d = " + d);
+////        
+////        // The boolean ("bool" in C#), integer (int), double, and character
+////        // (char) are all simple (primitive) data types, now a "complex" data
+////        // type (the "String" with a capital "S")....       
+////        
+////        String e = "apple";
+////        System.out.println("e = " + e);
 //        
-//        // Output our variables (before we do anything to them) - when 
-//        // outputting a variable it always displays the value stored in the 
-//        // variable (not the name of the variable)
+//        // Manipulate ("use") the varibles... 
 //        
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
+//        int x = 0;
+//        System.out.println("x = " + x);
 //        
-//        // Variables can change ("vary")
-//        a = false;
-//        b = 1;
-//        c = 1.2;
+//        x = 30;
+//        System.out.println("x = " + x);
 //        
-//        // Variables always go on the left hand side (LHS) of the equals
-//        // sign (=) and the value going into the variable always goes on
-//        // the right hand side (RHS)
+//        int y = x + 10;
 //        
-//        // Output them again - after they have been changed...
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
+//        // Optional ("you don't have to use this code") shorthand...
+//        y++;    // Means the same as y = y + 1;
+//        y--;    // Means the same as y = y - 1;
 //        
-//        // The "char" is short for "character" it holds (remembers) ONE
-//        // character   
+//        // Even more shorthand (less recommended)  
+//        y += 10;    // Means the same as y = y + 10;
+//        y -= 10;    // Means the same as y = y - 10;
+//        y *= 10;    // Means the same as y = y * 10;
+//        y /= 10;    // Means the same as y = y / 10;
 //        
-//        char d = 'A';
-//        System.out.println("d = " + d);
+//        System.out.println("y = " + y);
 //        
-//        // The boolean ("bool" in C#), integer (int), double, and character
-//        // (char) are all simple (primitive) data types, now a "complex" data
-//        // type (the "String" with a capital "S")....       
+//        // Modulus (mod) division gives you the remainder of a division
+//        // (not the normal answer) - in Java it uses the percentage "%"
+//        // symbol for this
 //        
-//        String e = "apple";
-//        System.out.println("e = " + e);
-        
-        // Manipulate ("use") the varibles... 
-        
-        int x = 0;
-        System.out.println("x = " + x);
-        
-        x = 30;
-        System.out.println("x = " + x);
-        
-        int y = x + 10;
-        
-        // Optional ("you don't have to use this code") shorthand...
-        y++;    // Means the same as y = y + 1;
-        y--;    // Means the same as y = y - 1;
-        
-        // Even more shorthand (less recommended)  
-        y += 10;    // Means the same as y = y + 10;
-        y -= 10;    // Means the same as y = y - 10;
-        y *= 10;    // Means the same as y = y * 10;
-        y /= 10;    // Means the same as y = y / 10;
-        
-        System.out.println("y = " + y);
-        
-        // Modulus (mod) division gives you the remainder of a division
-        // (not the normal answer) - in Java it uses the percentage "%"
-        // symbol for this
-        
-        x = 28;
-        y = x / 5;
-        int z = x % 5;
-        
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
-        
-        // Constants are variables that don't change (they stay "constant"),
-        // and constants are written in ALL_CAPITAL_LETTERS with underscores
-        // to seperate words
-        
-        final double  PI               = 3.141592653589793;
-        final int     PROBLEMS         = 99;
-        final char    YES              = 'Y';
-        final boolean FOUND            = true;
-        final String  COMPUTER_TEACHER = "Wachs";
-        
-        System.out.println(PI       + ", " + 
-                           PROBLEMS + ", " + 
-                           YES      + ", " + 
-                           FOUND    + ", " + 
-                           COMPUTER_TEACHER);
-        
-        // In a line of code, one space or multiple spaces doesn't matter
-        // as seen above when declaring constants (it only matter when
-        // between quotation marks). You can hit enter in a line of code
-        // to break to a new line, because the computer will still consider
-        // it ONE line of code until we reach the semicolon.
-        
-        // Constants are used for things like: easier code to maintain,
-        // easier to read/understand (especially for other programmers)
+//        x = 28;
+//        y = x / 5;
+//        int z = x % 5;
+//        
+//        System.out.println("x = " + x);
+//        System.out.println("y = " + y);
+//        System.out.println("z = " + z);
+//        
+//        // Constants are variables that don't change (they stay "constant"),
+//        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+//        // to seperate words
+//        
+//        final double  PI               = 3.141592653589793;
+//        final int     PROBLEMS         = 99;
+//        final char    YES              = 'Y';
+//        final boolean FOUND            = true;
+//        final String  COMPUTER_TEACHER = "Wachs";
+//        
+//        System.out.println(PI       + ", " + 
+//                           PROBLEMS + ", " + 
+//                           YES      + ", " + 
+//                           FOUND    + ", " + 
+//                           COMPUTER_TEACHER);
+//        
+//        // In a line of code, one space or multiple spaces doesn't matter
+//        // as seen above when declaring constants (it only matter when
+//        // between quotation marks). You can hit enter in a line of code
+//        // to break to a new line, because the computer will still consider
+//        // it ONE line of code until we reach the semicolon.
+//        
+//        // Constants are used for things like: easier code to maintain,
+//        // easier to read/understand (especially for other programmers)
         
         // Converting between variable data types...
+        
+        int f = 25;
+        double g = f;
+        
+        System.out.println("f = " + f);
+        System.out.println("g = " + g);
+        
+        g = 25.999999999999;
+        int h = (int) g;
+        
+        System.out.println("g = " + g);
+        System.out.println("h = " + h); 
+                
+        // When we use round brackets ( )  with a data type inside, this is
+        // called "casting" which means it converts (temporarily) to another
+        // data type - which meant it ignored the decimal part
+        
+        double k = 2.999999;
+        int    l = (int)k;
+        double m = (double)l;
+        
+        // Casting can also happen with other data types...
+        
+        char n = 'A';
+        int  o = (int)n;
+        char p = (char)70;
+        
+        System.out.println("k = " + k);
+        System.out.println("l = " + l); 
+        System.out.println("m = " + n);
+        System.out.println("n = " + n); 
+        System.out.println("o = " + o);
+        System.out.println("p = " + p); 
+        
+        
         
         
         
