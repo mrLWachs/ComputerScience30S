@@ -395,9 +395,10 @@ public class ComputerScience30S {
         
         System.out.println("word " + word + " is length " + length);
         
+        String upper = word.toUpperCase();
+        System.out.println("word " + word + " in uppercase is " + upper);
         
-        
-        
+        // Many more string functions can be explored
         
         
         
