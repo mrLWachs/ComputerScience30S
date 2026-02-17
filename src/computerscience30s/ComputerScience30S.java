@@ -416,7 +416,7 @@ public class ComputerScience30S {
 //        System.out.println("answer4 = " + answer4);
 //        System.out.println("answer5 = " + answer5);
 //        System.out.println("answer6 = " + answer6);
-        
+//        
         // Math library also does random numbers, in a way like...
         
         // Random random = new Random();
@@ -435,7 +435,36 @@ public class ComputerScience30S {
         // between a low and a high number
 
         // e.g. between 1 and 10 and make it an integer
-
+        
+        // Start with some constants defining the low and high
+        final double LOW  = 1.0;
+        final double HIGH = 10.0;
+        
+        // Now the formula to generate in that range
+        
+        double number = (HIGH - LOW + 1) * seed + LOW;
+        
+        System.out.println("number = " + number);
+        
+        // Now cast it into an int        
+        int value = (int)number;
+        System.out.println("value = " + value);
+        
+        // Do it again, but simplify the formula (between 2-53)
+        
+        int card = (int) ( ( 53 - 2 + 1 ) * Math.random() + 2 );
+        System.out.println("card = " + card);
+        
+        // =====================================================================
+        // (4) CONDITIONAL STATEMENTS (making decisions, if, else, else if)
+        // =====================================================================
+         
+        // The simple if statement, you use this when comparing if something is
+        // true, as it checks that one thing ("asks a true/false question")
+        
+        
+        
+        
         
         
         
