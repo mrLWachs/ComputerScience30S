@@ -399,31 +399,42 @@ public class ComputerScience30S {
 //        System.out.println("word " + word + " in uppercase is " + upper);
 //        
 //        // Many more string functions can be explored
+//        
+//        // "Math" library of code is also "built-in" to java
+//        // which comes with it's own functions (actions, methods)
+//
+//        double answer1 = Math.PI;
+//        double answer2 = Math.cos(0.5);
+//        double answer3 = Math.abs(-1);
+//        double answer4 = Math.pow(5, 3);
+//        double answer5 = Math.sqrt(9);
+//        double answer6 = Math.log(0.5);
+//        
+//        System.out.println("answer1 = " + answer1);
+//        System.out.println("answer2 = " + answer2);
+//        System.out.println("answer3 = " + answer3);
+//        System.out.println("answer4 = " + answer4);
+//        System.out.println("answer5 = " + answer5);
+//        System.out.println("answer6 = " + answer6);
         
-        // "Math" library of code is also "built-in" to java
-        // which comes with it's own functions (actions, methods)
-
-        double answer1 = Math.PI;
-        double answer2 = Math.cos(0.5);
-        double answer3 = Math.abs(-1);
-        double answer4 = Math.pow(5, 3);
-        double answer5 = Math.sqrt(9);
-        double answer6 = Math.log(0.5);
+        // Math library also does random numbers, in a way like...
         
-        System.out.println("answer1 = " + answer1);
-        System.out.println("answer2 = " + answer2);
-        System.out.println("answer3 = " + answer3);
-        System.out.println("answer4 = " + answer4);
-        System.out.println("answer5 = " + answer5);
-        System.out.println("answer6 = " + answer6);
+        // Random random = new Random();
         
-        
+        // Although, Java does allow you to do something like that line,
+        // but, it is not the same as C#
             
+        double seed = Math.random();
+        
+        // The "seed" generates a number (decimal) between
+        // 0 and 1 (but it never reaches 0 or 1)
+        
+        System.out.println("seed = " + seed);
 
+        // You can use a formula for generating random numbers in a range
+        // between a low and a high number
 
-
-
-
+        // e.g. between 1 and 10 and make it an integer
 
         
         
