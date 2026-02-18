@@ -527,6 +527,39 @@ public class ComputerScience30S {
             System.out.println("not equal");
         }
         
+        // Nesting is when you place one if statement inside the block of 
+        // another if statement
+        
+        if (word1.equals(word2) == false) {
+            // Like "!=" with strings
+            if (word1.equalsIgnoreCase(word2)) {
+                System.out.println("not really equal");
+            }
+        }
+        
+        // Combine logic using "and" "or" "not" which use the symbols:
+        // "&&" for "and"  - AND means BOTH   have to be true
+        // "||" for "or"   - OR  means EITHER can be true
+        // "!"  for "not"  - NOT reverses the logic
+        
+        int age = 17;
+        double iq = 180.0;
+        
+        if (age >= 21 && iq > 130) {
+            System.out.println("Get in");
+        }
+        else if (age >= 18 || iq >= 100) {
+            System.out.println("Keep trying");
+        }
+        else {
+            System.out.println("Get out");
+        }
+        
+        // =====================================================================
+        // (5) LOOPING (repeating instructions, while, do while, for)
+        // =====================================================================
+        
+        
         
         
         
