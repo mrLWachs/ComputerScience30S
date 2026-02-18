@@ -507,10 +507,25 @@ public class ComputerScience30S {
         if (value5 != value6) System.out.println("!=");
         else                  System.out.println("==");
         
+        // Use "else if" for multiple cases of more than 2 things (same as the
+        // "switch" statement - which I don't use) use strings for this
+        // example which are more complex (because they use many character,
+        // and upper and lower case)
         
+        // NOTE: with string NEVER use == ALWAYS use .equals()..
         
+        String word1 = "edgy";
+        String word2 = "eDgy";
         
-        
+        if (word1.equals(word2)) {
+            System.out.println("equal");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("kind of equal");
+        }
+        else {
+            System.out.println("not equal");
+        }
         
         
         
