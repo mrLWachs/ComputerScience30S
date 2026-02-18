@@ -474,9 +474,13 @@ public class ComputerScience30S {
         // code and that block only runs when the test inside of the round
         // brackets tests TRUE. It also indents the code inside the block
         
+        if (value1 < value2) {
+            System.out.println("They are");
+            System.out.println("less than");
+        }
         
-        
-        
+        // All lines of code between the curley brackets { } is in a block that 
+        // is "controlled" by the conditional (if) statement
         
         
         
