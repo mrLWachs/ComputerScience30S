@@ -582,7 +582,13 @@ public class ComputerScience30S {
         // when you want the body (block) of the loop to run at least
         // once!
         
+        String choice = "";        
         
+        do {            
+            choice = JOptionPane.showInputDialog("Enter password");
+        } while (choice.equalsIgnoreCase(password) == false);
+        
+        JOptionPane.showMessageDialog(null, "You got it");
         
         
         
