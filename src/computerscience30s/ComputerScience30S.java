@@ -727,7 +727,7 @@ public class ComputerScience30S {
 //      all the code) and pres ALT + SHIFT + F (you should do this before you 
 //      hand in your code)
 // (18) When preparing a solution for hand in, when in NetBeans (after the  
-//      code is cleaned up and ready - see tip 13) go to:
+//      code is cleaned up and ready - see tip 17) go to:
 //      "File -> Print to HTML..." and then use the dialog box that appears
 //      to select a location you can find the HTML file, and give the file  
 //      you are saving a good name (with your name in the file name). Do 
