@@ -745,3 +745,9 @@ public class ComputerScience30S {
 //      various categories and make adjustments to your preferred style (see 
 //      Mr. Wachs if you cannot find the style change you want)
 //
+// UNIT 2: Methods..............................................................
+// 
+// (20) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
