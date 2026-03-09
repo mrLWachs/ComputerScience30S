@@ -1,8 +1,36 @@
+/**=============================================================================
+ * COMPUTER SCIENCE 30S CLASS EXAMPLE
+ * =============================================================================
+ * NOTE: This is the "in-class" example Mr. Wachs will be constantly adding 
+ * code to as we learn each unit of the Computer Science 30S course. By the 
+ * end of this course, it will have example code and comments explaining each 
+ * concept of each unit of this intermediate Computer Science course. You can
+ * always use this example as a learning reference. This example will always
+ * be demonstrated during lessons in class and then this code will always be 
+ * shared on Mr. Wachs' GitHub page here: https://bit.ly/4p104OH
+ */
+
+/**
+ * Required package class namespace - the line below is put in automatically,
+ * and connects this file to the project
+ */ 
 package computerscience30s;
 
+/**
+ * Required imports for the project - the lines below are added when your code
+ * needs to connect to another library (API) of code
+ */
 import javax.swing.JOptionPane;
 
 
+/**
+ * ComputerScience30s.java - the large in class example we continue to work on
+ * in each unit adding example code on the new concepts of each unit along with
+ * any in class requests for code example that might come up over the course.
+ * 
+ * @author Mr. Wachs
+ * @since March 2026
+ */
 public class ComputerScience30S {
 
     public static void main(String[] args) {   
