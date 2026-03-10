@@ -35,6 +35,11 @@ public class ComputerScience30S {
 
     public static void main(String[] args) {   
         
+        learnIntroductionToJava();
+        
+    }
+
+    private static void learnIntroductionToJava() {
         // =====================================================================
         // (1) COMMENTS (various types)
         // =====================================================================
@@ -673,8 +678,7 @@ public class ComputerScience30S {
         JOptionPane.showMessageDialog(null, "Thank you!");
                 
         // This line terminates any running java program at any point
-        // System.exit(0);
-        
+        // System.exit(0);        
     }
     
 }
