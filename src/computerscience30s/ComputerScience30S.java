@@ -37,7 +37,7 @@ public class ComputerScience30S {
         // =====================================================================
         // UNIT 1: Introduction to Java (variables, conditionals, loops)
         // =====================================================================
-         learnIntroductionToJava();
+        // learnIntroductionToJava();
         
         // NOTE: this code was originally all here in the main method, but
         // after the class learned what methods were, the code was shifted into 
@@ -698,7 +698,27 @@ public class ComputerScience30S {
     }
 
     private static void learnMethods() {
-        System.out.println("Learn Methods");
+        System.out.println("Start learning methods...");
+        
+        // =====================================================================
+        // (1) WHAT is a method, creating a method, and "calling" a method
+        // =====================================================================
+         
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method. We make methods
+        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // repeating code
+        
+        // Code to "jump" to a method, is "calling" the method (method call) 
+        writeStar();
+        
+        
+    }
+    
+    private static void writeStar() {
+        System.out.println("*");
     }
     
 }
