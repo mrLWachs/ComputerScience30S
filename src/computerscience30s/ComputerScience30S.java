@@ -34,8 +34,24 @@ import javax.swing.JOptionPane;
 public class ComputerScience30S {
 
     public static void main(String[] args) {   
+        // =====================================================================
+        // UNIT 1: Introduction to Java (variables, conditionals, loops)
+        // =====================================================================
+         learnIntroductionToJava();
         
-        learnIntroductionToJava();
+        // NOTE: this code was originally all here in the main method, but
+        // after the class learned what methods were, the code was shifted into 
+        // the method below
+        
+        // =====================================================================
+        // UNIT 2: Methods (calling, parameters, returning)
+        // =====================================================================
+         learnMethods();
+         
+        // NOTE: when you "Call" a method (this means you use the name of the 
+        // method to make the code "jump" to the method and its logic, and after 
+        // the logic in the method is complete, the code will "jump" back to the  
+        // next line after the call)
         
     }
 
@@ -680,6 +696,10 @@ public class ComputerScience30S {
         // This line terminates any running java program at any point
         // System.exit(0);        
     }
+
+    private static void learnMethods() {
+        System.out.println("Learn Methods");
+    }
     
 }
 
@@ -783,3 +803,13 @@ public class ComputerScience30S {
 //      help to "expand" and "collapse" the method body (block of code)
 //      press CTRL and SHIFT and "-" it collapses all methods, and
 //      CTRL and SHIFT and "+" expands all code folds
+// (21) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
+// (22) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip #12) will help you write it
+// (23) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
+// (24) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
