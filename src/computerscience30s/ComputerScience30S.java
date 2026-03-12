@@ -713,12 +713,25 @@ public class ComputerScience30S {
         
         // Code to "jump" to a method, is "calling" the method (method call) 
         writeStar();
+        // Call it again
+        writeStar();
+        
+        
+        write("something");
+        
+        write("Spider-man");
+        
+        write("Batman");
         
         
     }
     
     private static void writeStar() {
         System.out.println("*");
+    }
+
+    private static void write(String something) {
+        System.out.println(something);
     }
     
 }
