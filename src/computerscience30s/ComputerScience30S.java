@@ -765,20 +765,31 @@ public class ComputerScience30S {
     }
 
     private static void write(String something) {
+        // The "variable" created inside of the round "( )" brackets of a 
+        // method is called a "parameter" as an input - if a method does not
+        // need any inputs, the brackets are left empty "()"
+        
         System.out.println(something);
     }
 
     private static void writeLotsOf(String thing, int times) {
         // Methods can have no parameters, one parameter, or lots of parameters,
-        // if it has more than one parameter, they are separated by commas
+        // and if it has more than one parameter, they are separated by commas
+        
         for (int i = 0; i < times; i++) {
             write(thing);
+            
             // Reminder that methods can call other methods (which themselves
             // can call other methds)
         }
     }
 
     private static int giveMeNumber() {
+        // The keyword "return" is used insode the body of a method to 
+        // "send back" a value (like an int, double, String, etc.) as an output
+        // of a method - if a method does not need to have an output, the 
+        // word "void" is used
+        
         return random(1, 100);
     }
     
