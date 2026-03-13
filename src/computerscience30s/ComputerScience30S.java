@@ -737,7 +737,23 @@ public class ComputerScience30S {
         write("Omni-man");
         write("Mr. Wachs");
         
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are seperated with commas ","
+        
         writeLotsOf("Dalmations",101);
+        
+        writeLotsOf("Problems", 99);
+        
+        // =====================================================================
+        // (3) RETURNING from a method (output) or void methods
+        // =====================================================================
+         
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
+        
+        int number = giveMeNumber();        
+        write("The number was " + number);
         
         
         
@@ -760,6 +776,21 @@ public class ComputerScience30S {
             // Reminder that methods can call other methods (which themselves
             // can call other methds)
         }
+    }
+
+    private static int giveMeNumber() {
+        return random(1, 100);
+    }
+    
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = ( H - L + 1 ) * seed + L;
+        return (int)number;
+        
+        // Note: the code could also be written other ways like...
+        //return (int)(( high - low + 1) * Math.random() + low);  
     }
     
 }
