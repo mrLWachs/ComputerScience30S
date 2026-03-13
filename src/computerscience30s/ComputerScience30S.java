@@ -737,7 +737,7 @@ public class ComputerScience30S {
         write("Omni-man");
         write("Mr. Wachs");
         
-        
+        writeLotsOf("Dalmations",101);
         
         
         
@@ -750,6 +750,16 @@ public class ComputerScience30S {
 
     private static void write(String something) {
         System.out.println(something);
+    }
+
+    private static void writeLotsOf(String thing, int times) {
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // if it has more than one parameter, they are separated by commas
+        for (int i = 0; i < times; i++) {
+            write(thing);
+            // Reminder that methods can call other methods (which themselves
+            // can call other methds)
+        }
     }
     
 }
