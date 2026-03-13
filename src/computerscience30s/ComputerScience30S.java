@@ -716,12 +716,30 @@ public class ComputerScience30S {
         // Call it again
         writeStar();
         
+        // =====================================================================
+        // (2) PARAMETERS for methods ("inputs"), passing, and arguments
+        // =====================================================================
+         
+        // When we call a method, we sometimes place "data" (information) 
+        // inside the round brackets and that data is "passed" (sending) over 
+        // to the method. The data being passed is technically called the
+        // "argument" and the data being recieved is called the "parameter(s)". 
+        // You can always change the arguement.
         
         write("something");
         
-        write("Spider-man");
+        // You can "call" the same method with different arguments (with passes
+        // the data into the method's parameter)
         
+        write("Spider-man");
         write("Batman");
+        write("Superman");
+        write("Omni-man");
+        write("Mr. Wachs");
+        
+        
+        
+        
         
         
     }
