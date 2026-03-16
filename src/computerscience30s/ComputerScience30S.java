@@ -756,6 +756,10 @@ public class ComputerScience30S {
         write("The number was " + number);
         
         
+        output("Hello");
+        
+        output("Good-bye","Learning Methods");
+        
         
         
     }
@@ -829,6 +833,28 @@ public class ComputerScience30S {
         
         // Note: the code could also be written other ways like...
         //return (int)(( high - low + 1) * Math.random() + low);  
+    }
+
+    /**
+     * Displays text in a dialog box
+     * 
+     * @param text the text to display in that dialog box
+     */
+    private static void output(String text) {
+        JOptionPane.showMessageDialog(null, text);
+    }
+
+    /**
+     * Display text in a dialog with a title at the top of the dialog
+     * 
+     * @param text the text to display
+     * @param title what to show at the top of the dialog
+     */
+    private static void output(String text, String title) {
+        // Overloaded methods are methods with the same name, BUT different
+        // parameters / arguments so we know which version of the method to call
+        JOptionPane.showMessageDialog(null, text, title, 
+                JOptionPane.PLAIN_MESSAGE);
     }
     
 }
