@@ -760,10 +760,18 @@ public class ComputerScience30S {
         
     }
     
+    /**
+     * Writes a star on the screen
+     */
     private static void writeStar() {
         System.out.println("*");
     }
 
+    /**
+     * Writes something on the screen
+     * 
+     * @param something the thing to write on the screen (input)
+     */
     private static void write(String something) {
         // The "variable" created inside of the round "( )" brackets of a 
         // method is called a "parameter" as an input - if a method does not
@@ -772,6 +780,12 @@ public class ComputerScience30S {
         System.out.println(something);
     }
 
+    /**
+     * Writes something on the screen multiple times
+     * 
+     * @param thing the something to write
+     * @param times how many times to write it  
+     */
     private static void writeLotsOf(String thing, int times) {
         // Methods can have no parameters, one parameter, or lots of parameters,
         // and if it has more than one parameter, they are separated by commas
