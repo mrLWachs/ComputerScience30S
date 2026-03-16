@@ -755,12 +755,17 @@ public class ComputerScience30S {
         int number = giveMeNumber();        
         write("The number was " + number);
         
-        
+        // =====================================================================
+        // (4) OVERLOADING a method (multiple methods with same name)
+        // =====================================================================
+         
+        // An "overloaded" method is when you have multiple (two or more) 
+        // methods that all have the same name, BUT each method has different
+        // parameters, so that when the methods is called, based on the 
+        // arguments we know which version of the method to call
         output("Hello");
         
         output("Good-bye","Learning Methods");
-        
-        
         
     }
     
@@ -969,3 +974,8 @@ public class ComputerScience30S {
 //      snippets", and select "Generated Method body" and remove the last line
 // (24) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
+// (25) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
+// (26) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
