@@ -798,6 +798,11 @@ public class ComputerScience30S {
         }
     }
 
+    /**
+     * Gives you a random number
+     * 
+     * @return random number between 1 and 100 (output)
+     */
     private static int giveMeNumber() {
         // The keyword "return" is used insode the body of a method to 
         // "send back" a value (like an int, double, String, etc.) as an output
@@ -807,6 +812,14 @@ public class ComputerScience30S {
         return random(1, 100);
     }
     
+    /**
+     * Generates a random number in a range between two numbers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number less than or equal to low and greater than or 
+     * equal to high 
+     */
     private static int random(int low, int high) {
         double seed   = Math.random();
         double L      = (double)low;
