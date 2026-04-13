@@ -60,6 +60,9 @@ public class ComputerScience30S {
         
     }
 
+    /**
+     * Learn the content of the introduction unit (unit 1)
+     */
     private static void learnIntroductionToJava() {
         // =====================================================================
         // (1) COMMENTS (various types)
@@ -702,6 +705,9 @@ public class ComputerScience30S {
         // System.exit(0);        
     }
 
+    /**
+     * Learn the content of the methods unit (unit 2)
+     */
     private static void learnMethods() {
         System.out.println("Start learning methods...");
         
