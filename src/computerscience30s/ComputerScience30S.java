@@ -46,12 +46,17 @@ public class ComputerScience30S {
         // =====================================================================
         // UNIT 2: Methods (calling, parameters, returning)
         // =====================================================================
-         learnMethods();
+        // learnMethods();
          
         // NOTE: when you "Call" a method (this means you use the name of the 
         // method to make the code "jump" to the method and its logic, and after 
         // the logic in the method is complete, the code will "jump" back to the  
         // next line after the call)
+        
+        // =====================================================================
+        // UNIT 3: Arrays (index, length, traversals, matrices)
+        // =====================================================================
+        learnArrays();
         
     }
 
@@ -861,6 +866,21 @@ public class ComputerScience30S {
         // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit (unit 3)
+     */
+    private static void learnArrays() {
+        System.out.println("Start learning arrays...");
+        
+        // =====================================================================
+        // (1) WHAT is an array (vs. a variable)
+        // =====================================================================
+             
+        
+        
+        System.out.println("Completed learning arrays!");
     }
     
 }
