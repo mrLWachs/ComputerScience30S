@@ -883,7 +883,12 @@ public class ComputerScience30S {
         // =====================================================================
         // (1) WHAT is an array (vs. a variable)
         // =====================================================================
-             
+            
+        int variable = 5;
+        
+        int array[] = new int[5];
+        
+        
         
         
         System.out.println("Completed learning arrays!");
