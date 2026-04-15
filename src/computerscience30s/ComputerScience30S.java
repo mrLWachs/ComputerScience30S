@@ -1015,8 +1015,19 @@ public class ComputerScience30S {
         // When using arrays, use individual elements (spots, indices - the 
         // plural of "index") of the array like regular variables, for example
         
+        int[] numbers = new int[100];
         
+        numbers[99] = 333;
+        numbers[67] = 67;
         
+        //         +-----+-----+-----+-----+-----+
+        // numbers |     | ... | 67  | ... | 333 | (length is 100)
+        //         +-----+-----+-----+-----+-----+
+        //            0    ...   67          99
+        // Remember, the last index is always ONE LESS than the length
+        
+        numbers[0] = numbers[99] * 2;
+        System.out.println(numbers[0]);
         
         
         
