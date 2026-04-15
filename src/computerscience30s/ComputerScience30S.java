@@ -998,8 +998,22 @@ public class ComputerScience30S {
         //       +------+------+------+------+------+
         //          0      1      2      3      4 
         
+        // You can also create CONSTANT arrays that are pre-filled, the name
+        // we gives array should be a plural word (e.g. 'scores' (array name)
+        // not 'score' (variable name), 'names' not 'name', etc.) 
         
+        final String[] OPTIONS = {
+            "New Game",
+            "Save Game",
+            "Exit"
+        };
         
+        // =====================================================================
+        // (3) USING an array
+        // =====================================================================
+                 
+        // When using arrays, use individual elements (spots, indices - the 
+        // plural of "index") of the array like regular variables, for example
         
         
         
