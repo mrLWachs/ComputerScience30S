@@ -1064,9 +1064,9 @@ public class ComputerScience30S {
         // (5) METHODS with arrays (as parameters and return types)
         // =====================================================================
          
-        output(array);
-        output(numbers);
-        output(coins);
+        output(array);      // Send a array to a method as a parameter
+        output(numbers);    // Call the method with a different argument
+        output(coins);      // Overload the "output" method again
         
         
         
