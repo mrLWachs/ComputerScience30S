@@ -1216,3 +1216,16 @@ public class ComputerScience30S {
 // (26) If you have to rename a variable or a method, select the word (the name
 //      of the variable or method) and then press CTRL + R, then type in a
 //      new name
+//
+// UNIT 3: Arrays...............................................................
+//
+// (27) When your code "crashes" and an error takes place (run-time error) try
+//      to READ what the error says down in the output window of NetBeans as
+//      it may offer clues on how to debug the error (and click on the links)
+// (28) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jump to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
+// (29) To view the same code editing window with two different views, go to
+//      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
+//
