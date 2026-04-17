@@ -1128,6 +1128,8 @@ public class ComputerScience30S {
 }
 
 
+// <editor-fold defaultstate="collapsed" desc="NetBeans Tips">  
+
 // =============================================================================
 // TIPS: for using NetBeans, Java, GitHub, and Mr. Wachs' course:
 // =============================================================================
