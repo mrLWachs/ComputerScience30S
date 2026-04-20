@@ -1076,10 +1076,73 @@ public class ComputerScience30S {
         int[] values = random(1, 10, 50);
         output(values);
         
+        // Test some of the methods we copied and pasted over from Mr. Wachs'
+        // GitHub page for working with arrays...
+        char c = random('!', '~');
+        System.out.println("random character was " + c);
+                
         // =====================================================================
         // (6) MATRIX or multidimensional (2D) arrays
         // =====================================================================
          
+        // Multi-dimensional array (also known as a "array of arrays", or a 
+        // array filled with other arrays, 2D, etc.) - and also known as a 
+        // table, grid, or a MATRIX
+        
+        // We declare (create) a matrix , by adding multiple sets of square
+        // brackets (a set of brackets for each dimension)
+        
+        char[][] twoDArray = new char[2][3];
+        twoDArray[0][0] = 'A';
+        twoDArray[0][1] = 'Z';
+        
+        // We "COULD" Visualize this as...
+        
+        // Note: the way we "visualzie" this matrix is up to US! we decide 
+        //       whether the rows is the first dimension or the columns is the 
+        //       first dimension (I will pick rows as the first dimension)
+        //
+        //      0     1     2
+        //   +-----+-----+-----+
+        // 0 |  A  |  Z  |     |
+        //   +-----+-----+-----+   total of 2 "rows"
+        // 1 |     |     |     |
+        //   +-----+-----+-----+
+        //
+        //     total of 3 "columns"
+        
+        // Advice, when working with matrices, I recommend using variable and 
+        // constants with names the make sense (to you!)
+        
+        // Create some constants to use when building the matrix (these are
+        // not needed to declare a matrix, but they might help in understanding 
+        // it) - we make contants as a way to "visualize" what we are building
+        
+        final int ROWS    = 30;
+        final int COLUMNS = 40;
+        
+        char[][] matrix = new char[ROWS][COLUMNS];
+        
+        // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
+        // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
+        // could be "seen" as...
+        //
+        //               (columns, width, x axis is 4, meaning 0-3)
+        //
+        //                     0         1         2         3
+        //                +---------+---------+---------+---------+
+        // (rows,       0 |         |         |         |         |
+        //  height,       +---------+---------+---------+---------+
+        //  y axis      1 |         |         |         |         |
+        //  is 3,         +---------+---------+---------+---------+
+        //  meaning     2 |         |         |         |         |
+        //  0-2)          +---------+---------+---------+---------+
+        // 
+        // A matrix "row" can also be "visualized" as the matrix "height"
+        // A matrix "column" can also be "visualized" as the matrix "width"
+        
+        // Fill the matrix with random characters...
+        
         
         
         
