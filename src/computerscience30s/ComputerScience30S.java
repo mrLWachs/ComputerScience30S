@@ -1148,6 +1148,44 @@ public class ComputerScience30S {
         // method) - when traversing matricies (plural of matrix) we use 
         // multiple nested for loops
         
+        final char LOW  = '!';
+        final char HIGH = '~';
+        
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[row][column] = random(LOW, HIGH);
+            }
+        }
+        
+        // Output the matrix, using a method which turns the entire matrix into
+        // a string (which we can then output with one of our existing methods)
+        value = toString(matrix);
+        System.out.println("Big Matrix: \n" + value);
+        
+        // =====================================================================
+        // (7) OPTIONAL introduction to graphics items
+        // =====================================================================
+         
+        // Now experiment (optional) to start looking at "graphics"
+        
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
+        
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes')
+        
+        // Temporary variables for the color in this example...
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
