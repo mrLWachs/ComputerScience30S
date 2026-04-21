@@ -1111,7 +1111,7 @@ public class ComputerScience30S {
         char c = random('!', '~');
         System.out.println("random character was " + c);         
         String value = toString(twoDArray);
-        System.out.println(value);
+        System.out.println("Matrix: \n" + value);
                 
         // ADVICE: when working with matrices, I recommend using variable and 
         // constants with names the make sense (to you!). So we create some 
