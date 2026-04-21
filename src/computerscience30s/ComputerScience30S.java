@@ -1124,8 +1124,8 @@ public class ComputerScience30S {
         
         char[][] matrix = new char[ROWS][COLUMNS];
                 
-        // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
-        // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
+        // NOTE: if we "visualize this as a 3 by 4 matrix (3 rows by 4 columns),
+        // or y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
         // could be "seen" as...
         //
         //               (columns, width, x axis is 4, meaning 0-3)
@@ -1166,15 +1166,24 @@ public class ComputerScience30S {
         // (7) OPTIONAL introduction to graphics items
         // =====================================================================
          
-        // Now experiment (optional) to start looking at "graphics"
-        
-        // We set up some 'graphical' "things" to make the dialog more 
-        // interesting by 'importing' the code that does this (we are not 
-        // writing that specific code, we are 'using' others code)
-        
-        // Using capital letters and importing (using the lightbulb) and a line
-        // similar to the way we declare arrays, and using round brackets 
-        // (implies a method? - we will study in the next unit 'classes')
+        // Now we will experiment and start looking at "graphics". This 
+        // concept will be looked at more formally after the classes unit as an 
+        // optional unit. Following this in this example is entirely optional.
+        // The use of graphics will not specifically be a unit that will have 
+        // any assignments, and graphics are not necessary for your final 
+        // projects. However, they 'can' be added to projects/assignments, and
+        // if you add graphics to the final project, it will count for marks 
+        // (but not required). Also, many of you will 'want' to add this fun 
+        // and interesting aspect to your programming in Java. To begin, we will
+        // set up some "graphical things" (objects) to make the dialog box
+        // output we are familar with (i.e. JOptionPane input, message boxes, 
+        // etc.) more interesting by 'importing' the code that does this (we 
+        // are not writing that specific code, we are 'using' others code).
+        // This will require attention to details like using capital letters 
+        // and importing (using the lightbulb), using a line of code similar to 
+        // the way we declare arrays (i.e. ' = new ...'), and using round 
+        // brackets (implying a method?). These details will be studied in more
+        // details in the next unit 'classes' and the optiona 'graphics' unit.
         
         // Temporary variables for the color in this example...
         
