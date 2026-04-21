@@ -1075,54 +1075,55 @@ public class ComputerScience30S {
         // Overloaded version of the random() method with arrays
         int[] values = random(1, 10, 50);
         output(values);
-        
-        // Test some of the methods we copied and pasted over from Mr. Wachs'
-        // GitHub page for working with arrays...
-        char c = random('!', '~');
-        System.out.println("random character was " + c);
-                
+               
         // =====================================================================
         // (6) MATRIX or multidimensional (2D) arrays
         // =====================================================================
          
         // Multi-dimensional array (also known as a "array of arrays", or a 
         // array filled with other arrays, 2D, etc.) - and also known as a 
-        // table, grid, or a MATRIX
-        
-        // We declare (create) a matrix , by adding multiple sets of square
-        // brackets (a set of brackets for each dimension)
+        // table, grid, or a MATRIX. We declare (create) a matrix , by adding 
+        // multiple sets of square brackets (set of brackets for each dimension)
         
         char[][] twoDArray = new char[2][3];
         twoDArray[0][0] = 'A';
-        twoDArray[0][1] = 'Z';
-        
-        // We "COULD" Visualize this as...
-        
-        // Note: the way we "visualzie" this matrix is up to US! we decide 
+        twoDArray[0][1] = 'B';
+        twoDArray[0][2] = 'C';
+        twoDArray[1][0] = 'D';
+        twoDArray[1][1] = 'E';
+        twoDArray[1][2] = 'F';
+                   
+        // NOTE: the way we "visualize" this matrix is up to US! we decide 
         //       whether the rows is the first dimension or the columns is the 
         //       first dimension (I will pick rows as the first dimension)
         //
         //      0     1     2
         //   +-----+-----+-----+
-        // 0 |  A  |  Z  |     |
+        // 0 |  A  |  B  |  C  |
         //   +-----+-----+-----+   total of 2 "rows"
-        // 1 |     |     |     |
+        // 1 |  D  |  E  |  F  |
         //   +-----+-----+-----+
         //
-        //     total of 3 "columns"
+        //    total of 3 "columns"
         
-        // Advice, when working with matrices, I recommend using variable and 
-        // constants with names the make sense (to you!)
-        
-        // Create some constants to use when building the matrix (these are
-        // not needed to declare a matrix, but they might help in understanding 
-        // it) - we make contants as a way to "visualize" what we are building
+        // Now test some of the methods we copied and pasted over from 
+        // Mr. Wachs' GitHub page for working with arrays...
+        char c = random('!', '~');
+        System.out.println("random character was " + c);         
+        String value = toString(twoDArray);
+        System.out.println(value);
+                
+        // ADVICE: when working with matrices, I recommend using variable and 
+        // constants with names the make sense (to you!). So we create some 
+        // constants to use when building the matrix (these are not needed to 
+        // declare a matrix, but they might help in understanding it) - we make
+        // contants as a way to "visualize" what we are building
         
         final int ROWS    = 30;
         final int COLUMNS = 40;
         
         char[][] matrix = new char[ROWS][COLUMNS];
-        
+                
         // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
         // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
         // could be "seen" as...
@@ -1141,7 +1142,11 @@ public class ComputerScience30S {
         // A matrix "row" can also be "visualized" as the matrix "height"
         // A matrix "column" can also be "visualized" as the matrix "width"
         
-        // Fill the matrix with random characters...
+        // Fill the matrix with random characters (meaning put content in every
+        // location/index/spot in the matrix) by traversing (travelling, 
+        // 'visit' every spot) the matrix and adding random characters (our 
+        // method) - when traversing matricies (plural of matrix) we use 
+        // multiple nested for loops
         
         
         
