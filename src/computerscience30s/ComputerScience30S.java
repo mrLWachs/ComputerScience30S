@@ -22,6 +22,8 @@ package computerscience30s;
  */
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
@@ -1237,39 +1239,74 @@ public class ComputerScience30S {
         // that file and go to "Properties" -> this will allow you to get all 
         // the information (data) you need to use the image...
         
-        String first = "C:\\Users\\lawrence.wachs\\"
-                     + "OneDrive - St. James-Assiniboia School Division"
-                     + "\\Desktop\\";
+        String first = "C:\\Users\\lawrence.wachs\\Documents\\"
+                     + "NetBeansProjects\\ComputerScience30S\\";
         // WHERE: commonly called "folder", "path", "directory" (where it is)
         
-        String middle = "m";
+        String middle = "matrix";
         // WHO: the part of the name that the user usually enters
         
         String last = ".gif";
         // WHAT: the File "extension" or type (what type of file is this?)
         
         String imageName = first + middle + last;
+        // Every file has a "first", "middle", and "last" name
         
+        // For images, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...        
         
-                
+        // Now we "import" an object that can display images...
+        Icon icon = new ImageIcon(imageName);
         
-        
-        
-        
-        
+        // And two more things for our message dialog...
+        String title = "The Matrix...";
+        int type = JOptionPane.PLAIN_MESSAGE;
         
         // Now we finally display the dialog box, BUT we USE the text area and 
-        // the image in the dialog as parameters
-        JOptionPane.showMessageDialog(null, area);
+        // the image in the dialog as parameters to display a "fancy" dialog
+        // (with a picture, formatted text: font, size, colors: back/fore)
+        JOptionPane.showMessageDialog(null,area,title,type,icon);
         
+        // NOTE: to help with this (if you want to try it in things like your
+        // assignments and projects) -> I have provided two methods below (that
+        // you can get off of GitHub) that display the JOptionPane message 
+        // (and potentially input) dialog using "fancy" images, colors, fonts... 
+        // and you can pass the correct arguments to those methods to produce  
+        // the results...
         
+        // FIRST: method requires "objects" passed as arguments:       
+        // A matrix of values to turn into text -> matricies can also be made 
+        // with pre-set values (like 1D arrays) 
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
+        String text2 = toString(TIC_TAC_TOE);        // Convert matrix to string
+        String imageName2 = "C:\\Users\\lawrence.wachs\\Documents\\"
+                          + "NetBeansProjects\\ComputerScience30S\\"
+                          + "tic-tac-toe.gif";              // New full name
+        Icon icon2 = new ImageIcon(imageName2);             // Create icon
+        font = new Font("Comic Sans MS",Font.BOLD,50);      // Recreate font
+        background = Color.white;                           // Preset colors
+        foreground = Color.BLACK;
+        // Now call that first method
+        output(text2,background, foreground, font, icon2, "Tic-Tac-Toe...");
         
+        // SECOND: method requires only a lot more arguements of all the 
+        // component "parts" of the objects to change the graphical properties
         
-        
-        
-        
-        
-        
+        output("Hi kids", 
+                255, 255, 255, 
+                0, 0, 0, 
+                "Arial", Font.PLAIN, 180, 
+                "C:\\Users\\lawrence.wachs\\Documents\\NetBeansProjects\\"
+              + "ComputerScience30S\\poke.gif", 
+                "Another example...");
         
         System.out.println("Completed learning arrays!");
     }
@@ -1367,6 +1404,72 @@ public class ComputerScience30S {
         }     
         return text;                              // Return the filled up string
     }
+    
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font (includes the type of font and the size) along with text and 
+     * title.
+     * 
+     * @param text what text to show in the dialog
+     * @param background the background color of the dialog
+     * @param foreground the foreground color (or text color) of the dialog
+     * @param font the font for the text in the dialog
+     * @param icon a image icon (picture) to display in the dialog
+     * @param title what to show at the top of the dialog
+     */
+    private static void output(
+            String text, 
+            Color  background, 
+            Color  foreground, 
+            Font   font, 
+            Icon   icon, 
+            String title) {
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)  
+        JTextArea area = new JTextArea();
+        
+        // Now we add things into the area, using methods built into the text 
+        // area object
+        area.setText(text);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setFont(font);
+        
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title, 
+                JOptionPane.PLAIN_MESSAGE, 
+                icon
+        );
+    }
+    
+    public static void output(
+            String text, 
+            int    backgroundRed, 
+            int    backgroundGreen, 
+            int    backgroundBlue, 
+            int    foregroundRed, 
+            int    foregroundGreen, 
+            int    foregroundBlue, 
+            String fontName,
+            int    fontType,
+            int    fontSize,
+            String iconName, 
+            String title) {
+        Color background = new Color(backgroundRed, backgroundGreen, 
+                backgroundBlue);
+        Color foreground = new Color(foregroundRed, foregroundGreen, 
+                foregroundBlue);
+        Font font = new Font(fontName, fontType, fontSize);
+        Icon icon = new ImageIcon(iconName);
+        output(text, background, foreground, font, icon, title);
+    }
+            
     
 }
 
