@@ -21,8 +21,8 @@ package computerscience30s;
  * needs to connect to another library (API) of code
  */
 import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JOptionPane;
-import javax.swing.JTextArea;
 
 
 /**
@@ -1204,8 +1204,19 @@ public class ComputerScience30S {
        
         // Fonts are created in a simlar way (import, then declare an "object")
         
+        // Temporary variables for the font in this example...
+        String name  = "Biome";     // Must be a "named" font on the computer
+        int    style = Font.BOLD;   // Could also be italics, or plain
+        int    size  = 20;          // Measured in points
+                
+        // Create the font "object"
+        Font font = new Font(name,style,size);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
         
-        
+        // We could have also done this in one line like:
+        // Font font = new Font("Arial",Font.BOLD, 12);
         
         
         
