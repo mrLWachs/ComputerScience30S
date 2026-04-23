@@ -20,7 +20,9 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
+import java.awt.Color;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -1186,19 +1188,25 @@ public class ComputerScience30S {
         // details in the next unit 'classes' and the optiona 'graphics' unit.
         
         // Temporary variables for the color in this example...
+        int red   = 0;
+        int green = 0;
+        int blue  = 0;
+        
+        Color background = new Color(red,green,blue);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)
+        
+        Color foreground = new Color(0,255,0);
         
         
         
+        //..... fonts, images,...
         
         
-        
-        
-        
-        
-        
-        
-        
-        
+        JTextArea area = new JTextArea(value);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        JOptionPane.showMessageDialog(null, area);
         
         
         
