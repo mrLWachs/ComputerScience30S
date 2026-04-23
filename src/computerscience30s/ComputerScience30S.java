@@ -1300,13 +1300,14 @@ public class ComputerScience30S {
         // SECOND: method requires only a lot more arguements of all the 
         // component "parts" of the objects to change the graphical properties
         
-        output("Hi kids", 
-                255, 255, 255, 
-                0, 0, 0, 
-                "Arial", Font.PLAIN, 180, 
-                "C:\\Users\\lawrence.wachs\\Documents\\NetBeansProjects\\"
-              + "ComputerScience30S\\poke.gif", 
-                "Another example...");
+        output("Hi kids",                          // The text to show
+                255, 255, 0,                       // The background color (RGB)
+                0, 0, 255,                         // The foreground color (RGB)
+                "Broadway", Font.PLAIN, 250,       // The font (name,style,size)
+                "C:\\Users\\lawrence.wachs\\"      // the image to show
+              + "Documents\\NetBeansProjects\\"    // (first, middle, and last
+              + "ComputerScience30S\\poke.gif",    // names combined)
+                "Another example...");             // The title
         
         System.out.println("Completed learning arrays!");
     }
@@ -1448,19 +1449,30 @@ public class ComputerScience30S {
         );
     }
     
-    public static void output(
-            String text, 
-            int    backgroundRed, 
-            int    backgroundGreen, 
-            int    backgroundBlue, 
-            int    foregroundRed, 
-            int    foregroundGreen, 
-            int    foregroundBlue, 
-            String fontName,
-            int    fontType,
-            int    fontSize,
-            String iconName, 
-            String title) {
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font, along with text and title.
+     * 
+     * @param text what text to show in the dialog
+     * @param backgroundRed the amount of red for the background color
+     * @param backgroundGreen the amount of red for the background color
+     * @param backgroundBlue the amount of red for the background color
+     * @param foregroundRed the amount of red for the foreground color
+     * @param foregroundGreen the amount of red for the foreground color
+     * @param foregroundBlue the amount of red for the foreground color
+     * @param fontName the name of the font to use
+     * @param fontType the type (bold, italics, plain) of the font to use
+     * @param fontSize the size (in points) of the font to use
+     * @param iconName the full (first, middle, and last) name of image to use
+     * @param title what to show at the top of the dialog 
+     */
+    public static void output(String text, int backgroundRed, 
+                              int backgroundGreen, int backgroundBlue, 
+                              int foregroundRed, int foregroundGreen, 
+                              int foregroundBlue, String fontName,
+                              int fontType, int fontSize, String iconName, 
+                              String title) {
         Color background = new Color(backgroundRed, backgroundGreen, 
                 backgroundBlue);
         Color foreground = new Color(foregroundRed, foregroundGreen, 
@@ -1468,8 +1480,7 @@ public class ComputerScience30S {
         Font font = new Font(fontName, fontType, fontSize);
         Icon icon = new ImageIcon(iconName);
         output(text, background, foreground, font, icon, title);
-    }
-            
+    }        
     
 }
 
