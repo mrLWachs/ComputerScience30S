@@ -23,6 +23,7 @@ package computerscience30s;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -1205,7 +1206,7 @@ public class ComputerScience30S {
         // Fonts are created in a simlar way (import, then declare an "object")
         
         // Temporary variables for the font in this example...
-        String name  = "Biome";     // Must be a "named" font on the computer
+        String name  = "Consolas";  // Must be a "named" font on the computer
         int    style = Font.BOLD;   // Could also be italics, or plain
         int    size  = 20;          // Measured in points
                 
@@ -1218,15 +1219,48 @@ public class ComputerScience30S {
         // We could have also done this in one line like:
         // Font font = new Font("Arial",Font.BOLD, 12);
         
+        // NEXT: to actually use these "properties" (colors, font) we first need
+        // to create something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it) 
+        JTextArea area = new JTextArea();
+        
+        // Now we add things into the area, using methods built into the text 
+        // area object
+        area.setText(value);
+        area.setForeground(foreground);
+        area.setBackground(background);
+        area.setFont(font);
+        
+        // For images (pictures, "icons") -> first, download or create the image
+        // file and make a  note of where it is "saved". Then right click on 
+        // that file and go to "Properties" -> this will allow you to get all 
+        // the information (data) you need to use the image...
+        
+        String first = "C:\\Users\\lawrence.wachs\\"
+                     + "OneDrive - St. James-Assiniboia School Division"
+                     + "\\Desktop\\";
+        // WHERE: commonly called "folder", "path", "directory" (where it is)
+        
+        String middle = "m";
+        // WHO: the part of the name that the user usually enters
+        
+        String last = ".gif";
+        // WHAT: the File "extension" or type (what type of file is this?)
+        
+        String imageName = first + middle + last;
+        
+        
+                
         
         
         
         
         
         
-        
-        
-        
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters
+        JOptionPane.showMessageDialog(null, area);
         
         
         
