@@ -1198,15 +1198,28 @@ public class ComputerScience30S {
         
         Color foreground = new Color(0,255,0);
         
+        // These "colors" just like what we are going to do next ("fonts")
+        // are technically "properties" (like the properties window in Visual
+        // Studio...)
+       
+        // Fonts are created in a simlar way (import, then declare an "object")
         
         
-        //..... fonts, images,...
         
         
-        JTextArea area = new JTextArea(value);
-        area.setBackground(background);
-        area.setForeground(foreground);
-        JOptionPane.showMessageDialog(null, area);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
