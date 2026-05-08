@@ -70,9 +70,9 @@ public class ComputerScience30S {
          
         // NOTE: the line above required us to use the "lightbulb" in NetBeans
         // to "Create class LearnClasses in source package" which created a new
-        // code module that you can see in the Projects window on the left in 
-        // NetBeans (it is a "class" of code we will learn the unit in)
-        
+        // code module (a "LearnClasses.java" file) that you can see in the  
+        // Projects window on the left in NetBeans (it is a "class" of code we 
+        // will learn about the unit in)        
     }
 
     /**
