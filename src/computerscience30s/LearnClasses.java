@@ -58,6 +58,13 @@ public class LearnClasses {
         
         // Class object = new Class() <--- implies a method?
         
+        // We can call (invoke) methods within the object
+        person.born();
+        // We can also "access" the properties (variables) of that object
+        person.name = "John Doe";
+        person.gender = "Non binary";
+        person.birthday();
+        person.talk();
         
         
         

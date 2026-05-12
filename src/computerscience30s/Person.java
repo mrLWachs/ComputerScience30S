@@ -24,19 +24,28 @@ public class Person
     // Methods: (things it can do, verbs, actions, return, parameter(s))
       
     void born() {
-        
+        name   = "undefined";
+        gender = "undefined";
+        age    = 0;
+        alive  = true;
     }
     
     void die() {
-        
+        alive = false;
     }
     
     void talk() {
-        
+        if (alive == true) {
+            System.out.println(name + " is " + age + 
+                    " identifes " + gender);
+        }
+        else {
+            System.out.println("Booo!!!");
+        }
     }
     
     void birthday() {
-        
+        age++;
     }
        
 }
