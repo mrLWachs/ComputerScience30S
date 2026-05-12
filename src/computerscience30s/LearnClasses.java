@@ -1,4 +1,5 @@
 
+/** Required package class namespace */ 
 package computerscience30s;
 
 /**
@@ -10,8 +11,12 @@ package computerscience30s;
  * @author Mr. Wachs
  * @since May 7, 2026
  */
-public class LearnClasses {
+public class LearnClasses 
+{
     
+    /**
+     * Default constructor method
+     */
     public LearnClasses() {
         System.out.println("Start Learning about Classes...");
                 
