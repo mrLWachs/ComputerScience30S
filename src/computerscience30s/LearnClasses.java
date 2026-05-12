@@ -58,13 +58,30 @@ public class LearnClasses {
         
         // Class object = new Class() <--- implies a method?
         
+         // person.born();
+        // The original "born" method was changed into a constructor
+        
         // We can call (invoke) methods within the object
-        person.born();
+        person.talk();        
         // We can also "access" the properties (variables) of that object
         person.name = "John Doe";
         person.gender = "Non binary";
         person.birthday();
         person.talk();
+        
+        // =====================================================================
+        // (5) CONSTRUCTOR METHODS
+        // =====================================================================        
+        // These are special methods created in a class that are called 
+        // (invoked) when a class is used to create an object - these methods 
+        // have: (1) The same name as the class (including a capital letter)
+        // and (2) No return type - not even the word "void". They are used to 
+        // set the properties to starting (or "default") values - When the 
+        // constructor is called, it is "creating" an object, or 
+        // "instantiating" an "instance", "declaring" a "variable" of the 
+        // class type. We can also overload the constructor methods 
+        // (see examples in the Person class)
+        
         
         
         
