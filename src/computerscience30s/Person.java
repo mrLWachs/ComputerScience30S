@@ -15,15 +15,10 @@ public class Person
 
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
      
-    // We add a keyword to the front of the properties (modifier word) to
-    // determine if the property (variable, global variable) is encapsulated
-    // or not. Meaning is the variable accessable (can be read and changed)
-    // inside the class and/or outside the class (words "private" and "public")
-    
-    public String name;        // Represents this person's full name    
-    private int age;           // Represents this person's age in years    
-    public String gender;      // Represents this person's identified gender    
-    private boolean alive;     // Represents whether this person is alive or not
+    String name;        // Represents this person's full name    
+    int age;           // Represents this person's age in years    
+    String gender;      // Represents this person's identified gender    
+    boolean alive;     // Represents whether this person is alive or not
     
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
