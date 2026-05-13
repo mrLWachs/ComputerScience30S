@@ -35,7 +35,7 @@ public class Person
      * 'create' a Person object. The method sets all the class properties  
      * (global variables) to their starting values ("defaults").
      */
-    public Person() {
+    Person() {
         name   = "undefined";
         gender = "undefined";
         age    = 0;
@@ -51,6 +51,30 @@ public class Person
     //     age    = 0;
     //     alive  = true;        
     // }
+    
+    /**
+     * Another overloaded (which means multiple methods with the same name, but
+     * different parameters) constructor method
+     * 
+     * @param newName the 'new' name to assign this person object
+     */
+    Person(String newName) {
+        name   = newName;
+        gender = "undefined";
+        age    = 0;
+        alive  = true;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     /**
      * The person dies (changing/modifying) the encapsulated (private) property

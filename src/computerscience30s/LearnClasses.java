@@ -87,6 +87,19 @@ public class LearnClasses
         // class type. We can also overload the constructor methods 
         // (see examples in the Person class)
         
+        // We can create ("declared", "instantiate") another Person object
+        Person jane = new Person();
+        jane.name = "Jane Doe";
+        jane.gender = "female";
+        jane.talk();
+        
+        // Creating a third person... (using the 2nd constructor option)
+        Person james = new Person("James Rogowy");
+        james.talk();
+        
+        
+        
+        
         
         
         
