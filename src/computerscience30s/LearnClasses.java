@@ -97,8 +97,20 @@ public class LearnClasses
         Person james = new Person("James Rogowy");
         james.talk();
         
+        // Create a 4th person... (using a different constructor method)
+        Person forth = new Person("Forth Forthy", 4, "four");
+        forth.talk();
         
-        
+        // =====================================================================
+        // (6) THIS keyword
+        // =====================================================================        
+        // The keyword "this" is used as a "placeholder" to refer to the object
+        // that will (eventually) be created. Often used in constructor methods
+        // or other methods to refer to the class properties. Often used to 
+        // avoid confusion with any method parameters that have the "same name" 
+        // as the properties. It can also be used to implicitly call (invoke) 
+        // methods within a class as the word "this" makes that implicit 
+        // reference to the object itself (see an example in the Person class)
         
         
         
