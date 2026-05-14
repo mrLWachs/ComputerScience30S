@@ -41,17 +41,7 @@ public class Person
         age    = 0;
         alive  = true;
     }
-    
-    // The method below was originally written and then deleted (commented out)
-    // because the new constructor method above performs the same purpose....
-    
-    // void born() {
-    //     name   = "undefined";
-    //     gender = "undefined";
-    //     age    = 0;
-    //     alive  = true;        
-    // }
-    
+
     /**
      * Another overloaded (which means multiple methods with the same name, but
      * different parameters) constructor method
@@ -82,19 +72,29 @@ public class Person
         this.age    = age;
         alive  = true;
     }
-        
+               
+    // The method below was originally written and then deleted (commented out)
+    // because the new constructor method above performs the same purpose....
+    
+    // void born() {
+    //     name   = "undefined";
+    //     gender = "undefined";
+    //     age    = 0;
+    //     alive  = true;        
+    // }
+    
     /**
      * The person dies (changing/modifying) the encapsulated (private) property
      * (alive) through this method
      */
-    public void die() {
+    void die() {
         alive = false;
     }
     
     /**
      * Gives the person a birthday, changes the encapsulated property (age)
      */
-    public void birthday() {
+    void birthday() {
         age++;
     }
     
