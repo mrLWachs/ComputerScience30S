@@ -31,7 +31,21 @@ public class Student extends Person
      * @param number the student number for this student
      */
     public Student(String name, int age, String gender, int number) {
-        
+        // The keyword "super" is a reference to the "super class" (in this
+        // case is "Person) and you can use the keyword to change properties
+        // (but not encapsulated/private ones) and call methods
+        super.name = name;
+        super.gender = gender;
+        // Because age is "private" (or encapsulated) in the parent (Person)
+        // class, we cannot access it directly, instead we will call a 
+        // public method that modifies this property
+        for (int i = 0; i < age; i++) {
+            super.birthday();
+        }
+        // "this" is an explicit refernce to "this class"
+        this.number = number;
+        average = 0.0;
+        book = new Book();
     }   
     
     /**

@@ -149,7 +149,19 @@ public class LearnClasses
         
         Student student = new Student("Pubert Studentson",16,"male",67);
         student.talk();
-        
+        // Now call (invoke) the 'inherited' methods...
+        student.birthday();
+        student.talk();
+        // Call (invoke) methods specifically for the student class
+        student.study();
+        student.talk();
+        student.slackOff();
+        student.talk();
+        student.cram();
+        student.talk();
+        // Calling another inherited method
+        student.die();
+        student.talk();
         
         
         
