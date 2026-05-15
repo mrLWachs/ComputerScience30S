@@ -112,7 +112,7 @@ public class LearnClasses
         // methods within a class as the word "this" makes that implicit 
         // reference to the object itself (see an example in the Person class)
         
-         // =====================================================================
+        // =====================================================================
         // (7) ENCAPSULATION (private and public)
         // =====================================================================        
         // A concept applied to both properties and methods of classes to 
@@ -135,6 +135,17 @@ public class LearnClasses
         
         // person.age = 10;
         // person.think();
+        
+        // =====================================================================
+        // (8) INHERITANCE
+        // =====================================================================        
+        // The ways two or more classes of code "communicate" with each other 
+        // to transfer data or represent (model) a "real world" relationship of 
+        // concepts. Inheritance is where one class "inherits" all the 
+        // properties and methods of the other class - like biology you can 
+        // have a parent (or "super" or "base") class and a child (or "sub") 
+        // class that inherits from the parent class - this is also simply put 
+        // as a "is a" relationship (see an example in the Student class)
         
         
         
