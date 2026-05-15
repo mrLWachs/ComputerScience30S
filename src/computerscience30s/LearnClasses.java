@@ -163,7 +163,29 @@ public class LearnClasses
         student.die();
         student.talk();
         
+        // =====================================================================
+        // (10) SUPER KEYWORD
+        // =====================================================================        
+        // The keyword "super" is also used as a reference to the parent class 
+        // that this class inherits from (extends). Used with the dot operator,
+        // you can access any public properties or call any public methods from
+        // the parent or "super" class (you can see an example of this in the
+        // "Student" class)
         
+        // =====================================================================
+        // (11) OVER-RIDE METHODS
+        // =====================================================================        
+        // A type of method - so this means (like the unit on methods) it may 
+        // or may not have parameter(s) and it may or may not (void) return 
+        // something. This applies to classes that inherit from another class.
+        // It is similar to the concept of over-loading a method (two or 
+        // methods with the same name but different parameters) - but not quite
+        // the same. The method is named the same name (with the same parameter
+        // list) as a method that was already inherited from the super (parent)
+        // class. Instead of calling the inherited method, when you call this 
+        // method from the sub (child) class, this sub classes method code 
+        // "over-rides" that method and it's code runs instead (you can see an 
+        // example of this in the "Student" class)
         
         
         
