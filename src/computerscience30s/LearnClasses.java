@@ -147,7 +147,7 @@ public class LearnClasses
         // class that inherits from the parent class - this is also simply put 
         // as a "is a" relationship (see an example in the Student class)
         
-        Student student = new Student();
+        Student student = new Student("Pubert Studentson",16,"male",67);
         student.talk();
         
         

@@ -18,6 +18,44 @@ public class Student extends Person
      * "has a" relationship (association) or "usage" with the Student class
      */
     public Book book;
-   
+    private int number;
+    private double average;
+    
+    /**
+     * Constructor for the class, sets the class properties (including the
+     * properties it inherited form the super or parent class)
+     * 
+     * @param name the name for this student person
+     * @param age the age for this student person
+     * @param gender the gender for this student person
+     * @param number the student number for this student
+     */
+    public Student(String name, int age, String gender, int number) {
+        
+    }   
+    
+    /**
+     * Studying raises the student's average
+     */
+    public void study() {
+        average += 1.25;
+        // or "average = average + 1.25;"
+    }
+    
+    /**
+     * Slacking off lowers the student's average
+     */
+    public void slackOff() {
+        average -= 0.33;
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 10; i++) {
+            study();
+        }
+    }
     
 }
