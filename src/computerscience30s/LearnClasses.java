@@ -187,7 +187,19 @@ public class LearnClasses
         // "over-rides" that method and it's code runs instead (you can see an 
         // example of this in the "Student" class)
         
+        // =====================================================================
+        // (12) POLYMORPHISM
+        // =====================================================================        
+        // Is the idea that our code can adapt or change ("morph") to many 
+        // ("poly") different types of objects. For example, a method that can 
+        // take a class type as a parameter will accept all objects of that 
+        // type, but also all children (sub-class) objects of that class as well
+        // (you can see an example of this if you complete the bonus section of
+        // this example...)
         
+        // Instantiate a Husky object
+        Husky husky = new Husky("Havoc", 18, "Dog", 2665);
+        husky.talk();
         
         
         
