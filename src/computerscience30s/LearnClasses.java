@@ -212,17 +212,19 @@ public class LearnClasses
         // Now call the method...
         teacher.teach();
         
+        // Build (declare, initiaize, instantiate) a Meeting object
+        Meeting meeting = new Meeting();
         
+        // Calling our polymorphic method
+        meeting.attend(person);
+        meeting.attend(jane);
+        meeting.attend(james);
+        meeting.attend(forth);        
+        meeting.attend(student);
+        meeting.attend(husky);
+        meeting.attend(teacher);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        meeting.hold();
         
         System.out.println("Completed Learning about Classes!");
     }
