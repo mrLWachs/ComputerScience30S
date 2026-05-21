@@ -1,22 +1,60 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+/** Required package class namespace */
 package computerscience30s;
 
 /**
+ * Graphics1.java - this is a form (or frame, or 'container', or user interface)
+ * built using the NetBeans WYSIWYG ("what you see is what you get") UI 
+ * designer. To make this type of JFrame, you go to "File -> New File" and  
+ * select "JFrame Form" and the UI editor will appear. To switch between code  
+ * and the designer, use the buttons under the "Graphics1.java" tab named 
+ * "Source" and "Design". We will be using the editor's "Palette" and 
+ * "Properties" windows to build and change the design and then adding code as 
+ * needed. We will examine this frame and Graphics1 to compare doing the same 
+ * things using a designer vs. writing all the code ourselves. 
+ * 
+ * NOTE: For those students who took the introductory Computer Science 20S 
+ * course and used Visual Studio and the C# programming language, an editor 
+ * like this should seem familiar to you. That IDE allows programmers to use
+ * the WYSIWYG editor without having to write all the code. Editors just write 
+ * code for you (both Visual Studio and this NetBeans editor) and "hide" that 
+ * code (either in a collapsed method in NetBeans, or in another class in 
+ * Visual studio). You can find a Visual Studio C# version of this example
+ * here: https://bit.ly/4k5ccfN with the specific code page here:
+ * https://bit.ly/3SzFK9n
+ * 
+ * NOTE: If you remember having to "name" all the objects in Visual
+ * Studio, you can also do this in NetBeans (although in this course that is not 
+ * required) by right clicking on each object and selecting "Change Variable
+ * Name..." and then typing in a new name. 
  *
- * @author lawrence.wachs
+ * @author Mr. Wachs
+ * @since May 2026
  */
 public class Graphics1 extends javax.swing.JFrame {
-    
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Graphics1.class.getName());
 
     /**
-     * Creates new form Graphics1
+     * Class constructor, creates new form Graphics1
      */
     public Graphics1() {
         initComponents();
+        
+        // Add code after the call to the method in the line above (which do 
+        // not erase that line - which is a method call) - now add code to   
+        // make the form (frame, container, window, etc.) appear to the user
+        // and other methods we can call to make visual changes...
+            
+        // Some properties could be coded and others can be set using the
+        // properties window in the designer
+        
+        // When designing, another option that could be done is to "right click"
+        // on the frame (the "container") and select "Set Layout" and then 
+        // select "null" - this give you more control over where items can be 
+        // placed but requires you to use code to set the size of the frame
+        // before it is shown...
+        
+        this.setSize(450, 580);             // The width and height
+        this.setLocationRelativeTo(null);   // This centers the frame on screen
+        this.setVisible(true);              // Display the frame
     }
 
     /**
@@ -28,73 +66,147 @@ public class Graphics1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        exitButton = new javax.swing.JButton();
+        textLabel = new javax.swing.JLabel();
+        pictureLabel = new javax.swing.JLabel();
+        textField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 0));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(51, 51, 255));
-        jButton1.setText("EXIT");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        exitButton.setText("EXIT");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                exitButtonActionPerformed(evt);
             }
         });
+        getContentPane().add(exitButton);
+        exitButton.setBounds(22, 44, 187, 23);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jButton1)
-                .addContainerGap(234, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(60, 60, 60)
-                .addComponent(jButton1)
-                .addContainerGap(189, Short.MAX_VALUE))
-        );
+        textLabel.setText("Hello World");
+        textLabel.setToolTipText("");
+        getContentPane().add(textLabel);
+        textLabel.setBounds(22, 16, 187, 16);
+
+        pictureLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/creepy.gif"))); // NOI18N
+        pictureLabel.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                pictureLabelMouseMoved(evt);
+            }
+        });
+        pictureLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pictureLabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pictureLabelMouseExited(evt);
+            }
+        });
+        getContentPane().add(pictureLabel);
+        pictureLabel.setBounds(22, 119, 320, 371);
+
+        textField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                textFieldKeyPressed(evt);
+            }
+        });
+        getContentPane().add(textField);
+        textField.setBounds(22, 79, 187, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
         // TODO add your handling code here:
         
-        System.exit(0);
+        // Double clicking a button in the design mode, immediately jumps to 
+        // code written for you connected to that button - to add in your 
+        // code to execute (just like in Visual Studio). Parts of this code
+        // is also not editable (that is why is appears in grey) but you can 
+        // add the code for the "action" for this event
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_exitButtonActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void textFieldKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textFieldKeyPressed
+        // For other actions, like this, right click on the object in the 
+        // WYSIWYG ("What You See Is What You Get") designer and go to the
+        // menu -> Events -> then the action you wish to add 
+        
+        textLabel.setText("Key was pressed");
+    }//GEN-LAST:event_textFieldKeyPressed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Graphics1().setVisible(true));
-    }
+    private void pictureLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseEntered
+        // The event "mouseEntered" and "mouseExited" are like "hover" effects
+        // of the mouse being "over" (or entering the space) of this object and
+        // then exiting (or leaving the space) of this label object
+        
+        textLabel.setText("Mouse has entered");
+    }//GEN-LAST:event_pictureLabelMouseEntered
 
+    private void pictureLabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseExited
+        textLabel.setText("Mouse has left");
+    }//GEN-LAST:event_pictureLabelMouseExited
+
+    private void pictureLabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseMoved
+        // Several different mouse events are accessible like this event 
+        // of the mouse moving over the object (the label image) and you can
+        // use the "evt" parameter to access events from the mouse like the 
+        // (x, y) cooordinate of it as it relates to the label
+        
+        textLabel.setText("Mouse over image: " + evt.getX() + "," + evt.getY());
+    }//GEN-LAST:event_pictureLabelMouseMoved
+
+    ////////////////////////////////////////////////////////////////////////////
+    // NOTE: the NetBeans WYSIWYG visual designer also adds a version of the 
+    // "main" method to this class of code (each JFrame form when added also 
+    // adds a main method below for each JFrame form seen below - just like the 
+    // original class file when you build a project). You can certainly delete
+    // that original project class file, and then the project will use this 
+    // version of main when the project runs (when you click the green tirangle 
+    // above on the NetBeans toolbar) or you can delete the main method below 
+    // and have other code call this class's constructor to show this form. You 
+    // can also change the project properties so that it "picks" which version 
+    // of main to run (see Mr. Wachs for instructions on how to do this). I  
+    // have removed the main method for this class (by commenting it out below)
+    ////////////////////////////////////////////////////////////////////////////
+    
+    
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
+//            logger.log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(() -> new Graphics1().setVisible(true));
+//    }
+
+    ////////////////////////////////////////////////////////////////////////////
+    // NOTE: the NetBeans visual designer adds the code below for each 
+    // component (control, widget, property, global variable) which also 
+    // cannot be edited
+    ////////////////////////////////////////////////////////////////////////////
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton exitButton;
+    private javax.swing.JLabel pictureLabel;
+    private javax.swing.JTextField textField;
+    private javax.swing.JLabel textLabel;
     // End of variables declaration//GEN-END:variables
 }
