@@ -90,6 +90,8 @@ public class ComputerScience30S {
         // designer and code (so add a JFrame Form class which we will code)
         
         Graphics1 graphics1 = new Graphics1();
+        Graphics2 graphics2 = new Graphics2();
+        
     }
 
     /**

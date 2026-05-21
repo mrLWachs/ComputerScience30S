@@ -72,6 +72,7 @@ public class Graphics1 extends javax.swing.JFrame {
         textField = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Graphics One");
         getContentPane().setLayout(null);
 
         exitButton.setText("EXIT");
@@ -133,7 +134,7 @@ public class Graphics1 extends javax.swing.JFrame {
         // WYSIWYG ("What You See Is What You Get") designer and go to the
         // menu -> Events -> then the action you wish to add 
         
-        textLabel.setText("Key was pressed");
+        textLabel.setText("Key pressed: " + evt.getKeyCode());
     }//GEN-LAST:event_textFieldKeyPressed
 
     private void pictureLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseEntered
