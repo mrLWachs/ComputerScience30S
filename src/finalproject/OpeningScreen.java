@@ -33,7 +33,7 @@ public class OpeningScreen extends javax.swing.JFrame {
     // or deleted...
     // =========================================================================
     
-     private static final java.util.logging.Logger logger = 
+    private static final java.util.logging.Logger logger = 
             java.util.logging.Logger.getLogger(OpeningScreen.class.getName());
 
     // =========================================================================
