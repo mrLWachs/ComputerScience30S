@@ -43,7 +43,7 @@ public class ComputerScience30S {
         // =====================================================================
         // UNIT 1: Introduction to Java (variables, conditionals, loops)
         // =====================================================================
-        learnIntroductionToJava();
+        learnIntroductionToJava(); 
         
         // NOTE: this code was originally all here in the main method, but
         // after the class learned what methods were, the code was shifted into 
