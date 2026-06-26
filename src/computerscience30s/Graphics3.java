@@ -21,7 +21,7 @@ import javax.swing.Timer;
  * with our custom code (a 'hybrid' approach) to make a "mini final project" 
  * type of application (a mini 'PhotoShop')
  *
- * @author Mr. Wachs
+ * @author Mr. Wachs 
  * @since December 2025
  */
 public class Graphics3 extends javax.swing.JFrame 
@@ -31,8 +31,8 @@ public class Graphics3 extends javax.swing.JFrame
      * Constructor method, creates new frame/form Graphics3 
      */
     public Graphics3() {
-        initComponents();
-        setup();                // jump to custom method
+        initComponents(); 
+        setup();                                       // jump to custom method
     }
 
     // NetBeans designer code below ...........................................
