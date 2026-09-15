@@ -6,6 +6,29 @@ public class ComputerScience30S {
 
     public static void main(String[] args) {
         
+        // =====================================================================
+        // (1) COMMENTS (various types)
+        // =====================================================================
+             
+        // This is a comment
+        
+        // All typing after "//" until the line ends is called a in-line comment        
+        // Commments are not code, so you can write what you want   
+        
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
+        
+        // Brackets (braces, parenthesis) and specifically the "curly" braces
+        // the { and } are important to the structure of code. All code right 
+        // now goes between these two brackets.
+            
+        // =====================================================================
+        // (2) INPUTS/OUTPUTS (simple, dialogs, and options)
+        // =====================================================================
+        
         // A basic output...
         System.out.print("Hello World");
         
@@ -17,6 +40,30 @@ public class ComputerScience30S {
         System.out.println("I'm in the world");
         
         System.out.println("Good-bye world");
+        
+        // Additional output tips... (these are "special" characters)
+        // (possibly never need to use these) 
+        
+        System.out.println("Make a quote: \" ");
+        System.out.println("Make a backslash: \\ ");
+        System.out.println("Make a tab: \t appear ");
+        System.out.println("Make a new line: \n appear ");
+        
+        // In all these, the key is to use the "\" backslash
+        // which is called an "escape character"
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
     
