@@ -1,20 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package computerscience30s;
 
-/**
- *
- * @author lawrence.wachs
- */
+
 public class ComputerScience30S {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
     }
     
 }
@@ -35,4 +28,11 @@ public class ComputerScience30S {
 //      option for getting caught up or repairing this example
 // (3)  To zoom in and out on the code, hold ALT and roll the mouse
 // (4)  Double click the top of a tab to hide side windows or show them
-
+// (5)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (6)  All characters in code are color coded, black is the default and can
+//      mean all different types of things (like variables, etc.), blue 
+//      indicates "key" words that have special meaning, and grey indicates
+//      comments (not code) - and code can be letters (a-z,A-Z), numbers (0-9),
+//      and symbols ( {} () [] + - * / = etc)
+// (7)  The curly brackets (braces, parenthesis) are important "{" and "}" so
+//      do not remove them or an error may occur
