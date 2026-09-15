@@ -6,7 +6,17 @@ public class ComputerScience30S {
 
     public static void main(String[] args) {
         
+        // A basic output...
+        System.out.print("Hello World");
         
+        // Tips for typing (so you don't have to type)
+            // Autocomplete ("Intellisense")
+            // Keyboard shortcuts ("hot keys")
+            // see the notes at the bottom of this java file...
+            
+        System.out.println("I'm in the world");
+        
+        System.out.println("Good-bye world");
         
     }
     
@@ -36,3 +46,9 @@ public class ComputerScience30S {
 //      and symbols ( {} () [] + - * / = etc)
 // (7)  The curly brackets (braces, parenthesis) are important "{" and "}" so
 //      do not remove them or an error may occur
+// (8)  Click the green triangle on the top toolbar to run code
+// (9)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (10) Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (11) When on a GitHub webpage, click on the line numbers on the left and then
+//      when you refresh the page, it will automatically scroll to that line
+
