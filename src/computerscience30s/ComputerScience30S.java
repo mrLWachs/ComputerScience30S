@@ -1,6 +1,8 @@
 
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 
 public class ComputerScience30S {
 
@@ -51,6 +53,10 @@ public class ComputerScience30S {
         
         // In all these, the key is to use the "\" backslash
         // which is called an "escape character"
+        
+        // Dialog types of input and outputs, and are little tiny "windows", 
+        // "forms", "graphical rectangles" and are somewhat "fancier" ways to
+        // do an input/output with a dialog box (in C# it was "Message box")
         
         
         
