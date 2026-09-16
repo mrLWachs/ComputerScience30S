@@ -58,6 +58,17 @@ public class ComputerScience30S {
         // "forms", "graphical rectangles" and are somewhat "fancier" ways to
         // do an input/output with a dialog box (in C# it was "Message box")
         
+        JOptionPane.showMessageDialog(null, "Hello World");
+        
+        // Above line of code is the ONLY one needed for assignment, final 
+        // project, etc. - for ALL OUTPUTS
+        
+        // For inputs (meaning the user is involved in giving us data)...
+        // An "input" dialog box
+        
+        JOptionPane.showInputDialog("Enter something");
+        
+        // The simpliest version (is the one you will need to know)
         
         
         
