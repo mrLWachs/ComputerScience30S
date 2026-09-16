@@ -152,4 +152,7 @@ public class ComputerScience30S {
 // (10) Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (11) When on a GitHub webpage, click on the line numbers on the left and then
 //      when you refresh the page, it will automatically scroll to that line
-
+// (12) The word "null" means "nothing" and can often act as a placeholder for 
+//      code you often do not need (right now)
+// (13) To stop a running program, click the red stop button on the left in the
+//      output window, or the X in the bottom right of NetBeans
