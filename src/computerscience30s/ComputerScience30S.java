@@ -209,6 +209,14 @@ public class ComputerScience30S {
         // when the user gives us information, and for calculations / formulas.
         // You write a line of code to create (declare) a variable...
         
+        // This is an example of the simpliest variable "type"        
+        boolean a = true;
+        
+        // type name = value ;        
+        int b = 0;
+        double c = 0.0;
+        
+        
         
         
         
