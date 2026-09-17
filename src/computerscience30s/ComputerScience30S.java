@@ -253,6 +253,33 @@ public class ComputerScience30S {
         
         // Manipulate ("use") the varibles... 
         
+        int x = 0;
+        System.out.println("x = " + x);
+        
+        x = 30;
+        System.out.println("x = " + x);
+        
+        int y = x + 10;
+        System.out.println("y = " + y);
+        
+        // Optional ("you don't have to use this code") shorthand...
+        y++;    // Means is the same as coding "y = y + 1;"
+        y--;    // Means is the same as coding "y = y - 1;"
+        
+        // Even more shorthand (less recommend)
+        y += 10;    // Means is the same as coding "y = y + 10;"
+        y -= 10;    // Means is the same as coding "y = y - 10;"
+        y *= 10;    // Means is the same as coding "y = y * 10;"
+        y /= 10;    // Means is the same as coding "y = y / 10;"
+        
+        System.out.println("y = " + y);
+        
+        // Modulus (mod) division gives you the remainder of a division
+        // (not the normal answer) - in Java it uses the percentage "%"
+        // symbol for this
+        
+        
+        
         
         
         
