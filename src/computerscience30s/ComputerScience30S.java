@@ -216,6 +216,36 @@ public class ComputerScience30S {
         int b = 0;
         double c = 0.0;
         
+        // Output our variables (before we do anything to them) - when 
+        // outputting a variable it always displays the value stored in the 
+        // variable (not the name of the variable)
+        
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        
+        // Variables can change ("vary")
+        a = false;
+        b = 1;
+        c = 1.2;
+        
+        // Variables always go on the left hand side (LHS) of the equals
+        // sign (=) and the value going into the variable always goes on
+        // the right hand side (RHS)
+        
+        // Output them again - after they have been changed...
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        
+        // The "char" is short for "character" it holds (remembers) ONE
+        // character  
+        
+        
+        
+        
+        
+        
         
         
         
