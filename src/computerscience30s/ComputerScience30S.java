@@ -332,7 +332,7 @@ public class ComputerScience30S {
         
         double k = 2.9999999;
         int    l = (int)k;
-        double m = (double)k;
+        double m = (double)l;
         
         // Casting can also happen with other data types...
         
