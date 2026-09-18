@@ -336,8 +336,23 @@ public class ComputerScience30S {
         
         // Casting can also happen with other data types...
         
+        char n = 'A';
+        int  o = (int)n;
+        char p = (char)70;
         
+        System.out.println("k = " + k);
+        System.out.println("l = " + l);
+        System.out.println("m = " + m);
+        System.out.println("n = " + n);
+        System.out.println("o = " + o);
+        System.out.println("p = " + p);
         
+        // How to use dialog (JOptionPane) boxes (specifically the input)
+        // with variables...
+        
+        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+        // at the front of the line that makes the input dialog (code above is
+        // wrong, always make a string variable then the input dialog)
         
         
         
