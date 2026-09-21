@@ -495,12 +495,18 @@ public class ComputerScience30S {
         // Blocks of code can be one line or multiple lines of code and the 
         // "block" is controlled (runs or not) by the if statement
         
+        // if with an "else" (an option) for both true and false, check 2 things
         
+        double value3 = 1.45, value4 = 1.5;
         
+        // Using a comma is a option (I do not recommend)
         
-        
-        
-        
+        if (value3 < value4) {
+            System.out.println("Less than");
+        }
+        else {
+            System.out.println("Greater than");
+        }
         
         
         
