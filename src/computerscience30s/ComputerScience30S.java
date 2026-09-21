@@ -1,6 +1,7 @@
 
 package computerscience30s;
 
+import java.util.Random;
 import javax.swing.JOptionPane;
 
 
@@ -454,6 +455,39 @@ public class ComputerScience30S {
         System.out.println("value = " + value);
         
         // Do it again, but simplify the formula (between 2-53)
+        
+        int card = (int)( (53 - 2 + 1) * Math.random() + 2 );
+        System.out.println("card = " + card);
+        
+        // You can also use the C# style (Random random...) but I would caution
+        // you to use it carefully...
+        
+        Random random = new Random();
+        int random1 = random.nextInt();
+        double random2 = random.nextDouble(1, 10);
+        System.out.println("random1 = " + random1);
+        System.out.println("random2 = " + random2);
+        
+        // =====================================================================
+        // (4) CONDITIONAL STATEMENTS (making decisions, if, else, else if)
+        // =====================================================================
+        
+        // The simple if statement, you use this when comparing if something is
+        // true, as it checks that one thing ("asks a true/false question")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
