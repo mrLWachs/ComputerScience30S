@@ -443,6 +443,19 @@ public class ComputerScience30S {
         final double LOW  = 1.0;
         final double HIGH = 10.0;
         
+        // Now the formula to generate in that range
+        
+        double number = (HIGH - LOW + 1) * seed + LOW;
+        
+        System.out.println("number = " + number);
+        
+        // Now cast the double into an integer
+        int value = (int)number;
+        System.out.println("value = " + value);
+        
+        // Do it again, but simplify the formula (between 2-53)
+        
+        
         
         
         
