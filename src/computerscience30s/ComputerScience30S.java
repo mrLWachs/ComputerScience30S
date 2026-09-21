@@ -428,6 +428,22 @@ public class ComputerScience30S {
         
         double seed = Math.random();
         
+        // The "seed" generates a number (decimal) between 0 and 1 
+        // (but it never reaches 0 or 1)
+        
+        System.out.println("seed = " + seed);
+        
+        // You can use a formula for generating random numbers in a range
+        // between a low and a high number
+        
+        // Formula: random = (HIGH - LOW + 1) * seed + LOW
+        // e.g. (between 1 and 100) = (100-1+1)* seed + 1
+        
+        // Start with some constants defining the low and high
+        final double LOW  = 1.0;
+        final double HIGH = 10.0;
+        
+        
         
         
         
