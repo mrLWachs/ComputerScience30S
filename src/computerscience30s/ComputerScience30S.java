@@ -482,11 +482,18 @@ public class ComputerScience30S {
             System.out.println("equal");
         }
         
+        // If statements use both ( ) round and { } curly brackets and the 
+        // code inside of the curly brackets is said to be in a "block" of
+        // code and that block only runs when the test inside of the round
+        // brackets tests TRUE. It also indents the code inside the block
         
+        if (value1 < value2) {
+            System.out.print("They are ");
+            System.out.println("less than");
+        }
         
-        
-        
-        
+        // Blocks of code can be one line or multiple lines of code and the 
+        // "block" is controlled (runs or not) by the if statement
         
         
         
