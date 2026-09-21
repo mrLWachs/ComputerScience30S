@@ -475,7 +475,12 @@ public class ComputerScience30S {
         // The simple if statement, you use this when comparing if something is
         // true, as it checks that one thing ("asks a true/false question")
         
+        int value1 = 10;
+        int value2 = 20;
         
+        if (value1 == value2) {
+            System.out.println("equal");
+        }
         
         
         
