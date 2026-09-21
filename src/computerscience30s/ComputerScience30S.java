@@ -421,10 +421,12 @@ public class ComputerScience30S {
         
         // Math library also does random numbers, in a way like...
         
+        // Random random = new Random();
         
+        // Although, Java does allow you to do something like that line,
+        // but, it is not the same as C#
         
-        
-        
+        double seed = Math.random();
         
         
         
