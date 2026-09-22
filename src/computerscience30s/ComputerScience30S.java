@@ -543,6 +543,29 @@ public class ComputerScience30S {
             System.out.println("not equal");
         }
         
+        // Nesting is when you place one if statement inside the block of
+        // another if statement
+        
+        if (word1.equals(word2) == false) {
+            // Like "!=" with integers, doubles, etc
+            if (word1.equalsIgnoreCase(word2)) {
+                System.out.println("not really equal");
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
