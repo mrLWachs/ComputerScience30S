@@ -593,13 +593,24 @@ public class ComputerScience30S {
             password = JOptionPane.showInputDialog("Create another password");
         }
         
+        // The next type of loop is rarely used (you may never need it)
+        // it tests for true/false at the bottom of the loop, you use it
+        // when you want the body (block) of the loop to run at least
+        // once!
         
+        String choice = "";
         
+        do {            
+            choice = JOptionPane.showInputDialog("Enter password");
+        } while (choice.equalsIgnoreCase(password) == false);
         
+        JOptionPane.showMessageDialog(null, "You got it");
         
-        
-        
-        
+        // The "for" loop is used for counting (and for the upcoming unit 
+        // called "arrays"). It is a much more technical ("codey") looking loop
+        // The inside of the round brackets means: ( start ; end ; change)        
+        // The for loop creates its own variable (by default NetBeans calls
+        // it "i") - short for "iteration"
         
         
         
@@ -654,3 +665,6 @@ public class ComputerScience30S {
 //      error and a potential fix (if you click on the lightbulb)
 // (16) Under the menu "Window" you can select "Reset Windows" to reset NetBeans
 //      back to it's starting user interface settings
+// (17) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
+
