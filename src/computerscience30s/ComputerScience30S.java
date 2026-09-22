@@ -577,9 +577,21 @@ public class ComputerScience30S {
         
         // Simple loop...
         
+        int counter = 0;
         
+        while (counter < 10) {
+            System.out.println("counter = " + counter);
+            counter++;      // same as "counter = counter + 1;"
+        }
         
+        // while loop with string...
         
+        String password = JOptionPane.showInputDialog("Create password");
+        
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Try again");
+            password = JOptionPane.showInputDialog("Create another password");
+        }
         
         
         
