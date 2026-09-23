@@ -631,9 +631,13 @@ public class ComputerScience30S {
             System.out.println("i is " + i);
         }
         
+        for (int counting = 100; counting <= 500; counting*=2) {
+            System.out.println("counting = " + counting);
+        }
         
-        
-        
+        // =====================================================================
+        // (6) EXAMPLE ASSIGNMENT (modeling procedures and expectations)
+        // =====================================================================
         
         
         
