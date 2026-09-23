@@ -679,21 +679,55 @@ public class ComputerScience30S {
 // (7)  The curly brackets (braces, parenthesis) are important "{" and "}" so
 //      do not remove them or an error may occur
 // (8)  Click the green triangle on the top toolbar to run code
-// (9)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
-// (10) Type "sout" and then press tab it fills (autocompletes) "System.out..."
-// (11) When on a GitHub webpage, click on the line numbers on the left and then
+// (9)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (10) When on a GitHub webpage, click on the line numbers on the left and then
 //      when you refresh the page, it will automatically scroll to that line
-// (12) The word "null" means "nothing" and can often act as a placeholder for 
+// (11) The word "null" means "nothing" and can often act as a placeholder for 
 //      code you often do not need (right now)
-// (13) To stop a running program, click the red stop button on the left in the
+// (12) To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
-// (14) To "comment out" chunks of code, select the code with your mouse or 
+// (13) To "comment out" chunks of code, select the code with your mouse or 
 //      your keyboard, then click on one of the two buttons under the code tab
 //      (on the right)
-// (15) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+// (14) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
 //      error and a potential fix (if you click on the lightbulb)
-// (16) Under the menu "Window" you can select "Reset Windows" to reset NetBeans
+// (15) Under the menu "Window" you can select "Reset Windows" to reset NetBeans
 //      back to it's starting user interface settings
-// (17) You can get more NetBeans tips and autocompletes by selecting:
+// (16) You can get more NetBeans tips and autocompletes by selecting:
 //      Help -> Keyboard Shortcuts Card
-
+// (17) To autoformat code (fixes indents, extra spaces, etc.) you select the
+//      code with mouse or keyboard (if you select nothing it will autoformat
+//      all the code) and pres ALT + SHIFT + F (you should do this before you 
+//      hand in your code)
+// (18) To make projects easier and automate some tasks, go to 
+//      Tools -> Templates, scroll down and click on the ">" beside "Java", 
+//      select "Java Main Class", and "Open in Editor" and the enter 
+//      the text below (by uncommenting it, then copying it, and pasting it 
+//      into the temple (first delete all the text in the template and then 
+//      replace what is there with this by pasting it):
+//
+///** Required package class namespace */
+//package ${package};
+//
+//
+///*
+// * ${name} - description
+// * 
+// * @author YOUR NAME
+// * @since ${date}
+//*/
+//public class ${name}
+//{
+//
+//    /**
+//     * Main method for the project
+//     * 
+//     * @param args the command line arguments
+//     */
+//    public static void main(String[] args) {
+//        // TODO code application logic here
+//        
+//    }
+//
+//}
+//
