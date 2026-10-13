@@ -34,7 +34,24 @@ import javax.swing.JOptionPane;
  */
 public class ComputerScience30S {
 
-    public static void main(String[] args) {        
+    public static void main(String[] args) {    
+        // =====================================================================
+        // UNIT 1: Introduction to Java (variables, conditionals, loops)
+        // =====================================================================
+        learnIntroToJava();
+        
+        // =====================================================================
+        // UNIT 2: Methods (calling, parameters, returning)
+        // =====================================================================
+        // Make a "call" to a method (that does not yet exist). We call methods 
+        // by the name we give the method. Method names start in lowercase, 
+        // then use camel casing (just like variables) - try to use "verbs" 
+        // (action words). Methods (functions, procedures, actions) can often be
+        // identified by looking for the 2 round brackets ( )
+        learnMethods();    
+    }
+
+    private static void learnIntroToJava() {
         // =====================================================================
         // (1) COMMENTS (various types)
         // =====================================================================
@@ -692,7 +709,15 @@ public class ComputerScience30S {
         JOptionPane.showMessageDialog(null, "Thank you!");
                 
         // This line terminates any running java program at any point
-        // System.exit(0);          
+        // System.exit(0);    
+    }
+
+    private static void learnMethods() {
+        System.out.println("Start learning methods...");
+        
+        
+        
+        System.out.println("Completed learning methods!");
     }
     
 }
