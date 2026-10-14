@@ -38,16 +38,20 @@ public class ComputerScience30S {
         // =====================================================================
         // UNIT 1: Introduction to Java (variables, conditionals, loops)
         // =====================================================================
-        learnIntroToJava();
+        // learnIntroToJava();
         
         // =====================================================================
         // UNIT 2: Methods (calling, parameters, returning)
         // =====================================================================
-        // Make a "call" to a method (that does not yet exist). We call methods 
-        // by the name we give the method. Method names start in lowercase, 
-        // then use camel casing (just like variables) - try to use "verbs" 
-        // (action words). Methods (functions, procedures, actions) can often be
-        // identified by looking for the 2 round brackets ( )
+        // These lines make a "call" to a method (that does not yet exist).
+        // "Call" means you use the name of the method to make the code "jump" 
+        // to the method and its logic, and after the logic in the method is 
+        // complete, the code will "jump" back to the  next line after the call.
+        // We call methods by the name we give when we write the method. Method 
+        // names start in lowercase, then use camel casing (just like variables)
+        // and we try to use "verbs" (action words) for that name. Methods 
+        // (functions, procedures, actions) can often be identified by looking 
+        // for the 2 round brackets ( )
         learnMethods();    
     }
 
@@ -715,6 +719,17 @@ public class ComputerScience30S {
     private static void learnMethods() {
         System.out.println("Start learning methods...");
         
+        // =====================================================================
+        // (1) WHAT is a method, creating a method, and "calling" a method
+        // =====================================================================
+         
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method. We make methods
+        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // repeating code
+        
         
         
         System.out.println("Completed learning methods!");
@@ -819,7 +834,22 @@ public class ComputerScience30S {
 //      Then hand in both the code file (html) and the outputs file (Word file)
 //      on Mr. Wachs' hand in page here: https://bit.ly/3iiTvbu
 //
-
+// UNIT 2: Methods..............................................................
+// 
+// (21) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
+// (22) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
+// (23) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip #12) will help you write it
+// (24) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
+// (25) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
 
 
 
