@@ -730,9 +730,54 @@ public class ComputerScience30S {
         // for: (1) to break up a problem (2) reusability (3) to avoid 
         // repeating code
         
+        // Code to "jump" to a method, is "calling" the method (method call) 
+        writeStar();
+        // Call it agaiun
+        writeStar();
+        
+        // =====================================================================
+        // (2) PARAMETERS for methods ("inputs"), passing, and arguments
+        // =====================================================================
+         
+        // When we call a method, we sometimes place "data" (information) 
+        // inside the round brackets and that data is "passed" (sending) over 
+        // to the method. The data being passed is technically called the
+        // "argument" and the data being recieved is called the "parameter(s)". 
+        // You can always change the arguement.
+        
+        write("something");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Completed learning methods!");
+    }
+
+    private static void writeStar() {
+        System.out.println("*");
+    }
+
+    private static void write(String something) {
+        // The "variable" created inside of the round "( )" brackets of a 
+        // method is called a "parameter" as an input - if a method does not
+        // need any inputs, the brackets are left empty "()"
+        
+        System.out.println(something);
     }
     
 }
