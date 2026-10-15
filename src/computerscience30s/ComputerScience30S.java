@@ -747,8 +747,19 @@ public class ComputerScience30S {
         
         write("something");
         
+        // You can "call" the same method with different arguments (it passes
+        // the data into the method's parameter)
         
+        write("something else");
+        write("flash");
+        write("Spider-man");
+        write("Batman");
+        write("Superman");
+        write("Omni-man");
+        write("Mr. Wachs");
         
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are seperated with commas ","        
         
         
         
