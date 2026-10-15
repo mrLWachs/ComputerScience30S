@@ -804,8 +804,7 @@ public class ComputerScience30S {
         for (int i = 0; i < times; i++) {
             write(thing);
         }
-        // Reminder that methods can call other methods (which themselves can
-        // call other methds)
+        // Methods can call other methods (and they can call other methds...)
     }
 
     private static int giveMeNumber() {
