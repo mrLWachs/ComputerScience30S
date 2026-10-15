@@ -773,8 +773,8 @@ public class ComputerScience30S {
         // previous methods needed information (inputs) as parameters or 
         // empty brackets () if they did not need information passed
         
-        
-        
+        int number = giveMeNumber();
+        write("Number was " + number);
         
         
         
@@ -806,6 +806,15 @@ public class ComputerScience30S {
         }
         // Reminder that methods can call other methods (which themselves can
         // call other methds)
+    }
+
+    private static int giveMeNumber() {
+        // The keyword "return" is used inside the body of a method to 
+        // "send back" a value (like an int, double, String, etc.) as an output
+        // of a method - if a method does not need to have an output, the 
+        // word "void" is used
+        
+        return 7;
     }
     
 }
