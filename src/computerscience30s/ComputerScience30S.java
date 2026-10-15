@@ -725,14 +725,14 @@ public class ComputerScience30S {
          
         // Methods (functions, procedures, actions) are named in a style like 
         // variables are named (lowercase then camel casing), but use verb
-        // type words starting with lowercase then using camel casing the
-        // presense of round brackets ( ) indicate a method. We make methods
-        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // type words starting with lowercase then using camel casing. The
+        // presense of round brackets ( ) indicate a method. Methods are useful
+        // for: (1) breaking up problems (2) code reusability (3) to avoid 
         // repeating code
         
         // Code to "jump" to a method, is "calling" the method (method call) 
         writeStar();
-        // Call it agaiun
+        // Call it again...
         writeStar();
         
         // =====================================================================
@@ -740,10 +740,10 @@ public class ComputerScience30S {
         // =====================================================================
          
         // When we call a method, we sometimes place "data" (information) 
-        // inside the round brackets and that data is "passed" (sending) over 
+        // inside the round brackets and that data is "passed" (sent) over 
         // to the method. The data being passed is technically called the
-        // "argument" and the data being recieved is called the "parameter(s)". 
-        // You can always change the arguement.
+        // "argument" and the data being received is called the "parameter(s)". 
+        // You can always change the argument.
         
         write("something");
         
@@ -751,7 +751,6 @@ public class ComputerScience30S {
         // the data into the method's parameter)
         
         write("something else");
-        write("flash");
         write("Spider-man");
         write("Batman");
         write("Superman");
