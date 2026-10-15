@@ -761,11 +761,17 @@ public class ComputerScience30S {
         // You can have more than one, multiple parameters/arguments in a 
         // method which are seperated with commas ","        
         
+        writeLotsOf("Dalmations",101);
         
+        writeLotsOf("Problems", 99);
         
-        
-        
-        
+        // =====================================================================
+        // (3) RETURNING from a method (output) or void methods
+        // =====================================================================
+         
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
         
         
         
@@ -789,6 +795,17 @@ public class ComputerScience30S {
         // need any inputs, the brackets are left empty "()"
         
         System.out.println(something);
+    }
+
+    private static void writeLotsOf(String thing, int times) {
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // and if it has more than one parameter, they are separated by commas
+        
+        for (int i = 0; i < times; i++) {
+            write(thing);
+        }
+        // Reminder that methods can call other methods (which themselves can
+        // call other methds)
     }
     
 }
