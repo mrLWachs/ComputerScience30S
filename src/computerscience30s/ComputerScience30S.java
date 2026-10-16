@@ -775,6 +775,27 @@ public class ComputerScience30S {
         int number = giveMeNumber();
         write("Number was " + number);
         
+        // =====================================================================
+        // (4) COMMENTING methods (documenting) 
+        // =====================================================================
+         
+        // You use comments in methods just as in other code to clarify what 
+        // the method will be doing. The documentation of methods will now be 
+        // expected (and marked) on all programmer-defined methods you write. 
+        // Modern programming languages (including Java) have specific 
+        // documentation techniques and in Java, this is called the JavaDoc 
+        // style. NetBeans and other Java IDEs not only support this, but help 
+        // automate the documentation process. It begins by typing /** on the 
+        // line before the method identifier line.
+        
+        // =====================================================================
+        // (5) OVERLOADING a method (multiple methods with same name)
+        // =====================================================================
+         
+        // An "overloaded" method is when you have multiple (two or more) 
+        // methods that all have the same name, BUT each method has different
+        // parameters, so that when the methods is called, based on the 
+        // arguments we know which version of the method to call
         
         
         
@@ -952,6 +973,8 @@ public class ComputerScience30S {
 //      Then hand in both the code file (html) and the outputs file (Word file)
 //      on Mr. Wachs' hand in page here: https://bit.ly/3iiTvbu
 //
+// =============================================================================
+//
 // UNIT 2: Methods..............................................................
 // 
 // (21) The + and - signs and gray lines along the side in NetBeans
@@ -968,8 +991,12 @@ public class ComputerScience30S {
 //      snippets", and select "Generated Method body" and remove the last line
 // (25) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
-
-
+// (26) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
+// (27) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
+// =============================================================================
 
 
 
