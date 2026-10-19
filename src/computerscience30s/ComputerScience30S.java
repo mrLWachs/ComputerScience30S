@@ -38,7 +38,7 @@ public class ComputerScience30S {
         // =====================================================================
         // UNIT 1: Introduction to Java (variables, conditionals, loops)
         // =====================================================================
-        // learnIntroToJava();
+        learnIntroToJava();
         
         // =====================================================================
         // UNIT 2: Methods (calling, parameters, returning)
