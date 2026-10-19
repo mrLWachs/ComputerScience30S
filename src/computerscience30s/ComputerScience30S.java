@@ -800,7 +800,7 @@ public class ComputerScience30S {
         output("Hello");
         
         output("Good-bye","Learning Methods");
-          
+        
         System.out.println("Completed learning methods!");
     }
 
