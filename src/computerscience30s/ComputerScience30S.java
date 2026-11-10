@@ -38,7 +38,7 @@ public class ComputerScience30S {
         // =====================================================================
         // UNIT 1: Introduction to Java (variables, conditionals, loops)
         // =====================================================================
-        learnIntroToJava();
+        //learnIntroToJava();
         
         // =====================================================================
         // UNIT 2: Methods (calling, parameters, returning)
@@ -52,7 +52,12 @@ public class ComputerScience30S {
         // and we try to use "verbs" (action words) for that name. Methods 
         // (functions, procedures, actions) can often be identified by looking 
         // for the 2 round brackets ( )
-        learnMethods();    
+        //learnMethods();  
+        
+        // =====================================================================
+        // UNIT 3: Arrays (index, length, traversals, matrices)
+        // =====================================================================
+        learnArrays();
     }
 
     private static void learnIntroToJava() {
