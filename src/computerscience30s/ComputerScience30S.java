@@ -908,6 +908,49 @@ public class ComputerScience30S {
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
     }
+
+    private static void learnArrays() {
+        System.out.println("Start learning Arrays...");
+        
+        // =====================================================================
+        // (1) WHAT is an array (vs. a variable)
+        // =====================================================================
+        
+        int variable = 5;
+
+        // E.g. in memory a variable could "look" like...
+        //
+        //          +-------+
+        // variable |   5   | (type integer)
+        //          +-------+
+        
+        // =====================================================================
+        // (2) DECLARING (or "creating" an array
+        // =====================================================================
+        
+        int array[] = new int[5];
+        
+        // The order of words in declaring an array:
+        // (1)    (2)    (3)   (4)   (5)     (6)    (7)                     (8)
+        // type   name   [ ]    =    "new"   type    [ size of the array ]   ;
+                
+        // E.g. in memory an array could "look" like...
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (a length of 5)
+        //       +-------+-------+-------+-------+-------+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        System.out.println("Completed learning Arrays!");
+    }
     
 }
 
