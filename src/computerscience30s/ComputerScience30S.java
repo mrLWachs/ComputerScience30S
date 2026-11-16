@@ -952,6 +952,28 @@ public class ComputerScience30S {
         // with a number (or a variable) inside - this number represents the 
         // SIZE of the array. When arrays are first created, they are EMPTY.
         
+        // The array has now 5 "spots" (or "index", "elements", "subscript")
+        // which automatically numbers them - BUT the first spot is ALWAYS
+        // numbered as spot zero and the rest and numbered in order:
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (indexed)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
+        
+        array[0] = 25;
+        array[1] = 250;
+        array[2] = 2;
+        array[3] = 0;
+        array[4] = -25;
+        
+        //       +-------+-------+-------+-------+-------+
+        // array |   25  |  250  |   2   |   0   |  -25  | (now filled)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
+        
+        
+        
         
         
         
