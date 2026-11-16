@@ -972,6 +972,17 @@ public class ComputerScience30S {
         //       +-------+-------+-------+-------+-------+
         //           0       1       2       3       4
         
+        // These next lines would be errors when the code runs:
+        // array[5] = 25;
+        // array[1000] = 25;
+        // array[-1] = 25;
+        // The above lines would be "out of bounds" errors (or "range" error)
+        
+        // array[2.5] = 25;
+        // array[0] = 2.5;
+        // The above lines would be data "type" errors
+        
+        
         
         
         
