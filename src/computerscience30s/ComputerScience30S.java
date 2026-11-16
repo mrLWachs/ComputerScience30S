@@ -982,7 +982,12 @@ public class ComputerScience30S {
         // array[0] = 2.5;
         // The above lines would be data "type" errors
         
+        double[] a;
         
+        // In memory...
+        //
+        // a
+        //
         
         
         
