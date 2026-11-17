@@ -1057,12 +1057,28 @@ public class ComputerScience30S {
         //            0    ...   67          99
         // Remember, the last index is always ONE LESS than the length
         
+        numbers[0] = numbers[99] * 2;
+        System.out.println(numbers[0]);
         
+        //         +-----+-----+-----+
+        // numbers | 666 | .?. | 333 | 
+        //         +-----+-----+-----+
+        //            0    ...   99
         
+        // =====================================================================
+        // (4) LOOPS (the "for") with arrays (and ".length")
+        // =====================================================================
         
+        // To work with, and to "travel" (means to "visit" every spot) the
+        // entire array, we use a loop! - Specifically the "for" loop!
         
-        
-        
+        for (int i = 0; i < 100; i++) {
+            System.out.println("i = " + numbers[i]);
+        }
+        // The for loop is perfect because it automatically (when I type "for"
+        // and TAB) starts at 0, goes up by 1, is "less than" then ending 
+        // number (which can be the length), and it uses the variables name
+        // "i" (which can stand for "index")
         
         
         
