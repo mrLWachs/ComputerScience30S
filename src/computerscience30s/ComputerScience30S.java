@@ -1095,8 +1095,8 @@ public class ComputerScience30S {
         // =====================================================================
         
         output(array);
-        
-        
+        output(numbers);
+        output(coins);
         
         
         
