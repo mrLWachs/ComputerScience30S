@@ -1094,7 +1094,7 @@ public class ComputerScience30S {
         // (5) METHODS with arrays (as parameters and return types)
         // =====================================================================
         
-        
+        output(array);
         
         
         
@@ -1109,6 +1109,23 @@ public class ComputerScience30S {
         
         
         System.out.println("Completed learning Arrays!");
+    }
+    
+    /** 
+     * Output an array of integers in a dialog
+     * 
+     * @param array the array of integers
+     */
+    private static void output(int[] array) {
+        // Arrays can be a parameter (or one of the parameters) an "input(s)"
+        String text = "Array [ ";
+        // Loop (traverse) through the array and add the contents (what is 
+        // stored at each index) to the string (keep concatinating to string)
+        for (int i = 0; i < array.length; i++) {
+            text = text + array[i] + ", ";
+        }        
+        text = text + " ]";
+        System.out.println(text);                  // Finally output that string
     }
     
 }
