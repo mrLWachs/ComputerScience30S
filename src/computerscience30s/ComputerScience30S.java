@@ -1111,6 +1111,31 @@ public class ComputerScience30S {
         char c = random('!', '~');
         System.out.println("random character was " + c);
         
+        // =====================================================================
+        // (6) MATRIX or multidimensional (2D) arrays
+        // =====================================================================
+         
+        // Multi-dimensional array (also known as a "array of arrays", or a 
+        // array filled with other arrays, 2D, etc.) - and also known as a 
+        // table, grid, or a MATRIX. We declare (create) a matrix , by adding 
+        // multiple sets of square brackets (set of brackets for each dimension)
+        
+        char[][] twoDArray = new char[2][3];
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
