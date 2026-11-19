@@ -1121,6 +1121,26 @@ public class ComputerScience30S {
         // multiple sets of square brackets (set of brackets for each dimension)
         
         char[][] twoDArray = new char[2][3];
+        twoDArray[0][0] = 'A';
+        twoDArray[0][1] = 'B';
+        twoDArray[0][2] = 'C';
+        twoDArray[1][0] = 'D';
+        twoDArray[1][1] = 'E';
+        twoDArray[1][2] = 'F';
+        
+        // NOTE: the way we "visualize" this matrix is up to US! we decide 
+        //       whether the rows is the first dimension or the columns is the 
+        //       first dimension (I will pick rows as the first dimension)
+        //
+        //      0     1     2
+        //   +-----+-----+-----+
+        // 0 |  A  |  B  |  C  |
+        //   +-----+-----+-----+   total of 2 "rows"
+        // 1 |  D  |  E  |  F  |
+        //   +-----+-----+-----+
+        //
+        //    total of 3 "columns"
+        
         
         
         
