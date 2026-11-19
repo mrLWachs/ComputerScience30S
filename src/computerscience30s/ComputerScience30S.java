@@ -1094,15 +1094,22 @@ public class ComputerScience30S {
         // (5) METHODS with arrays (as parameters and return types)
         // =====================================================================
         
-        output(array);
-        output(numbers);
-        output(coins);
+        output(array);      // Send a array to a method as a parameter
+        output(numbers);    // Call the method with a different argument
+        output(coins);      // Overload the "output" method again
         
+        // Test again...
+        double[] examples = { 3.14, 0.01, 99.99, 9876.54321 };
+        output(examples);
         
-        
-        
-        
-        
+        // Overloaded version of the random() method with arrays
+        int[] values = random(1, 10, 50);
+        output(values);
+                
+        // Now test some of the methods we copied and pasted over from 
+        // Mr. Wachs' GitHub page for working with arrays...
+        char c = random('!', '~');
+        System.out.println("random character was " + c);
         
         
         
