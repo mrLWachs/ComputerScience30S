@@ -1127,6 +1127,33 @@ public class ComputerScience30S {
         text = text + " ]";
         System.out.println(text);                  // Finally output that string
     }
+
+    /**
+     * Converts an array of doubles into an array of integers and then
+     * output the array 
+     * 
+     * @param array 
+     */
+    private static void output(double[] array) {
+        int[] a = convert(array);
+        output(a);
+    }
+
+    /**
+     * Converts an array of double into an array of integers
+     * 
+     * @param array the array of doubles
+     * @return an array of integers
+     */
+    private static int[] convert(double[] array) {
+        // Methods can return (output) entire arrays
+        int[] a = new int[array.length];      // Create empty array (same size)
+        // Copying over all the content from the double array to the int array
+        for (int i = 0; i < a.length; i++) {  // Traverse the array
+            a[i] = (int)array[i];             // Cast the double into a int
+        }        
+        return a;                             // Return the converted new array 
+    }
     
 }
 
