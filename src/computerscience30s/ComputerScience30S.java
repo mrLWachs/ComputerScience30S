@@ -1141,8 +1141,8 @@ public class ComputerScience30S {
         //
         //    total of 3 "columns"
         
-        
-        
+        String value = toString(twoDArray);
+        System.out.println("Matrix ... \n" + value);
         
         
         
@@ -1233,6 +1233,27 @@ public class ComputerScience30S {
      */
     private static char random(char low, char high) {
         return (char)random((int)low, (int)high);     // cast to int and back  
+    }
+    
+    /**
+     * Change the matrix into a single string (for outputting)
+     * 
+     * @param matrix the 2D array of characters
+     * @return a single string representing the matrix
+     */
+    private static String toString(char[][] matrix) {
+        String text = "";          // Create string variable to store all values
+        // Use the nested for loops (with more descriptive variable names) and
+        // use the ".length" but also in the nested loop, we will use 
+        // the ".length" of that particular array (or row)
+        for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix[row].length; column++) {
+                 // Means the length of "this row" 
+                text = text + matrix[row][column] + " ";
+            }
+            text = text + "\n";               // Add a line break after each row
+        }        
+        return text;                              // Return the filled up string
     }
     
     
