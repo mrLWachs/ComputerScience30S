@@ -37,8 +37,14 @@ import javax.swing.JTextArea;
  * @author Mr. Wachs
  * @since September 2026
  */
-public class ComputerScience30S {
+public class ComputerScience30S 
+{
 
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {    
         // =====================================================================
         // UNIT 1: Introduction to Java (variables, conditionals, loops)
