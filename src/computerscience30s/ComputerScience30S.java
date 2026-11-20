@@ -1108,8 +1108,8 @@ public class ComputerScience30S {
                 
         // Now test some of the methods we copied and pasted over from 
         // Mr. Wachs' GitHub page for working with arrays...
-        char c = random('!', '~');
-        System.out.println("random character was " + c);
+        char character = random('!', '~');
+        System.out.println("random character was " + character);
         
         // =====================================================================
         // (6) MATRIX or multidimensional (2D) arrays
@@ -1144,14 +1144,76 @@ public class ComputerScience30S {
         String value = toString(twoDArray);
         System.out.println("Matrix ... \n" + value);
         
+        // Now test these methods (toString, random) with a bigger matrix filled
+        // with random characters...
         
+        // ADVICE: when working with matrices, I recommend using variable and 
+        // constants with names the make sense (to you!). So we create some 
+        // constants to use when building the matrix (these are not needed to 
+        // declare a matrix, but they might help in understanding it) - we make
+        // contants as a way to "visualize" what we are building
         
+        // NOTE: if we "visualize this as a 3 by 4 matrix (3 rows by 4 columns),
+        // or y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
+        // could be "seen" as...
+        //
+        //               (columns, width, x axis is 4, meaning 0-3)
+        //
+        //                     0         1         2         3
+        //                +---------+---------+---------+---------+
+        // (rows,       0 |         |         |         |         |
+        //  height,       +---------+---------+---------+---------+
+        //  y axis      1 |         |         |         |         |
+        //  is 3,         +---------+---------+---------+---------+
+        //  meaning     2 |         |         |         |         |
+        //  0-2)          +---------+---------+---------+---------+
+        // 
+        // A matrix "row" can also be "visualized" as the matrix "height"
+        // A matrix "column" can also be "visualized" as the matrix "width"
         
+        // Fill the matrix with random characters (meaning put content in every
+        // location/index/spot in the matrix) by traversing (travelling, 
+        // 'visit' every spot) the matrix and adding random characters (our 
+        // method) - when traversing matricies (plural of matrix) we use 
+        // multiple nested for loops
+              
+        final int ROWS    = 20;
+        final int COLUMNS = 30;
         
+        char[][] matrix = new char[ROWS][COLUMNS];
         
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                matrix[r][c] = random('!', '~');
+            }
+        }
         
+        // Output the matrix, using a method which turns the entire matrix into
+        // a string (which we can then output with one of our existing methods)
+        System.out.println(toString(matrix));
         
+        // =====================================================================
+        // (7) OPTIONAL introduction to graphics items
+        // =====================================================================
         
+        // Now we will experiment and start looking at "graphics". This 
+        // concept will be looked at more formally after the classes unit as an 
+        // optional unit. Following this in this example is entirely optional.
+        // The use of graphics will not specifically be a unit that will have 
+        // any assignments, and graphics are not necessary for your final 
+        // projects. However, they 'can' be added to projects/assignments, and
+        // if you add graphics to the final project, it will count for marks 
+        // (but not required). Also, many of you will 'want' to add this fun 
+        // and interesting aspect to your programming in Java. To begin, we will
+        // set up some "graphical things" (objects) to make the dialog box
+        // output we are familar with (i.e. JOptionPane input, message boxes, 
+        // etc.) more interesting by 'importing' the code that does this (we 
+        // are not writing that specific code, we are 'using' others code).
+        // This will require attention to details like using capital letters 
+        // and importing (using the lightbulb), using a line of code similar to 
+        // the way we declare arrays (i.e. ' = new ...'), and using round 
+        // brackets (implying a method?). These details will be studied in more
+        // details in the next unit 'classes' and the optiona 'graphics' unit.
         
         
         
