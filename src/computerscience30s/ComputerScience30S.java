@@ -20,8 +20,13 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
+import java.awt.Color;
+import java.awt.Font;
 import java.util.Random;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -1189,8 +1194,9 @@ public class ComputerScience30S {
         }
         
         // Output the matrix, using a method which turns the entire matrix into
-        // a string (which we can then output with one of our existing methods)
-        System.out.println(toString(matrix));
+        // (with one of our existing methods) a string and output it
+        String text = toString(matrix);
+        output(text);
         
         // =====================================================================
         // (7) OPTIONAL introduction to graphics items
@@ -1209,19 +1215,102 @@ public class ComputerScience30S {
         // output we are familar with (i.e. JOptionPane input, message boxes, 
         // etc.) more interesting by 'importing' the code that does this (we 
         // are not writing that specific code, we are 'using' others code).
-        // This will require attention to details like using capital letters 
-        // and importing (using the lightbulb), using a line of code similar to 
-        // the way we declare arrays (i.e. ' = new ...'), and using round 
-        // brackets (implying a method?). These details will be studied in more
-        // details in the next unit 'classes' and the optiona 'graphics' unit.
         
+        // To make displaying our matrix more "graphical" things we could do:
+            // Display the matrix in a dialog (JOptionPane)
+            // Add a picture (even animated) to dialog
+            // Change the text in the dialog
+                // Color (background and foreground)
+                // Font
+                // Size
+                // Style (bold, italics, underline...)
+                                
+        // For colors...........................................................
         
+        // Color has to be "broken down" into parts (how to "mix") - mix values
+        // of red, green, and blue (as int values from 0 up to 255 which is the
+        // maximum amount)
         
+        int backgroundRed   = 0;        // Black
+        int backgroundGreen = 0;
+        int backgroundBlue  = 0;
         
+        int foregroundRed   = 255;      // White
+        int foregroundGreen = 255;
+        int foregroundBlue  = 255;
         
+        // For fonts, styles, etc...............................................
         
+        String fontName  = "Courier New";   // Must be a font on computer system
+        int    fontSize  = 12;              // Measured in points
+        int    fontStyle = Font.BOLD;       // Could also be italics, or plain 
+        // Note: this was changed later to use the imported "Font" constant
         
+        // For pictures (images, "icons").......................................
         
+        // First, download or create the image file and make a  note of where 
+        // it is "saved". Then right click on that file and go to 
+        // "Properties" -> this will allow you to get all the information (data) 
+        // you need to use the image...
+        
+        String first = "C:\\1temp\\";
+        // "WHERE" -> commonly call "folder", "path", "directory" (where it is)
+        
+        String middle = "matrix";
+        // "WHO" -> the part of the name that the user usually enters
+        
+        String last = ".gif";
+        // "WHAT" -> the File "extension" or type (what type of file is this?)
+        
+        String pictureName = first + middle + last;
+        // EVERY file on your computer has a "first", "middle", and "last" name
+        
+        String title = "The Matrix...";            // For the tile of the dialog
+        
+        // Display the matrix in a dialog.......................................
+        
+        // NOTE: to help with this (if you want to try it in things like your
+        // assignments and projects) -> I have provided methods (that you can
+        // get off of GitHub) that display the JOptionPane message (and 
+        // potentially input) dialog using "fancy" images, colors, fonts... 
+        // and you can pass the correct arguments to those methods to produce  
+        // the results...
+        output(
+                text,
+                title,
+                backgroundRed,
+                backgroundGreen,
+                backgroundBlue,
+                foregroundRed,
+                foregroundGreen,
+                foregroundBlue,
+                fontName,
+                fontSize,
+                fontStyle,
+                pictureName
+        );
+        
+        // One final matrix (array) example with graphics...
+        // A matrix of values to turn into text -> matricies can also be made 
+        // with pre-set values (like 1D arrays) 
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
+        text = toString(TIC_TAC_TOE);        // Convert matrix to string
+        
+        // Now call our method which requires only a lot more arguments of all  
+        // the component "parts" of the objects to change graphical properties
+        output(
+                text,                              // The text to show
+                "Tic-Tac-Toe",                     // The title
+                255, 255, 0,                       // The background color (RGB)
+                0, 255, 255,                       // The foreground color (RGB)
+                "Comic Sans MS", 40, Font.BOLD,    // The font (name,style,size)
+                "C:\\1temp\\TicTacToe.gif"         // The image (name) to show
+        );
+                
         System.out.println("Completed learning Arrays!");
     }
     
@@ -1313,20 +1402,92 @@ public class ComputerScience30S {
                  // Means the length of "this row" 
                 text = text + matrix[row][column] + " ";
             }
-            text = text + "\n";               // Add a line break after each row
+            if (row != matrix.length - 1) {    // Add to all lines but the last
+                text = text + "\n";            // Add a line break after the row
+            }
         }        
         return text;                              // Return the filled up string
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * custom font (which includes the font name, type of font: bold, italics, 
+     * underline, and the font size), the text to show, and title for the dialog
+     * 
+     * @param text what text to show in the dialog
+     * @param title what to show at the top of the dialog
+     * @param backgroundRed the red amount of the dialog background color 
+     * @param backgroundGreen the green amount of the dialog background color
+     * @param backgroundBlue the blue amount of the dialog background color
+     * @param foregroundRed the red amount of foreground color (text color)
+     * @param foregroundGreen the green amount of foreground color (text color)
+     * @param foregroundBlue the blue amount of foreground color (text color)
+     * @param fontName the font name for the font to use (on this computer)
+     * @param fontSize the font size for the font to use (in points)
+     * @param fontStyle the font style (bold, italics, underline) to use
+     * @param pictureName the full name of the picture icon to display
+     */
+    private static void output(
+            String text, 
+            String title, 
+            int    backgroundRed, 
+            int    backgroundGreen, 
+            int    backgroundBlue, 
+            int    foregroundRed, 
+            int    foregroundGreen, 
+            int    foregroundBlue, 
+            String fontName, 
+            int    fontSize, 
+            int    fontStyle, 
+            String pictureName) {        
+        // NOTE: a lot of the code in this method will require attention to 
+        // details like using capital letters and importing (using the 
+        // lightbulb), using a line of code similar to the way we declare 
+        // arrays (i.e. ' = new ...'), and using round brackets (implying a 
+        // method?). These types of lines of code will be studied in more detail
+        // in the next unit 'classes' and the optional 'graphics' unit
+                
+        // FIRST: We create a "Color" object in our code by "importing" it in a
+        // similar way to how we originally did this with importing the
+        // "JOptionPane" library of code into our code        
+        Color background = new Color(backgroundRed,backgroundGreen,backgroundBlue);
+        Color foreground = new Color(foregroundRed,foregroundGreen,foregroundBlue);
+        
+        // NEXT: Create the font "object" and inside the bracket we put the font 
+        // name (must be installed on this computer), style (e.g. plain, bold, 
+        // underline, etc.) - uses a CONSTANT style, and finally the font size 
+        // (in points)
+        Font font = new Font(fontName,fontStyle,fontSize);
+        
+        // NEXT: to actually use these "properties" (colors, font) we first need
+        // to create something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it) 
+        JTextArea area = new JTextArea();
+        
+        // NEXT: we add the graphical things into that new area, using methods
+        // built into the text area object
+        area.setText(text);
+        area.setForeground(foreground);
+        area.setBackground(background);
+        area.setFont(font);
+        
+        // NEXT: we "import" another object that can display images...
+        Icon icon = new ImageIcon(pictureName);
+        
+        // NEXT: we create a simple integer for the "type" which determines how 
+        // the dialog will look (and we use the built-in constant from 
+        // JOptionPane for this)
+        int type = JOptionPane.PLAIN_MESSAGE;
+        
+        // FINALLY: we display the JOptionPane dialog box, BUT we USE the text 
+        // area object and the image object in the dialog as parameters to 
+        // display a "fancy" dialog (with a picture, formatted text: font, size,
+        // style, and colors: background / foreground)
+        JOptionPane.showMessageDialog(null,area,title,type,icon);        
+    }
+        
 }
 
 // =============================================================================
